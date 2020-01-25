@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <ProjectGuid>{1D006FF8-2766-4B6E-AD37-3004E8E563D6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OrientationSample</RootNamespace>
+    <AssemblyName>OrientationSample</AssemblyName>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <KniPlatform>Android</KniPlatform>
+    <ApplicationId>com.companyname.OrientationSample</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="OrientationSampleActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+    <Folder Include="Resources\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <KniContentReference Include="..\OrientationSampleContent\OrientationSampleContent.mgcb">
+      <Link>Content\OrientationSampleContent.mgcb</Link>
+    </KniContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Audio" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Media" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="3.14.9001" />
+    <PackageReference Include="MonoGame.Framework.Android.9000" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.14.9001" />
+  </ItemGroup>
+  <Import Project="..\OrientationSample\OrientationSample.projitems" Label="Shared" />
+
+</Project>
