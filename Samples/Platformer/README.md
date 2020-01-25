@@ -6,6 +6,8 @@ Submitted
 10/4/2010
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/Platformer.html)
+
 ---
 
 Description:
