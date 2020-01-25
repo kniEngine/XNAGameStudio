@@ -64,6 +64,9 @@ namespace Platformer
             graphics.IsFullScreen = true;
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 #endif
+#if ANDROID
+            graphics.IsFullScreen = true;
+#endif
 
             Accelerometer.Initialize();
         }
@@ -120,13 +123,17 @@ namespace Platformer
         {
             // get all of our input states
             keyboardState = Keyboard.GetState();
-            gamePadState = GamePad.GetState(PlayerIndex.One);
             touchState = TouchPanel.GetState();
             accelerometerState = Accelerometer.GetState();
+            try { gamePadState = GamePad.GetState(PlayerIndex.One); }
+            catch (NotImplementedException) { }
 
             // Exit the game when back is pressed.
             if (gamePadState.Buttons.Back == ButtonState.Pressed)
-                Exit();
+            {
+                try { this.Exit(); }
+                catch (PlatformNotSupportedException) { }
+            }
 
             bool continuePressed =
                 keyboardState.IsKeyDown(Keys.Space) ||
