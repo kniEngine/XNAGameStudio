@@ -1,12 +1,16 @@
 # XNAGameStudio
 
-The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
+The Education library from XNA Game Studios, valuable for KNI/FNA/MonoGame Developers for advanced samples.
 
 # Getting Started
 
 The project contains all the XNA samples from the XNA Creators Club site, however they are still currently in XNA Game format, meaning by default they can only be opened on machines running Visual Studio 2010 with the XNA Game Studio development MSI's installed
 
-The plan is to upgrade / migrate each sample to source in a MonoGame project.  Along with gathering all the necessary XNA documentation to support them.
+The plan is to upgrade / migrate each sample to source in a KNI project.  Along with gathering all the necessary XNA documentation to support them.
+
+# Using the Samples with KNI in Visual Studio 2022
+
+You need to install the latest [SDK](https://github.com/kniEngine/kni/releases/) to build those samples.
 
 # Using XNA projects in Visual Studio 2013 / 2015
 
