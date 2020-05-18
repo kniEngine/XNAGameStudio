@@ -6,6 +6,8 @@ Submitted
 10/21/2009
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/Primitives3D.html)
+
 ---
 
 Description:

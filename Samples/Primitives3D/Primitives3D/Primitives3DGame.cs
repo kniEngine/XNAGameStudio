@@ -192,13 +192,15 @@ namespace Primitives3D
 #else
             currentKeyboardState = Keyboard.GetState();
 #endif
-            currentGamePadState = GamePad.GetState(PlayerIndex.One);
+            try { currentGamePadState = GamePad.GetState(PlayerIndex.One); }
+            catch (NotImplementedException) { }
             currentMouseState = Mouse.GetState();
 
             // Check for exit.
             if (IsPressed(Keys.Escape, Buttons.Back))
             {
-                Exit();
+                try { this.Exit(); }
+                catch (PlatformNotSupportedException) { }
             }
 
             // Change primitive?
