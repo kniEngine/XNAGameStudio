@@ -70,10 +70,16 @@ namespace ShapeRenderingSample
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            KeyboardState kstate = Keyboard.GetState(PlayerIndex.One);
+            GamePadState gpstate = GamePad.GetState(PlayerIndex.One);
+
             // Allow the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
-                Keyboard.GetState(PlayerIndex.One).IsKeyDown(Keys.Escape))
-                this.Exit();
+            if (gpstate.Buttons.Back == ButtonState.Pressed ||
+                kstate.IsKeyDown(Keys.Escape))
+            {
+                try { this.Exit(); }
+                catch(PlatformNotSupportedException) { }
+            }
 
             base.Update(gameTime);
         }
