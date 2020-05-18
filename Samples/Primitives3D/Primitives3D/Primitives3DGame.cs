@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Input.Touch;
 #endregion
 
 namespace Primitives3D
@@ -36,6 +37,7 @@ namespace Primitives3D
         GamePadState lastGamePadState;
         MouseState currentMouseState;
         MouseState lastMouseState;
+        TouchCollection currentTouchState;
 
         // Store a list of primitive models, plus which one is currently selected.
         List<GeometricPrimitive> primitives = new List<GeometricPrimitive>();
@@ -194,11 +196,13 @@ namespace Primitives3D
 #endif
             currentGamePadState = GamePad.GetState(PlayerIndex.One);
             currentMouseState = Mouse.GetState();
+            currentTouchState = TouchPanel.GetState();
 
             // Check for exit.
             if (IsPressed(Keys.Escape, Buttons.Back))
             {
-                Exit();
+                try { this.Exit(); }
+                catch (PlatformNotSupportedException) { }
             }
 
             // Change primitive?
@@ -206,7 +210,7 @@ namespace Primitives3D
             int halfWidth = viewport.Width / 2;
             int halfHeight = viewport.Height / 2;
             Rectangle topOfScreen = new Rectangle(0, 0, viewport.Width, halfHeight);
-            if (IsPressed(Keys.A, Buttons.A) || LeftMouseIsPressed(topOfScreen))
+            if (IsPressed(Keys.A, Buttons.A) || LeftMouseIsPressed(topOfScreen) || TouchIsPressed(topOfScreen))
             {
                 currentPrimitiveIndex = (currentPrimitiveIndex + 1) % primitives.Count;
             }
@@ -214,7 +218,7 @@ namespace Primitives3D
 
             // Change color?
             Rectangle botLeftOfScreen = new Rectangle(0, halfHeight, halfWidth, halfHeight);
-            if (IsPressed(Keys.B, Buttons.B) || LeftMouseIsPressed(botLeftOfScreen))
+            if (IsPressed(Keys.B, Buttons.B) || LeftMouseIsPressed(botLeftOfScreen) || TouchIsPressed(botLeftOfScreen))
             {
                 currentColorIndex = (currentColorIndex + 1) % colors.Count;
             }
@@ -222,7 +226,7 @@ namespace Primitives3D
 
             // Toggle wireframe?
             Rectangle botRightOfScreen = new Rectangle(halfWidth, halfHeight, halfWidth, halfHeight);
-            if (IsPressed(Keys.Y, Buttons.Y) || LeftMouseIsPressed(botRightOfScreen))
+            if (IsPressed(Keys.Y, Buttons.Y) || LeftMouseIsPressed(botRightOfScreen) || TouchIsPressed(botRightOfScreen))
             {
                 isWireframe = !isWireframe;
             }
@@ -245,6 +249,17 @@ namespace Primitives3D
             return (currentMouseState.LeftButton == ButtonState.Pressed &&
                     lastMouseState.LeftButton != ButtonState.Pressed &&
                     rect.Contains(currentMouseState.X, currentMouseState.Y));
+        }
+
+        bool TouchIsPressed(Rectangle rect)
+        {
+            foreach (TouchLocation touch in currentTouchState)
+            {
+                if (touch.State == TouchLocationState.Pressed && rect.Contains(touch.Position))
+                    return true;
+            }
+
+            return false;
         }
 
         #endregion
