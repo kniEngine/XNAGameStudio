@@ -6,6 +6,8 @@ Submitted
 1182010
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/Blackjack.html)
+
 ---
 
 Sample Overview
