@@ -11,6 +11,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
+using System;
 using System.Collections.Generic;
 #endregion
 
@@ -36,7 +37,7 @@ namespace GameStateManagement
 
         public readonly bool[] GamePadWasConnected;
 
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || ANDROID
         public TouchCollection TouchState;
 
         public readonly List<GestureSample> Gestures = new List<GestureSample>();
@@ -87,7 +88,7 @@ namespace GameStateManagement
                     GamePadWasConnected[i] = true;
                 }
             }
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || ANDROID
             TouchState = TouchPanel.GetState();
 
             Gestures.Clear();
