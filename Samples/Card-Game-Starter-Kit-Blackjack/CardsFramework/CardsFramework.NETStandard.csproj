@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <AssemblyName>CardsFramework</AssemblyName>
+    <RootNamespace>CardsFramework</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="4.0.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cards\CardPacket.cs" />
+    <Compile Include="Cards\Hand.cs" />
+    <Compile Include="Cards\TraditionalCard.cs" />
+    <Compile Include="Game\CardsGame.cs" />
+    <Compile Include="Players\Player.cs" />
+    <Compile Include="Rules\GameRule.cs" />
+    <Compile Include="UI\AnimatedCardsGameComponent.cs" />
+    <Compile Include="UI\AnimatedGameComponent.cs" />
+    <Compile Include="UI\AnimatedGameComponentAnimation.cs" />
+    <Compile Include="UI\AnimatedHandGameComponent.cs" />
+    <Compile Include="UI\FlipGameComponentAnimation.cs" />
+    <Compile Include="UI\FramesetGameComponentAnimation.cs" />
+    <Compile Include="UI\GameTable.cs" />
+    <Compile Include="UI\ScaleGameComponentAnimation.cs" />
+    <Compile Include="UI\TransitionGameComponentAnimation.cs" />
+    <Compile Include="Utils\UIUtilty.cs" />
+  </ItemGroup>
+
+</Project>

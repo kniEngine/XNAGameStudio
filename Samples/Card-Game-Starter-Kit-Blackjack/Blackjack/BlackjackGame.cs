@@ -51,11 +51,13 @@ namespace Blackjack
 
             Components.Add(screenManager);
 
-#if WINDOWS
+#if WINDOWS || DESKTOPGL || BLAZORGL
             IsMouseVisible = true;
 #elif WINDOWS_PHONE
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
+            graphics.IsFullScreen = true;
+#elif ANDROID 
             graphics.IsFullScreen = true;
 #elif XBOX
             Components.Add(new Microsoft.Xna.Framework.GamerServices.GamerServicesComponent(this));
