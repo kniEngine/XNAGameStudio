@@ -6,6 +6,8 @@ Submitted
 10/18/2010
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/Shape-Rendering.html)
+
 ---
 
 Sample Overview
