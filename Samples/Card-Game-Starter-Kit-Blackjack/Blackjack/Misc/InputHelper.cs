@@ -81,7 +81,9 @@ namespace Blackjack
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         public override void Update(GameTime gameTime)
         {
-            GamePadState gamePadState = GamePad.GetState(PlayerIndex.One);
+            GamePadState gamePadState = default(GamePadState);
+            try { gamePadState = GamePad.GetState(PlayerIndex.One); }
+            catch (NotImplementedException) { }
 
             IsPressed = gamePadState.Buttons.A == ButtonState.Pressed;
 

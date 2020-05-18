@@ -83,7 +83,8 @@ namespace Blackjack
         /// <param name="playerIndex"></param>
         protected override void OnCancel(PlayerIndex playerIndex)
         {
-            ScreenManager.Game.Exit();
+            try { ScreenManager.Game.Exit(); }
+            catch (PlatformNotSupportedException) { }
         }
         #endregion
     }
