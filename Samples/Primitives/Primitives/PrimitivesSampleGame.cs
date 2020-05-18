@@ -161,10 +161,16 @@ namespace PrimitivesSample
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if ((GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                this.Exit();
+            KeyboardState kstate = Keyboard.GetState(PlayerIndex.One);
+            GamePadState gpstate = GamePad.GetState();
+
+            // Allow the game to exit
+            if (gpstate.Buttons.Back == ButtonState.Pressed ||
+                kstate.IsKeyDown(Keys.Escape))
+            {
+                try { this.Exit(); }
+                catch (PlatformNotSupportedException) { }
+            }
 
 
             base.Update(gameTime);

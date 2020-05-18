@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <ProjectGuid>{167E9BBD-891F-4452-934A-91B801E9997F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Primitives</RootNamespace>
+    <AssemblyName>Primitives</AssemblyName>	  
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <KniPlatform>Android</KniPlatform>
+    <ApplicationId>com.companyname.Primitives</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PrimitivesSampleActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+    <Folder Include="Resources\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <KniContentReference Include="..\PrimitivesContent\PrimitivesContent.mgcb">
+      <Link>Content\PrimitivesContent.mgcb</Link>
+    </KniContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Devices" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Audio" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Media" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Storage" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.XR" Version="4.0.9001" />
+    <PackageReference Include="nkast.Kni.Platform.Android.GL" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.0.9001" />
+  </ItemGroup>
+  <Import Project="..\Primitives\Primitives.projitems" Label="Shared" />
+
+</Project>
