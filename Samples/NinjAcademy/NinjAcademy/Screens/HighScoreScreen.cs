@@ -324,29 +324,35 @@ namespace NinjAcademy
         /// </summary>
         public static void LoadHighscores()
         {
-            // Get the place the data stored
-            using (IsolatedStorageFile isolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication())
+            try
             {
-                // Try to open the file
-                if (isolatedStorageFile.FileExists(HighScoreScreen.HighScoreFilename))
+                // Get the place the data stored
+                using (IsolatedStorageFile isolatedStorageFile = IsolatedStorageFile.GetUserStoreForApplication())
                 {
-                    using (IsolatedStorageFileStream isfs =
-                        isolatedStorageFile.OpenFile(HighScoreScreen.HighScoreFilename, FileMode.Open))
+                    // Try to open the file
+                    if (isolatedStorageFile.FileExists(HighScoreScreen.HighScoreFilename))
                     {
-                        // Get the stream to read the data
-                        using (StreamReader reader = new StreamReader(isfs))
+                        using (IsolatedStorageFileStream isfs =
+                            isolatedStorageFile.OpenFile(HighScoreScreen.HighScoreFilename, FileMode.Open))
                         {
-                            // Read the high-scores
-                            int i = 0;
-                            while (!reader.EndOfStream)
+                            // Get the stream to read the data
+                            using (StreamReader reader = new StreamReader(isfs))
                             {
-                                string name = reader.ReadLine();
-                                string score = reader.ReadLine();
-                                highScore[i++] = new KeyValuePair<string, int>(name, int.Parse(score));
+                                // Read the high-scores
+                                int i = 0;
+                                while (!reader.EndOfStream)
+                                {
+                                    string name = reader.ReadLine();
+                                    string score = reader.ReadLine();
+                                    highScore[i++] = new KeyValuePair<string, int>(name, int.Parse(score));
+                                }
                             }
                         }
                     }
                 }
+            }
+            catch (PlatformNotSupportedException)
+            {
             }
 
             OrderGameScore();
