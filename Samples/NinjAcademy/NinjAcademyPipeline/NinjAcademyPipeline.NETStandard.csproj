@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <ProjectGuid>{DB23BD3E-59F1-4B74-A3E8-0DDEC7AF2592}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NinjAcademyPipeline</RootNamespace>
+    <AssemblyName>NinjAcademyPipeline</AssemblyName>
+  </PropertyGroup>
+	
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants></DefineConstants>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.Net4.cs" />
+    <Compile Include="AnimationProcessor.cs" />
+    <Compile Include="ConfigurationProcessor.cs" />
+    <Compile Include="XDocumentImporter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="4.0.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.0.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline" Version="4.0.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Graphics" Version="4.0.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NinjAcademyCommonTypes\NinjAcademyCommonTypes.NETStandard.csproj">
+      <Project>{9ec7e352-e3b9-4153-90e4-490019532230}</Project>
+      <Name>NinjAcademyCommonTypes.NETStandard</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
