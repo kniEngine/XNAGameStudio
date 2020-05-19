@@ -174,7 +174,8 @@ namespace NinjAcademy
                     isExiting = false;
                     // When exiting intentionally, clear the saved game data
                     NinjAcademyGame.CleanIsolatedStorage();
-                    ScreenManager.Game.Exit();
+                    try { ScreenManager.Game.Exit(); }
+                    catch (PlatformNotSupportedException) { }
                     return;
                 }
             }
