@@ -6,6 +6,8 @@ Submitted
 12/20/2010
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/NinjAcademy.html)
+
 ---
 
 Sample Overview
