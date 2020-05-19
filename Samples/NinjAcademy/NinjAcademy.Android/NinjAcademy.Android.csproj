@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <ProjectGuid>{AE37DD20-A562-4FC3-9357-2D5CB409CA45}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NinjAcademy</RootNamespace>
+    <AssemblyName>NinjAcademy</AssemblyName>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <KniPlatform>Android</KniPlatform>
+    <ApplicationId>com.companyname.NinjAcademy</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+		
+  <ItemGroup>
+    <Compile Include="NinjAcademyActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+    <Folder Include="Resources\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <KniContentReference Include="..\NinjAcademyContent\NinjAcademyContent.mgcb">
+      <Link>Content\NinjAcademyContent.mgcb</Link>
+    </KniContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Audio" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Media" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="3.14.9001" />
+    <PackageReference Include="MonoGame.Framework.Android.9000" Version="3.14.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.14.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NinjAcademyCommonTypes\NinjAcademyCommonTypes.NETStandard.csproj">
+      <Project>{9ec7e352-e3b9-4153-90e4-490019532230}</Project>
+      <Name>NinjAcademyCommonTypes.NETStandard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\NinjAcademy\NinjAcademy.projitems" Label="Shared" />
+
+</Project>
