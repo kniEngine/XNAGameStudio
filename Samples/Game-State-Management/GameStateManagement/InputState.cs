@@ -7,6 +7,7 @@
 //-----------------------------------------------------------------------------
 #endregion
 
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
@@ -62,7 +63,8 @@ namespace GameStateManagement
                 LastGamePadStates[i] = CurrentGamePadStates[i];
 
                 CurrentKeyboardStates[i] = Keyboard.GetState((PlayerIndex)i);
-                CurrentGamePadStates[i] = GamePad.GetState((PlayerIndex)i);
+                try { CurrentGamePadStates[i] = GamePad.GetState((PlayerIndex)i); }
+                catch (NotImplementedException) { }
 
                 // Keep track of whether a gamepad has ever been
                 // connected, so we can detect if it is unplugged.
