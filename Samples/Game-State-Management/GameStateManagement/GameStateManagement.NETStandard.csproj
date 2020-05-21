@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <AssemblyName>GameStateManagement</AssemblyName>
+    <RootNamespace>GameStateManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="3.13.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameScreen.cs" />
+    <Compile Include="InputAction.cs" />
+    <Compile Include="InputState.cs" />
+    <Compile Include="IScreenFactory.cs" />
+    <Compile Include="ScreenManager.cs" />
+  </ItemGroup>
+
+</Project>
