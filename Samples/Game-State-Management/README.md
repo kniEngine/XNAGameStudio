@@ -5,6 +5,8 @@ Submitted
 5/24/2011
 Code Sample
 
+[Live demo](https://kniengine.github.io/XNAGameStudio/wasm/Game-State-Management.html)
+
 Description:
 
 This sample shows how to manage the transitions among menus and gameplay states.
