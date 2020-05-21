@@ -58,7 +58,9 @@ namespace GameStateManagementSample
 
         protected override void OnCancel()
         {
-            ScreenManager.Game.Exit();
+            try { ScreenManager.Game.Exit(); }
+            catch (PlatformNotSupportedException) { }
+
             base.OnCancel();
         }
     }
