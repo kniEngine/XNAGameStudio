@@ -15,9 +15,9 @@ This sample demonstrates how to develop a dynamic user interface that can be cre
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/dynamicmenu1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/dynamicmenu2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/dynamicmenu3.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/dynamicmenu4.png)  	  	  	  	  	  	 
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/dynamicmenu1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/dynamicmenu2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/dynamicmenu3.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/dynamicmenu4.png)  	  	  	  	  	  	 
 
  
 Download | Size | Description
 ---|---|---|
-[DynamicMenu_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/DynamicMenu_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Dynamic Menu sample.
+[DynamicMenu_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/DynamicMenu_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Dynamic Menu sample.

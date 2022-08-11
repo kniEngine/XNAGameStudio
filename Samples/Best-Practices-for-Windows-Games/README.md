@@ -16,4 +16,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[BestPractices_WP7_Games.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/BestPractices_WP7_Games.docx?raw=true) | 0.11MB | Best Practices for Windows Phone 7 Games Article.
+[BestPractices_WP7_Games.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/BestPractices_WP7_Games.docx?raw=true) | 0.11MB | Best Practices for Windows Phone 7 Games Article.

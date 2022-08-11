@@ -24,19 +24,19 @@ Credits
 
 Much of the code in this demo, especially the custom content processors that are used to prepare the graphics content, is borrowed from existing XNA Game Studio samples. Specifically:
 
-[Skinned Model](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Skinned-Model/) 	*SkinnedModelProcessor, SkinningData, Keyframe, AnimationPlayer, and AnimationClip*
+[Skinned Model](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Skinned-Model/) 	*SkinnedModelProcessor, SkinningData, Keyframe, AnimationPlayer, and AnimationClip*
 
-[Custom Model Effect](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Custom-Model-Effect/) 	*EnvironmentMappedModelProcessor, EnvironmentMappedMaterialProcessor, and CubemapProcessor*
+[Custom Model Effect](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Custom-Model-Effect/) 	*EnvironmentMappedModelProcessor, EnvironmentMappedMaterialProcessor, and CubemapProcessor*
 
-[Generated Geometry](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Generated-Geometry/) 	*SkyProcessor, SkyContent, and Sky*
+[Generated Geometry](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Generated-Geometry/) 	*SkyProcessor, SkyContent, and Sky*
 
-[Sprite Effects](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Sprite-Effects/) 	*TexturePlusAlphaProcessor*
+[Sprite Effects](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Sprite-Effects/) 	*TexturePlusAlphaProcessor*
 
-[Simple Animation](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Simple-Animation/) 	*Tank class*
+[Simple Animation](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Simple-Animation/) 	*Tank class*
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
 Download | Size | Description
 ---|---|---|
-[ReachGraphicsDemo_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ReachGraphicsDemo_4_0.zip?raw=true) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 
+[ReachGraphicsDemo_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ReachGraphicsDemo_4_0.zip?raw=true) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 

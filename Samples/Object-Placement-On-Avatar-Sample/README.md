@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ObjectPlacementOnAvatarSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ObjectPlacementOnAvatarSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Object Placement on Avatar Sample (XNA Game Studio 4.0). 
+[ObjectPlacementOnAvatarSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ObjectPlacementOnAvatarSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Object Placement on Avatar Sample (XNA Game Studio 4.0). 

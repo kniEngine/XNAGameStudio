@@ -18,9 +18,9 @@ A tank model is loaded through the content pipeline, and then rendered by using 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_simple_animation_01_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_simple_animation_01_small.JPG)![XNA_simple_animation_02_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_simple_animation_02_small.JPG)
+![XNA_simple_animation_01_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_simple_animation_01_small.JPG)![XNA_simple_animation_02_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_simple_animation_02_small.JPG)
 	
 
 Download | Size | Description
 ---|---|---|
-[SimpleAnimation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SimpleAnimation_4_0.zip?raw=true) | 4.89MB | Source code and assets for the Simple Animation Sample (XNA Game Studio 4.0). 
+[SimpleAnimation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SimpleAnimation_4_0.zip?raw=true) | 4.89MB | Source code and assets for the Simple Animation Sample (XNA Game Studio 4.0). 

@@ -15,4 +15,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[IntroToCSharp_Article_4_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true) | 0.15MB | Intro to C# from Objective-C and Java Article. 
+[IntroToCSharp_Article_4_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/IntroToCSharp_Article_4_0.doc?raw=true) | 0.15MB | Intro to C# from Objective-C and Java Article. 

@@ -23,10 +23,10 @@ This sample demonstrates the use of up-front allocations to avoid garbage collec
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle_02_small.jpg)
 
 	
 
 Download | Size | Description
 ---|---|---|
-[ParticleSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ParticleSample_4_0.zip?raw=true) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0) 
+[ParticleSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ParticleSample_4_0.zip?raw=true) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0) 

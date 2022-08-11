@@ -32,10 +32,10 @@ Features
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/memorymadness1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/memorymadness2.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/memorymadness1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/memorymadness2.png)
 	
 
  
 Download | Size | Description
 ---|---|---|
-[MemoryMadnessLab_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MemoryMadnessLab_4_0.zip?raw=true) | 8.07MB | Source code and assets for the Memory Madness lab.
+[MemoryMadnessLab_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MemoryMadnessLab_4_0.zip?raw=true) | 8.07MB | Source code and assets for the Memory Madness lab.

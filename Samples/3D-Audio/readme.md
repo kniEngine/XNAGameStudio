@@ -21,10 +21,10 @@ This sample demonstrates how to overcome this problem by implementing an AudioMa
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Audio3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Audio3D_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Audio3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Audio3D_02_small.jpg)
 
 	
 
 Download | Size | Description
 ---|---|---|
-[Audio3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Audio3DSample_4_0.zip?raw=true) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0). 
+[Audio3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Audio3DSample_4_0.zip?raw=true) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0). 

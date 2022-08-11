@@ -20,9 +20,9 @@ When it's the Red Team versus the Blue Team, or when you want to drive a car pai
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_ColorReplacement_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_ColorReplacement_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_ColorReplacement_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_ColorReplacement_02_small.jpg)
 
 	
 Download | Size | Description
 ---|---|---|
-[ColorReplacementSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ColorReplacementSample_4_0.zip?raw=true) | 1.86MB | Source code and assets for the Color Replacement Sample (XNA Game Studio 4.0)
+[ColorReplacementSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ColorReplacementSample_4_0.zip?raw=true) | 1.86MB | Source code and assets for the Color Replacement Sample (XNA Game Studio 4.0)

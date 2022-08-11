@@ -30,4 +30,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[InvitesSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/InvitesSample_4_0.zip?raw=true) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0). 
+[InvitesSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/InvitesSample_4_0.zip?raw=true) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0). 

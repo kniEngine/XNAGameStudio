@@ -21,10 +21,10 @@ Fortunately, the layered design of the Content Pipeline makes it easy to replace
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_CustomModelClass_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelClass_01_small.jpg)![XNA_CustomModelClass_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelClass_02_small.jpg) 
+![XNA_CustomModelClass_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelClass_01_small.jpg)![XNA_CustomModelClass_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelClass_02_small.jpg) 
 	
 
  
 Download | Size | Description
 ---|---|---|
-[CustomModelClassSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/CustomModelClassSample_4_0.zip?raw=true) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0). 
+[CustomModelClassSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/CustomModelClassSample_4_0.zip?raw=true) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0). 

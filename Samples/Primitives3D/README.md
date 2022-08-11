@@ -28,4 +28,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Primitives3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Primitives3DSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 
+[Primitives3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Primitives3DSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 

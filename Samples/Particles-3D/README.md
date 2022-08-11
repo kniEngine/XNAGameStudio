@@ -25,9 +25,9 @@ Although this sample works in 3D, the same code can be used for efficient 2D par
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_03_small.jpg)
 
 		
 Download | Size | Description
 ---|---|---|
-[Particles3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Particles3DSample_4_0.zip?raw=true) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0). 
+[Particles3DSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Particles3DSample_4_0.zip?raw=true) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0). 

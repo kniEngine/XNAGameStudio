@@ -15,10 +15,10 @@ This sample utilizes the Performance Utility to show the impact of adding 3D sph
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 	
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/performanceSample1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/performanceSample2.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/performanceSample1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/performanceSample2.png)
  
 
  
 Download | Size | Description
 ---|---|---|
-[PerformanceMeasuringSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PerformanceMeasuringSample_4_0.zip?raw=true) | 0.10MB | Source code and assets for the Performance Measuring sample
+[PerformanceMeasuringSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PerformanceMeasuringSample_4_0.zip?raw=true) | 0.10MB | Source code and assets for the Performance Measuring sample

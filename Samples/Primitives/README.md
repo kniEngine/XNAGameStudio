@@ -19,8 +19,8 @@ Many popular games use a "retro" style that does all of its drawing with points 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Pritives_01_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Pritives_01_small.jpg)
 
 Download | Size | Description
 ---|---|---|
-[PrimitivesSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PrimitivesSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Primitives Sample (XNA Game Studio 4.0). 
+[PrimitivesSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PrimitivesSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Primitives Sample (XNA Game Studio 4.0). 

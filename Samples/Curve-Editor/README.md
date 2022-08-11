@@ -27,10 +27,10 @@ You can create a Curve class in your XNA Framework game code and fill in the key
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_01_small.JPG)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_02_small.JPG)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_03_small.JPG)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Curve-Editor_01_small.JPG)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Curve-Editor_02_small.JPG)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Curve-Editor_03_small.JPG)
 
   	  	 
 
 Download | Size | Description
 ---|---|---|
-[CurveEditor_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/CurveEditor_4_0.zip?raw=true) | 0.28MB | Source code and content for the Curve Editor Tool. 
+[CurveEditor_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/CurveEditor_4_0.zip?raw=true) | 0.28MB | Source code and content for the Curve Editor Tool. 

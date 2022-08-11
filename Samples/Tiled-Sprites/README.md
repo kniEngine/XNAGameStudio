@@ -27,9 +27,9 @@ Sprite animation is a similar data management task to tiling, since several sour
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_TiledSprites_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_TiledSprites_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_TiledSprites_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_TiledSprites_02_small.jpg)
 
 		 
 Download | Size | Description
 ---|---|---|
-[TiledSpritesSample_ARCHIVE_3_1.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/TiledSpritesSample_ARCHIVE_3_1.zip?raw=true) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived). 
+[TiledSpritesSample_ARCHIVE_3_1.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/TiledSpritesSample_ARCHIVE_3_1.zip?raw=true) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived). 

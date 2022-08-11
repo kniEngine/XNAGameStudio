@@ -17,4 +17,4 @@ You can also view the documentation for this Starter Kit in the MSDN Libary. Vie
 
 Download | Size | Description
 ---|---|---|
-[translatorstarterkit.txt](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/translatorstarterkit.txt?raw=true) | 0.00MB | This program provides the user with the ability to enter a word or phrase in one language and have it translated to another language.
+[translatorstarterkit.txt](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/translatorstarterkit.txt?raw=true) | 0.00MB | This program provides the user with the ability to enter a word or phrase in one language and have it translated to another language.

@@ -17,9 +17,9 @@ The project comes ready to compile and run, and is easy to customize with only a
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/Spacewar1_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/Spacewar2_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/Spacewar3_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/Spacewar4_thumb.jpg)		
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/Spacewar1_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/Spacewar2_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/Spacewar3_thumb.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/Spacewar4_thumb.jpg)		
 
  
 Download | Size | Description
 ---|---|---|
-[Spacewar_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Spacewar_4_0.zip?raw=true) | 29.94MB | Source code and assets for Spacewar. 
+[Spacewar_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Spacewar_4_0.zip?raw=true) | 29.94MB | Source code and assets for Spacewar. 

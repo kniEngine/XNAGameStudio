@@ -18,18 +18,18 @@ This sample explores the diffuse and ambient lighting models and combines them i
 
 Other items in the Shader Series
 
-[Shader Series: Introduction](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-Introduction/) (Article)
+[Shader Series: Introduction](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-Introduction/) (Article)
 
-[Shader Series 2: Textures and Colors Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-2-Textures-and-Colors/)
+[Shader Series 2: Textures and Colors Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-2-Textures-and-Colors/)
 
-[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-3-Per-Pixel-Lighting/)
+[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-3-Per-Pixel-Lighting/)
 
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Shader1_VertexLighting_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Shader1_VertexLighting_02_small.jpg)
 	
 Download | Size | Description
 ---|---|---|
-[VertexLightingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/VertexLightingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 
+[VertexLightingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/VertexLightingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 

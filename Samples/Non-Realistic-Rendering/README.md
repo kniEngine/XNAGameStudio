@@ -25,10 +25,10 @@ Many graphical effects can be achieved by combining these techniques in various 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NonRealisticRendering_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NonRealisticRendering_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NonRealisticRendering_03_small.jpg)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[NonPhotoRealisticSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/NonPhotoRealisticSample_4_0.zip?raw=true) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0). 
+[NonPhotoRealisticSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/NonPhotoRealisticSample_4_0.zip?raw=true) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0). 

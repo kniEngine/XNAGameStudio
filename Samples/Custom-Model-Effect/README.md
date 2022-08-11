@@ -26,9 +26,9 @@ The second custom content pipeline processor converts a regular 2D photograph in
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_03_small.jpg)		
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelEffect_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelEffect_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelEffect_03_small.jpg)		
 
  
 Download | Size | Description
 ---|---|---|
-[CustomModelEffectSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/CustomModelEffectSample_4_0.zip?raw=true) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0). 
+[CustomModelEffectSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/CustomModelEffectSample_4_0.zip?raw=true) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0). 

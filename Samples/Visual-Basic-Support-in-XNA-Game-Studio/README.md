@@ -16,4 +16,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Visual Basic Support in XNA Game Studio 4.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/Visual%20Basic%20Support%20in%20XNA%20Game%20Studio%204.doc?raw=true) | 0.14MB | Article detailing Visual Basic support in XNA Game Studio 4.0.
+[Visual Basic Support in XNA Game Studio 4.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/Visual%20Basic%20Support%20in%20XNA%20Game%20Studio%204.doc?raw=true) | 0.14MB | Article detailing Visual Basic support in XNA Game Studio 4.0.

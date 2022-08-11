@@ -24,10 +24,10 @@ In Snow Shovel, the game objective is to gather as many snowflakes with the shov
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![snowshovel1.png](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/snowshovel1.png)![snowshovel2.png](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/snowshovel2.png)
+![snowshovel1.png](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/snowshovel1.png)![snowshovel2.png](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/snowshovel2.png)
 	
 
 
 Download | Size | Description
 ---|---|---|
-[SnowShovelSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SnowShovelSample_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 
+[SnowShovelSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SnowShovelSample_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 

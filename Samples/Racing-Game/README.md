@@ -20,7 +20,7 @@ Racing Game is a 3D auto racing game that features advanced graphics, audio, and
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Racing-Game_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Racing-Game_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Racing-Game_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Racing-Game_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Racing-Game_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Racing-Game_03_small.jpg)
 
   		
 

@@ -16,9 +16,9 @@ Note: This utility doesn't currently include supporting documentation. To see an
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).>/p>
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/debugsample1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/debugsample2.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/debugsample1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/debugsample2.png)
 
  
 Download | Size | Description
 ---|---|---|
-[PerformanceUtility_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PerformanceUtility_4_0.zip?raw=true) | 0.15MB | Source code and assets for the Performance Utility. 
+[PerformanceUtility_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PerformanceUtility_4_0.zip?raw=true) | 0.15MB | Source code and assets for the Performance Utility. 

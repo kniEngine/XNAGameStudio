@@ -18,4 +18,4 @@ For more information, see [Implementing the Model-View-ViewModel Pattern in a Wi
 
 Download | Size | Description
 ---|---|---|
-[modelviewviewmodelsample.txt](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/modelviewviewmodelsample.txt?raw=true) | 0.00MB | This sample demonstrates a simple MVVM application that uses XAML binding to connect the Views to the Model.
+[modelviewviewmodelsample.txt](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/modelviewviewmodelsample.txt?raw=true) | 0.00MB | This sample demonstrates a simple MVVM application that uses XAML binding to connect the Views to the Model.

@@ -15,9 +15,9 @@ This sample plays back recorded sound with an echo effect applied to it. To use 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/microphoneecho0.png)
+ ![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/microphoneecho0.png)
 
  
 Download | Size | Description
 ---|---|---|
-[MicrophoneEchoSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MicrophoneEchoSample_4_0.zip?raw=true) | 0.11MB | Source code and assets for the Microphone Echo Sample (XNA Game Studio 4.0). 
+[MicrophoneEchoSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MicrophoneEchoSample_4_0.zip?raw=true) | 0.11MB | Source code and assets for the Microphone Echo Sample (XNA Game Studio 4.0). 

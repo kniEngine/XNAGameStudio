@@ -25,9 +25,9 @@ This sample is based on the Chase & Evade sample and assumes that the reader is 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_FuzzyLogic_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_01_small.jpg)![XNA_FuzzyLogic_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_02_small.jpg)![XNA_FuzzyLogic_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_03_small.jpg)
+![XNA_FuzzyLogic_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_FuzzyLogic_01_small.jpg)![XNA_FuzzyLogic_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_FuzzyLogic_02_small.jpg)![XNA_FuzzyLogic_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_FuzzyLogic_03_small.jpg)
 		
 
 Download | Size | Description
 ---|---|---|
-[FuzzyLogicSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/FuzzyLogicSample_4_0.zip?raw=true) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0). 
+[FuzzyLogicSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/FuzzyLogicSample_4_0.zip?raw=true) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0). 

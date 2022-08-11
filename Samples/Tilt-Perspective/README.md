@@ -15,8 +15,8 @@ This sample uses the accelerometer to estimate the orientation of the phone's sc
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/tiltperspective.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/tiltperspective.png)
 
 Download | Size | Description
 ---|---|---|
-[TiltPerspective_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/TiltPerspective_4_0.zip?raw=true) | 0.24MB | Source code and assets for the Tilt Perspective sample.
+[TiltPerspective_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/TiltPerspective_4_0.zip?raw=true) | 0.24MB | Source code and assets for the Tilt Perspective sample.

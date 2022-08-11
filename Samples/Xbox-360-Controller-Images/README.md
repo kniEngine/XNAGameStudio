@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ControllerImages.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ControllerImages.zip?raw=true) | 0.67MB | Assets for the Xbox 360 Controller Images Pack. 
+[ControllerImages.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ControllerImages.zip?raw=true) | 0.67MB | Assets for the Xbox 360 Controller Images Pack. 

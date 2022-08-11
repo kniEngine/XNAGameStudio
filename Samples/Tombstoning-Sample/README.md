@@ -20,4 +20,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[TombstoningSample.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/TombstoningSample.zip?raw=true) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning. 
+[TombstoningSample.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/TombstoningSample.zip?raw=true) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning. 

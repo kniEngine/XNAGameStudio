@@ -15,9 +15,9 @@ Get the basics on Sound and Music for games on Windows Phone 7. This sample intr
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/musicAndSoundSample1.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/musicAndSoundSample1.png)
 
  
 Download | Size | Description
 ---|---|---|
-[SoundAndMusic_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SoundAndMusic_4_0.zip?raw=true) | 1.38MB | Source code and assets for the Sound and Music Sample (XNA Game Studio 4.0). 
+[SoundAndMusic_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SoundAndMusic_4_0.zip?raw=true) | 1.38MB | Source code and assets for the Sound and Music Sample (XNA Game Studio 4.0). 

@@ -10,7 +10,7 @@ Code Sample
 
 Description:
 
-This sample builds on the concepts illustrated in the [Custom Model Effect](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Custom-Model-Effect/) sample, and it applies a normal mapping effect to a mesh. The sample also uses a custom content processor to demonstrate two additional concepts: adding and removing per-vertex data from a mesh, and reading opaque data.
+This sample builds on the concepts illustrated in the [Custom Model Effect](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Custom-Model-Effect/) sample, and it applies a normal mapping effect to a mesh. The sample also uses a custom content processor to demonstrate two additional concepts: adding and removing per-vertex data from a mesh, and reading opaque data.
 
 Sample Overview
 
@@ -23,10 +23,10 @@ To make rendering more efficient at runtime, a second custom processor changes t
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NormalMappingEffect_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NormalMappingEffect_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_NormalMappingEffect_03_small.jpg)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[NormalMappingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/NormalMappingSample_4_0.zip?raw=true) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
+[NormalMappingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/NormalMappingSample_4_0.zip?raw=true) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)

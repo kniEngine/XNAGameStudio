@@ -19,12 +19,12 @@ Marblets is a puzzle-style game that challenges you to eliminate groups of same-
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Marblets_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Marblets_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Marblets_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Marblets_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Marblets_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Marblets_03_small.jpg)
 
 
 		
 
 Download | Size | Description
 ---|---|---|
-[MarbletsWindows_ARCHIVE_3_0.msi](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MarbletsWindows_ARCHIVE_3_0.msi?raw=true) | 6.06MB | Installer for the Marblets Sample Template (XNA Game Studio 3.0, Archived).
-[MarbletsXbox360_ARCHIVE_3_0.msi](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MarbletsXbox360_ARCHIVE_3_0.msi?raw=true) | 6.06MB | Installer for the Marblets Sample Template (XNA Game Studio 3.0, Archived). 
+[MarbletsWindows_ARCHIVE_3_0.msi](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MarbletsWindows_ARCHIVE_3_0.msi?raw=true) | 6.06MB | Installer for the Marblets Sample Template (XNA Game Studio 3.0, Archived).
+[MarbletsXbox360_ARCHIVE_3_0.msi](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MarbletsXbox360_ARCHIVE_3_0.msi?raw=true) | 6.06MB | Installer for the Marblets Sample Template (XNA Game Studio 3.0, Archived). 

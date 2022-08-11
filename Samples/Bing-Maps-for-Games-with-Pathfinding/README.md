@@ -19,9 +19,9 @@ Note: This sample requires a Bing Maps key to run. To register and obtain a key,
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/bingpathfinding1.png)  	 
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/bingpathfinding1.png)  	 
 
  
 Download | Size | Description
 ---|---|---|
-[BingMapsPathFinding_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/BingMapsPathFinding_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.
+[BingMapsPathFinding_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/BingMapsPathFinding_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.

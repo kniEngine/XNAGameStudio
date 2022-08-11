@@ -31,5 +31,5 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 download | Size | Description
 ---|---|---|
-[RobotGameSystemDetails_ARCHIVE_2_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/RobotGameSystemDetails_ARCHIVE_2_0.doc?raw=true) | 0.13MB | A system component document that will assist in extending the Robot Game Sample (XNA Game Studio 2.0, Archived).
-[RobotGame_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/RobotGame_ARCHIVE_2_0.zip?raw=true) | 49.14MB | Source and assets for the Robot Game Sample (XNA Game Studio 2.0, Archived). 
+[RobotGameSystemDetails_ARCHIVE_2_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/RobotGameSystemDetails_ARCHIVE_2_0.doc?raw=true) | 0.13MB | A system component document that will assist in extending the Robot Game Sample (XNA Game Studio 2.0, Archived).
+[RobotGame_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/RobotGame_ARCHIVE_2_0.zip?raw=true) | 49.14MB | Source and assets for the Robot Game Sample (XNA Game Studio 2.0, Archived). 

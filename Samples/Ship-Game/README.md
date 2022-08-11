@@ -20,16 +20,16 @@ The Ship Game starter kit includes a readme file outlining the game controls, ar
 
 The following tutorials are also available:
 
-    [*Ship Game: 3D Collision with the BoxCollider Library*](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Ship-Game-3D-Collision-with-the-BoxCollider-Library/) 
-    [*Ship Game: Adding New Content*](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Ship-Game-Adding-New-Content/) 
+    [*Ship Game: 3D Collision with the BoxCollider Library*](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Ship-Game-3D-Collision-with-the-BoxCollider-Library/) 
+    [*Ship Game: Adding New Content*](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Ship-Game-Adding-New-Content/) 
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/shipgame1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/shipgame2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/shipgame3.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/shipgame1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/shipgame2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/shipgame3.png)
 
   	 
 
 Download | Size | Description
 ---|---|---|
-[ShipGame_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ShipGame_4_0.zip?raw=true) | 47.05MB | Source code and assets for Ship Game.
+[ShipGame_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ShipGame_4_0.zip?raw=true) | 47.05MB | Source code and assets for Ship Game.

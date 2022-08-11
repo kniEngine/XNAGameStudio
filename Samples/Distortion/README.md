@@ -19,10 +19,10 @@ The techniques shown here are an invisibility cloak, heat haze, and privacy glas
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Distortion_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Distortion_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Distortion_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Distortion_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Distortion_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Distortion_03_small.jpg)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[DistortionSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/DistortionSample_4_0.zip?raw=true) | 2.41MB | Source code and assets for the Distortion Sample (XNA Game Studio 4.0). 
+[DistortionSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/DistortionSample_4_0.zip?raw=true) | 2.41MB | Source code and assets for the Distortion Sample (XNA Game Studio 4.0). 

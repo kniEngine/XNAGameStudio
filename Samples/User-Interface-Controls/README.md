@@ -17,10 +17,10 @@ Several controls are provided, including scrolling lists of text and images, as 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/uisample.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/uisample.png)
 
 
  
 Download | Size | Description
 ---|---|---|
-[UISample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/UISample_4_0.zip?raw=true) | 1.02MB | Source code and assets for the User Interface Controls Sample.
+[UISample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/UISample_4_0.zip?raw=true) | 1.02MB | Source code and assets for the User Interface Controls Sample.

@@ -27,9 +27,9 @@ Platformer includes the following features:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/platformer1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/platformer1.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/platformer1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/platformer1.png)
 
 
 Download | Size | Description
 ---|---|---|
-[Platformer_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Platformer_4_0.zip?raw=true) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0). 
+[Platformer_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Platformer_4_0.zip?raw=true) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0). 

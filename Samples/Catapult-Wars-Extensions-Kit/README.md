@@ -25,10 +25,10 @@ Exercises:
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 		
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk3.png)
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk4.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk5.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/catapulttk6.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk3.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk4.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk5.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/catapulttk6.png)
 
  
 Download | Size | Description
 ---|---|---|
-[CatapultWarsTrainingKit_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/CatapultWarsTrainingKit_4_0.zip?raw=true) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0). 
+[CatapultWarsTrainingKit_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/CatapultWarsTrainingKit_4_0.zip?raw=true) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0). 

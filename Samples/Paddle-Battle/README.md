@@ -23,5 +23,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[PaddleBattle_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango.zip?raw=true) | 0.22MB | Source code and assets for the Paddle Battle sample.
-[PaddleBattle_4_0_Mango_VB.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango_VB.zip?raw=true) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.
+[PaddleBattle_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PaddleBattle_4_0_Mango.zip?raw=true) | 0.22MB | Source code and assets for the Paddle Battle sample.
+[PaddleBattle_4_0_Mango_VB.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PaddleBattle_4_0_Mango_VB.zip?raw=true) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.

@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[InverseKinematics_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/InverseKinematics_4_0.zip?raw=true) | 0.30MB | Source code and assets for the Inverse Kinematics sample. 
+[InverseKinematics_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/InverseKinematics_4_0.zip?raw=true) | 0.30MB | Source code and assets for the Inverse Kinematics sample. 

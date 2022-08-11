@@ -18,4 +18,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[XNA_XNB_Format.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/XNA_XNB_Format.zip?raw=true) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).
+[XNA_XNB_Format.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/XNA_XNB_Format.zip?raw=true) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).

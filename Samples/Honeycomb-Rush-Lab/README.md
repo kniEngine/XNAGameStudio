@@ -31,9 +31,9 @@ Features:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/honeycomb_rush.png)	
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/honeycomb_rush.png)	
 
  
 Download | Size | Description
 ---|---|---|
-[HoneycombRush_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/HoneycombRush_4_0.zip?raw=true) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
+[HoneycombRush_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/HoneycombRush_4_0.zip?raw=true) | 25.98MB | Source code and assets for the Honeycomb Rush lab.

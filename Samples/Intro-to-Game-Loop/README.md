@@ -16,4 +16,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[IntroToGameLoop_Article_4_0.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/IntroToGameLoop_Article_4_0.docx?raw=true) | 0.13MB | Intro to Game Loop Article. 
+[IntroToGameLoop_Article_4_0.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/IntroToGameLoop_Article_4_0.docx?raw=true) | 0.13MB | Intro to Game Loop Article. 

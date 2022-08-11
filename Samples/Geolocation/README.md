@@ -19,4 +19,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[GeolocationSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/GeolocationSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Geolocation sample.
+[GeolocationSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/GeolocationSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Geolocation sample.

@@ -23,10 +23,10 @@ Because this billboard implementation runs entirely in the vertex shader, there 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Billboard_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Billboard_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Billboard_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Billboard_02_small.jpg)
 
 	
 
 Download | Size | Description
 ---|---|---|
-[BillboardSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/BillboardSample_4_0.zip?raw=true) | 0.42MB | Source code and assets for the Billboard Sample (XNA Game Studio 4.0). 
+[BillboardSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/BillboardSample_4_0.zip?raw=true) | 0.42MB | Source code and assets for the Billboard Sample (XNA Game Studio 4.0). 

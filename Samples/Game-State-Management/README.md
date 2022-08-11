@@ -24,7 +24,7 @@ All content and source code downloaded from this page are bound to the Microsoft
 	
 Download | Size | Description
 ---|---|---|
-[GSMSample_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/GSMSample_4_0_Mango.zip?raw=true) | 0.16MB | Source code and assets for the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
-[GSMSample_4_0_Mango_VB.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/GSMSample_4_0_Mango_VB.zip?raw=true) | 0.16MB | Source code and assets for the Visual Basic version of the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
-[GSMSample_4_0_PHONE.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/GSMSample_4_0_PHONE.zip?raw=true) | 0.12MB | Source code and assets for the Windows Phone version of the Game State Management Sample (XNA Game Studio 4.0).
-[GSMSample_4_0_WIN_XBOX.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/GSMSample_4_0_WIN_XBOX.zip?raw=true) | 0.15MB | Source code and assets for the Windows/Xbox 360 version of the Game State Management Sample (XNA Game Studio 4.0).
+[GSMSample_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/GSMSample_4_0_Mango.zip?raw=true) | 0.16MB | Source code and assets for the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
+[GSMSample_4_0_Mango_VB.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/GSMSample_4_0_Mango_VB.zip?raw=true) | 0.16MB | Source code and assets for the Visual Basic version of the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
+[GSMSample_4_0_PHONE.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/GSMSample_4_0_PHONE.zip?raw=true) | 0.12MB | Source code and assets for the Windows Phone version of the Game State Management Sample (XNA Game Studio 4.0).
+[GSMSample_4_0_WIN_XBOX.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/GSMSample_4_0_WIN_XBOX.zip?raw=true) | 0.15MB | Source code and assets for the Windows/Xbox 360 version of the Game State Management Sample (XNA Game Studio 4.0).

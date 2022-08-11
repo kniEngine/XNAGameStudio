@@ -20,10 +20,10 @@ The sample uses a self-hosted WCF service to simulate the server. The service’
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/tictactoe1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/tictactoe2.png)
+ ![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/tictactoe1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/tictactoe2.png)
  	 
 
  
 Download | Size | Description
 ---|---|---|
-[TicTacToe_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/TicTacToe_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Tic-Tac-Toe sample.
+[TicTacToe_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/TicTacToe_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Tic-Tac-Toe sample.

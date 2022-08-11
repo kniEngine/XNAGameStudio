@@ -15,11 +15,11 @@ This training kit is a set of resources for extending the Honeycomb Rush Lab to 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 	
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/honeycombrush2.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/honeycombrush2.png)
 
  
 
  
 Download | Size | Description
 ---|---|---|
-[HoneycombRushTrainingKit_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/HoneycombRushTrainingKit_4_0.zip?raw=true) | 59.93MB | Source code and assets for the Honeycomb Rush Training Kit.
+[HoneycombRushTrainingKit_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/HoneycombRushTrainingKit_4_0.zip?raw=true) | 59.93MB | Source code and assets for the Honeycomb Rush Training Kit.

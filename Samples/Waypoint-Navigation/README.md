@@ -21,9 +21,9 @@ This sample uses a tank to demonstrate two examples of this waypoint-following b
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![devEd_waypoints_small4.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/devEd_waypoints_small4.jpg)![devEd_waypoints_small2.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/devEd_waypoints_small2.jpg)![devEd_waypoints_small3.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/devEd_waypoints_small3.jpg)		
+![devEd_waypoints_small4.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/devEd_waypoints_small4.jpg)![devEd_waypoints_small2.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/devEd_waypoints_small2.jpg)![devEd_waypoints_small3.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/devEd_waypoints_small3.jpg)		
 	
 
 Download | Size | Description
 ---|---|---|
-[WaypointSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/WaypointSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Waypoint Sample (XNA Game Studio 4.0). 
+[WaypointSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/WaypointSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Waypoint Sample (XNA Game Studio 4.0). 

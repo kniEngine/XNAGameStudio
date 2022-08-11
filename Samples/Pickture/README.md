@@ -19,10 +19,10 @@ The goal in Pickture is to slide the puzzle chips until the picture is complete.
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Pickture_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Pickture_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Pickture_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Pickture_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Pickture_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Pickture_03_small.jpg)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[Pickture_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Pickture_ARCHIVE_2_0.zip?raw=true) | 9.19MB | Source code and assets for the Pickture Sample (XNA Game Studio 2.0, Archived). 
+[Pickture_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Pickture_ARCHIVE_2_0.zip?raw=true) | 9.19MB | Source code and assets for the Pickture Sample (XNA Game Studio 2.0, Archived). 

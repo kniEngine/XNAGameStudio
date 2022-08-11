@@ -23,9 +23,9 @@ This game includes the following features:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![NinjAcademy](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/ninjacademy1.png)  	  	 
+![NinjAcademy](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/ninjacademy1.png)  	  	 
 
  
 Download | Size | Description
 ---|---|---|
-[NinjAcademy_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/NinjAcademy_4_0.zip?raw=true) | 14.10MB | Source code and assets for NinjAcademy
+[NinjAcademy_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/NinjAcademy_4_0.zip?raw=true) | 14.10MB | Source code and assets for NinjAcademy

@@ -15,10 +15,10 @@ The Split Screen Sample demonstrates how to render the same scene to multiple vi
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/splitscreen.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/splitscreen.png)
  
 
  
 Download | Size | Description
 ---|---|---|
-[SplitScreenSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SplitScreenSample_4_0.zip?raw=true) | Size 4.79MB | Source code and assets for the Split Screen sample.
+[SplitScreenSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SplitScreenSample_4_0.zip?raw=true) | Size 4.79MB | Source code and assets for the Split Screen sample.

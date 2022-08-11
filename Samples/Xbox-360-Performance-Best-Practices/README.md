@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Best Practices for Game Performance on Xbox 360.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/Best%20Practices%20for%20Game%20Performance%20on%20Xbox%20360.docx?raw=true) | 0.04MB | Best Practices for Game Performance on Xbox 360 Article.
+[Best Practices for Game Performance on Xbox 360.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/Best%20Practices%20for%20Game%20Performance%20on%20Xbox%20360.docx?raw=true) | 0.04MB | Best Practices for Game Performance on Xbox 360 Article.

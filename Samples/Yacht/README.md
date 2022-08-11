@@ -53,9 +53,9 @@ This game includes the following features:
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/yacht1.png)  	  	 
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/yacht1.png)  	  	 
 
  
 Download | Size | Description
 ---|---|---|
-[Yacht_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Yacht_4_0.zip?raw=true) | 2.86MB | Source code and assets for Yacht.
+[Yacht_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Yacht_4_0.zip?raw=true) | 2.86MB | Source code and assets for Yacht.

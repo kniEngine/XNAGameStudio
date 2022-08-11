@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ButtonImages.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ButtonImages.zip?raw=true) | 0.45MB | Assets for the Xbox 360 Controller Button Images Pack. 
+[ButtonImages.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ButtonImages.zip?raw=true) | 0.45MB | Assets for the Xbox 360 Controller Button Images Pack. 

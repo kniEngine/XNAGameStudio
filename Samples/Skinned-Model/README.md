@@ -20,9 +20,9 @@ Out of the box, the XNA Framework provides only partial support for animation. I
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 	
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Skinning_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Skinning_02_small.jpg)	
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Skinning_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Skinning_02_small.jpg)	
 
  
 Download | Size | Description
 ---|---|---|
-[SkinningSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SkinningSample_4_0.zip?raw=true) | 9.59MB | Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 
+[SkinningSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SkinningSample_4_0.zip?raw=true) | 9.59MB | Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 

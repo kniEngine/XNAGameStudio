@@ -15,9 +15,9 @@ The sample shows 16 animated avatars that cast planar shadows onto the ground. T
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/avatarshadows1.png)
+ ![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/avatarshadows1.png)
 
  
 Download | Size | Description
 ---|---|---|
-[AvatarShadows_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarShadows_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Avatar Shadows Sample.
+[AvatarShadows_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarShadows_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Avatar Shadows Sample.

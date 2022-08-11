@@ -12,4 +12,4 @@ This sample demonstrates how to get audio input from the microphone in a Silverl
 
 Download | Size | Description
 ---|---|---|
-[SilverlightMicrophoneSample.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/SamplesSilverlightMicrophoneSample.zip?raw=true) | 0.05MB | This sample demonstrates how to get audio input from the Windows Phone microphone in a Silverlight application by using the [Microsoft.Xna.Framework.Audio.Microphone](http://go.microsoft.com/fwlink/?LinkId=205806) class. 
+[SilverlightMicrophoneSample.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/SamplesSilverlightMicrophoneSample.zip?raw=true) | 0.05MB | This sample demonstrates how to get audio input from the Windows Phone microphone in a Silverlight application by using the [Microsoft.Xna.Framework.Audio.Microphone](http://go.microsoft.com/fwlink/?LinkId=205806) class. 

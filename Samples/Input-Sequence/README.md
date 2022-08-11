@@ -21,4 +21,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[InputSequenceSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/InputSequenceSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0). 
+[InputSequenceSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/InputSequenceSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0). 

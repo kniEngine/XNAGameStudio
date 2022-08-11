@@ -23,9 +23,9 @@ The sample uses hardware occlusion queries to efficiently detect when the sun is
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_LensFlare_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_LensFlare_01_small.jpg)![XNA_LensFlare_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_LensFlare_02_small.jpg)
+![XNA_LensFlare_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_LensFlare_01_small.jpg)![XNA_LensFlare_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_LensFlare_02_small.jpg)
 
 	
 Download | Size | Description
 ---|---|---|
-[LensFlareSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/LensFlareSample_4_0.zip?raw=true) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0). 
+[LensFlareSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/LensFlareSample_4_0.zip?raw=true) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0). 

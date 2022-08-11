@@ -16,9 +16,9 @@ To help your games meet these requirements, this sample provides a BackgroundMus
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/musicmanagement1.png) 
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/musicmanagement1.png) 
 
  
 Download | Size | Description
 ---|---|---|
-[WP7MusicManagement_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/WP7MusicManagement_4_0.zip?raw=true) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.
+[WP7MusicManagement_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/WP7MusicManagement_4_0.zip?raw=true) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.

@@ -20,10 +20,10 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 
 		
-![XNA_ShadowMapping_01_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_01_small.JPG)![XNA_ShadowMapping_02_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_02_small.JPG)![XNA_ShadowMapping_03_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_03_small.JPG)
+![XNA_ShadowMapping_01_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_ShadowMapping_01_small.JPG)![XNA_ShadowMapping_02_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_ShadowMapping_02_small.JPG)![XNA_ShadowMapping_03_small.JPG](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_ShadowMapping_03_small.JPG)
  
 
  
 Download | Size | Description
 ---|---|---|
-[ShadowMappingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ShadowMappingSample_4_0.zip?raw=true) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 
+[ShadowMappingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ShadowMappingSample_4_0.zip?raw=true) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 

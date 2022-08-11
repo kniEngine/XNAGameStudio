@@ -18,4 +18,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[SoundLab.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SoundLab.zip?raw=true) | 57.36MB | Sound Assets for the Sound Lab Utility
+[SoundLab.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SoundLab.zip?raw=true) | 57.36MB | Sound Assets for the Sound Lab Utility

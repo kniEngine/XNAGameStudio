@@ -39,7 +39,7 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description 
 ---|---|---|
-[AvatarAnimPack_4_0_BIN.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_BIN.zip?raw=true) | 3.84MB | Assets for the Avatar Animation Pack.
-[AvatarAnimPack_4_0_FBX.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_FBX.zip?raw=true) | 34.52MB | Assets for the Avatar Animation Pack.
-[AvatarAnimPack_4_0_Maya.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_Maya.zip?raw=true) | 29.16MB | Assets for the Avatar Animation Pack.
-[AvatarAnimPack_4_0_Mod_Tool.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_Mod_Tool.zip?raw=true) | 38.48MB | Assets for the Avatar Animation Pack. 
+[AvatarAnimPack_4_0_BIN.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarAnimPack_4_0_BIN.zip?raw=true) | 3.84MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_FBX.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarAnimPack_4_0_FBX.zip?raw=true) | 34.52MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_Maya.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarAnimPack_4_0_Maya.zip?raw=true) | 29.16MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_Mod_Tool.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarAnimPack_4_0_Mod_Tool.zip?raw=true) | 38.48MB | Assets for the Avatar Animation Pack. 

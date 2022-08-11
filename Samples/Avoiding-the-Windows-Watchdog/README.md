@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true) | 0.02MB | Avoiding the Windows Phone Watchdog Article.
+[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true) | 0.02MB | Avoiding the Windows Phone Watchdog Article.

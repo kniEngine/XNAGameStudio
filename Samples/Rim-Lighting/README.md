@@ -17,11 +17,11 @@ The sample also provides a simple arcball class and a ModelViewerCamera class. T
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/rimlighting1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/rimlighting1.png)	
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/rimlighting1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/rimlighting1.png)	
 
  
 
  
 Download | Size | Description
 ---|---|---|
-[RimLighting_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/RimLighting_4_0.zip?raw=true) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0). 
+[RimLighting_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/RimLighting_4_0.zip?raw=true) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0). 

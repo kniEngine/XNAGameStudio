@@ -10,7 +10,7 @@ Tutorial
 
 Description:
 
-This tutorial teaches you how to extend the [Particles 3D](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Particles-3D/) sample so the particle systems are defined by XML files loaded with the XNA Content Pipeline.
+This tutorial teaches you how to extend the [Particles 3D](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Particles-3D/) sample so the particle systems are defined by XML files loaded with the XNA Content Pipeline.
 
 
 Sample Overview
@@ -20,10 +20,10 @@ In the original version of the sample, each particle system was defined by using
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Particle3D_03_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_02_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Particle3D_03_small.jpg)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[XmlParticles_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/XmlParticles_4_0.zip?raw=true) | 0.40MB | Source code and assets for the XML Particle Systems Tutorial (XNA Game Studio 4.0). 
+[XmlParticles_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/XmlParticles_4_0.zip?raw=true) | 0.40MB | Source code and assets for the XML Particle Systems Tutorial (XNA Game Studio 4.0). 

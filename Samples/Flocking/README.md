@@ -21,9 +21,9 @@ This sample demonstrates some of these behaviors. The sample has a flock of bird
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Flock_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Flock_01_small.jpg)![XNA_Flock_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Flock_02_small.jpg)![XNA_Flock_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Flock_03_small.jpg)		
+![XNA_Flock_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Flock_01_small.jpg)![XNA_Flock_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Flock_02_small.jpg)![XNA_Flock_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Flock_03_small.jpg)		
 
 
 Download | Size | Description
 ---|---|---|
-[FlockingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/FlockingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Flocking Sample (XNA Game Studio 4.0). 
+[FlockingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/FlockingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Flocking Sample (XNA Game Studio 4.0). 

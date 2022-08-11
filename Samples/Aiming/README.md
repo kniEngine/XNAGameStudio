@@ -21,10 +21,10 @@ The function TurnToFace does the hard work in this sample. You can copy it and u
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Aiming_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Aiming_02_small.jpg)	
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Aiming_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Aiming_02_small.jpg)	
 
 
 
 Download | Size | Description
 ---|---|---|
-[AimingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AimingSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Aiming Sample (XNA Game Studio 4.0). 
+[AimingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AimingSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Aiming Sample (XNA Game Studio 4.0). 

@@ -19,4 +19,4 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 Download | Size | Description
 ---|---|---|
-[OptimizationTutorial_ARCHIVE_2_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/OptimizationTutorial_ARCHIVE_2_0.doc?raw=true) | 0.08MB | The Optimization: High-Frequency Code Article (XNA Game Studio 2.0, Archived). 
+[OptimizationTutorial_ARCHIVE_2_0.doc](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/OptimizationTutorial_ARCHIVE_2_0.doc?raw=true) | 0.08MB | The Optimization: High-Frequency Code Article (XNA Game Studio 2.0, Archived). 

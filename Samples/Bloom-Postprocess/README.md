@@ -21,9 +21,9 @@ Because bloom is implemented entirely as a post-process, it can easily be used o
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Bloom_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Bloom_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Bloom_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Bloom_02_small.jpg)
 
 	
 Download | Size | Description
 ---|---|---|
-[BloomSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/BloomSample_4_0.zip?raw=true) | 11.48MB | Source code and assets for the Bloom Postprocessing Sample (XNA Game Studio 4.0)
+[BloomSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/BloomSample_4_0.zip?raw=true) | 11.48MB | Source code and assets for the Bloom Postprocessing Sample (XNA Game Studio 4.0)

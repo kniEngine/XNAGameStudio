@@ -25,4 +25,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[CustomAvatarAnimation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/CustomAvatarAnimation_4_0.zip?raw=true) | 10.03MB | Source code and assets for the Custom Avatar Animation sample 
+[CustomAvatarAnimation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/CustomAvatarAnimation_4_0.zip?raw=true) | 10.03MB | Source code and assets for the Custom Avatar Animation sample 

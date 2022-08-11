@@ -19,9 +19,9 @@ To create realistic enemy movement by using AI, implementing Pathfinding algorit
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/pathfinding0.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/pathfinding1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/pathfinding2.png)		
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/pathfinding0.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/pathfinding1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/pathfinding2.png)		
 
  
 Download | Size | Description
 ---|---|---|
-[Pathfinding_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Pathfinding_4_0.zip?raw=true) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0). 
+[Pathfinding_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Pathfinding_4_0.zip?raw=true) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0). 

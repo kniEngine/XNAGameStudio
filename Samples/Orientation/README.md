@@ -15,7 +15,7 @@ This sample demonstrates a crucial scenario many games will want to enable: lock
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/LayoutSample2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/LayoutSample3.png)
+ ![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/LayoutSample2.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/LayoutSample3.png)
 	 
 
  
@@ -23,4 +23,4 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 Download | Size | Description
 ---|---|---|
-[Orientation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/Orientation_4_0.zip?raw=true) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0). 
+[Orientation_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/Orientation_4_0.zip?raw=true) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0). 

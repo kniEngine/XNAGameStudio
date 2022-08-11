@@ -23,8 +23,8 @@ The second custom processor converts an image containing grayscale height values
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_SpriteEffects_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_SpriteEffects_01_small.jpg)![XNA_SpriteEffects_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_SpriteEffects_02_small.jpg)![XNA_SpriteEffects_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_SpriteEffects_03_small.jpg)		
+![XNA_SpriteEffects_01_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_SpriteEffects_01_small.jpg)![XNA_SpriteEffects_02_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_SpriteEffects_02_small.jpg)![XNA_SpriteEffects_03_small.jpg](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_SpriteEffects_03_small.jpg)		
 
 Download | Size | Description
 ---|---|---|
-[SpriteEffectsSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SpriteEffectsSample_4_0.zip?raw=true) | 0.30MB | Source code and assets for the Sprite Effects Sample (XNA Game Studio 4.0). 
+[SpriteEffectsSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SpriteEffectsSample_4_0.zip?raw=true) | 0.30MB | Source code and assets for the Sprite Effects Sample (XNA Game Studio 4.0). 

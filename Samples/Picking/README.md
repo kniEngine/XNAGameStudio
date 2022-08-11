@@ -21,11 +21,11 @@ In the sample, there's a table with several objects on it. If the user moves the
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Picking_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Picking_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Picking_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Picking_02_small.jpg)
 
 	
 
  
 Download | Size | Description
 ---|---|---|
-[PickingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PickingSample_4_0.zip?raw=true) | 3.95MB | Source code and assets for the Picking Sample (XNA Game Studio 4.0). 
+[PickingSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PickingSample_4_0.zip?raw=true) | 3.95MB | Source code and assets for the Picking Sample (XNA Game Studio 4.0). 

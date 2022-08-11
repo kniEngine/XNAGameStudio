@@ -8,7 +8,7 @@ Tutorial
 
 ---
 
-The Marble Maze Lab is a complete 3D accelerometer-based game for Windows Phone 7. Move your marble through the maze as quick as possible, but beware of the pits that will force you to restart from your last checkpoint. Based on the [Game State Management Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Game-State-Management/).
+The Marble Maze Lab is a complete 3D accelerometer-based game for Windows Phone 7. Move your marble through the maze as quick as possible, but beware of the pits that will force you to restart from your last checkpoint. Based on the [Game State Management Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Game-State-Management/).
 
 Features:
 
@@ -25,10 +25,10 @@ Features:
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 		
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/marblemaze0.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/marblemaze1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/marblemaze2.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/marblemaze0.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/marblemaze1.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/marblemaze2.png)
  
 
  
 Download | Size | Description
 ---|---|---|
-[MarbleMaze_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MarbleMaze_4_0.zip?raw=true) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0). 
+[MarbleMaze_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MarbleMaze_4_0.zip?raw=true) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0). 

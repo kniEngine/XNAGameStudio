@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Tombstoning_WP7_Games.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/Tombstoning_WP7_Games.docx?raw=true) | 0.04MB | Tombstoning for Windows Phone 7 Games Article.
+[Tombstoning_WP7_Games.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/Tombstoning_WP7_Games.docx?raw=true) | 0.04MB | Tombstoning for Windows Phone 7 Games Article.

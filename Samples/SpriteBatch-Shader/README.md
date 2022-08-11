@@ -23,4 +23,4 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 Download | Size | Description
 ---|---|---|
-[SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/SpriteBatchShader_ARCHIVE_2_0.zip?raw=true) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 
+[SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/SpriteBatchShader_ARCHIVE_2_0.zip?raw=true) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 

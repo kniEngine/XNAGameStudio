@@ -15,7 +15,7 @@ You may redistribute these fonts in their original format as part of your game.
 
 The fonts include:
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/redistfonts.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/redistfonts.png)
 
 
 
@@ -23,4 +23,4 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 Download | Size | Description
 ---|---|---|
-[RedistributableTTFs_ARCHIVE_3_1.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/RedistributableTTFs_ARCHIVE_3_1.zip?raw=true) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects. 
+[RedistributableTTFs_ARCHIVE_3_1.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/RedistributableTTFs_ARCHIVE_3_1.zip?raw=true) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects. 

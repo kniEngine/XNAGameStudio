@@ -18,22 +18,22 @@ Until now, the Shader Series has focused on single meshes, single lights, and si
 
 Other items in the Shader Series
 
-[Shader Series: Introduction](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-Introduction/) (Article)
+[Shader Series: Introduction](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-Introduction/) (Article)
 
-[Shader Series 1: Vertex Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-1-Vertex-Lighting/)
+[Shader Series 1: Vertex Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-1-Vertex-Lighting/)
 
-[Shader Series 2: Textures and Colors Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-2-Textures-and-Colors/)
+[Shader Series 2: Textures and Colors Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-2-Textures-and-Colors/)
 
-[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/master/src/Shader-Series-3-Per-Pixel-Lighting/)
+[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/kniEngine/XNAGameStudio/tree/main/Samples/Shader-Series-3-Per-Pixel-Lighting/)
 
 
 
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Shader4_Materials_MultiLights_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_Shader4_Materials_MultiLights_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Shader4_Materials_MultiLights_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_Shader4_Materials_MultiLights_02_small.jpg)
 
 	
 Download | Size | Description
 ---|---|---|
-[MaterialsAndLights_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/MaterialsAndLights_ARCHIVE_2_0.zip?raw=true) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED). 
+[MaterialsAndLights_ARCHIVE_2_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/MaterialsAndLights_ARCHIVE_2_0.zip?raw=true) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED). 

@@ -21,10 +21,10 @@ Any project that references the importer can use the importer. The importer can 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelImporter_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/XNA_CustomModelImporter_02_small.jpg)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelImporter_01_small.jpg)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/XNA_CustomModelImporter_02_small.jpg)
 
 	
 
 Download | Size | Description
 ---|---|---|
-[ModelImporterSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ModelImporterSample_4_0.zip?raw=true) | 1.49MB | Source code and assets for the Custom Model Importer Sample (XNA Game Studio 4.0). 
+[ModelImporterSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ModelImporterSample_4_0.zip?raw=true) | 1.49MB | Source code and assets for the Custom Model Importer Sample (XNA Game Studio 4.0). 

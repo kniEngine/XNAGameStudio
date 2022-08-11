@@ -20,4 +20,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[AvatarMultipleAnimationsSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/AvatarMultipleAnimationsSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0). 
+[AvatarMultipleAnimationsSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/AvatarMultipleAnimationsSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0). 

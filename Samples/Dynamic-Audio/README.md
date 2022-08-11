@@ -16,4 +16,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[DynamicAudio_Article_4_0.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/DynamicAudio_Article_4_0.docx?raw=true) | 0.43MB | Dynamic Audio in XNA Game Studio 4.0 Article. 
+[DynamicAudio_Article_4_0.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/DynamicAudio_Article_4_0.docx?raw=true) | 0.43MB | Dynamic Audio in XNA Game Studio 4.0 Article. 

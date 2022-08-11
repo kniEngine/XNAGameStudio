@@ -22,4 +22,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[TouchThumbsticksSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/TouchThumbsticksSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0). 
+[TouchThumbsticksSample_4_0.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/TouchThumbsticksSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0). 

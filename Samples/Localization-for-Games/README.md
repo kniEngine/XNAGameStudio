@@ -18,4 +18,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[WP_LocalizationForGames.docx](https://github.com/kniEngine/XNAGameStudio/blob/master/Documents/WP_LocalizationForGames.docx?raw=true) | 1.38MB | Article detailing localization for Windows Phone Games made using XNA Game Studio.
+[WP_LocalizationForGames.docx](https://github.com/kniEngine/XNAGameStudio/blob/main/Documents/WP_LocalizationForGames.docx?raw=true) | 1.38MB | Article detailing localization for Windows Phone Games made using XNA Game Studio.

@@ -38,8 +38,8 @@ The sample takes advantage of the Silverlight Storyboard animation system to dri
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/model viewer 1_small.png)![](https://github.com/kniEngine/XNAGameStudio/blob/master/Images/model viewer 2_small.png)
+![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/model viewer 1_small.png)![](https://github.com/kniEngine/XNAGameStudio/blob/main/Images/model viewer 2_small.png)
 	
 Download | Size | Description
 ---|---|---|
-[ModelViewerDemo_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/ModelViewerDemo_4_0_Mango.zip?raw=true) | 6.83MB | Source code and assets for the Model Viewer Demo.
+[ModelViewerDemo_4_0_Mango.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/ModelViewerDemo_4_0_Mango.zip?raw=true) | 6.83MB | Source code and assets for the Model Viewer Demo.

@@ -21,4 +21,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[PushRecipe_WP7_SL.zip](https://github.com/kniEngine/XNAGameStudio/blob/master/Samples/PushRecipe_WP7_SL.zip?raw=true) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library 
+[PushRecipe_WP7_SL.zip](https://github.com/kniEngine/XNAGameStudio/blob/main/Samples/PushRecipe_WP7_SL.zip?raw=true) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library 
