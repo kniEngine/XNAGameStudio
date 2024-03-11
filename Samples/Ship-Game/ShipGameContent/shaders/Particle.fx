@@ -1,3 +1,11 @@
+#if __DIRECTX__ 
+	#define VS_SHADERMODEL vs_4_0_level_9_1
+	#define PS_SHADERMODEL ps_4_0_level_9_1
+#else
+	#define VS_SHADERMODEL vs_2_0
+	#define PS_SHADERMODEL ps_2_0
+#endif
+
 float4x4 WorldViewProj;
 
 float4 StartColor = float4(1,0,0,1);    // start color and opacity
@@ -96,6 +104,7 @@ void ParticleVS(
 }
 
 float4 ParticlePS( 
+    in float4 Position  : SV_POSITION,
     in float4 Color     : COLOR0,
     in float4 Rotation  : COLOR1,
 #ifdef XBOX
@@ -119,8 +128,8 @@ Technique Particle
 {
     Pass
     {
-        VertexShader = compile vs_2_0 ParticleVS();
-        PixelShader = compile ps_2_0 ParticlePS();
+        VertexShader = compile VS_SHADERMODEL ParticleVS();
+        PixelShader = compile PS_SHADERMODEL ParticlePS();
     }
 }
 

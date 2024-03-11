@@ -1,5 +1,13 @@
+#if __DIRECTX__ 
+	#define VS_SHADERMODEL vs_4_0_level_9_1
+	#define PS_SHADERMODEL ps_4_0_level_9_1
+#else
+	#define VS_SHADERMODEL vs_2_0
+	#define PS_SHADERMODEL ps_2_0
+#endif
+
 float4x4 WorldViewProj;
-float4 LightPosition;
+float3 LightPosition;
 float3 LightColor;
 float3 LightAmbient;
 float3 CameraPosition;
@@ -71,7 +79,10 @@ void PlainMappingVS(
     OutTexCoord = InTexCoord;
 }
 
-float4 PlainMappingPS( in float2 TexCoord : TEXCOORD0 ) : COLOR0
+float4 PlainMappingPS(
+     in float4 Position : SV_POSITION,
+     in float2 TexCoord : TEXCOORD0
+    ) : COLOR0
 {
     return tex2D(TextureSampler, TexCoord);
 }
@@ -102,10 +113,12 @@ void NormalMappingVS(
 }
 
 float4 NormalMappingPS(
+    in float4 Position        : SV_POSITION,
     in float2 TexCoord        : TEXCOORD0,
     in float3 LightDir        : TEXCOORD1,
     in float3 ViewDir         : TEXCOORD2,
-    in float3 ReflectDir      : TEXCOORD3 ) : COLOR0
+    in float3 ReflectDir      : TEXCOORD3
+    ) : COLOR0
 {
     float4 diffuse = tex2D(TextureSampler, TexCoord);
     float4 specular = tex2D(SpecularSampler, TexCoord);
@@ -150,7 +163,10 @@ void ViewMappingVS(
     OutFacing = saturate(dot(view, InNormal));
 }
 
-float4 ViewMappingPS(in float Facing : TEXCOORD0) : COLOR0
+float4 ViewMappingPS(
+     in float4 Position : SV_POSITION,
+     in float Facing : TEXCOORD0
+    ) : COLOR0
 {
     Facing *= Facing;
     Facing *= Facing;
@@ -165,8 +181,8 @@ Technique PlainMapping
 {
     Pass
     {
-        VertexShader = compile vs_2_0 PlainMappingVS();
-        PixelShader = compile ps_2_0 PlainMappingPS();
+        VertexShader = compile VS_SHADERMODEL PlainMappingVS();
+        PixelShader = compile PS_SHADERMODEL PlainMappingPS();
     }
 }
 
@@ -174,8 +190,8 @@ Technique NormalMapping
 {
     Pass
     {
-        VertexShader = compile vs_2_0 NormalMappingVS();
-        PixelShader = compile ps_2_0 NormalMappingPS();
+        VertexShader = compile VS_SHADERMODEL NormalMappingVS();
+        PixelShader = compile PS_SHADERMODEL NormalMappingPS();
     }
 }
 
@@ -183,8 +199,8 @@ Technique ViewMapping
 {
     Pass
     {
-        VertexShader = compile vs_2_0 ViewMappingVS();
-        PixelShader = compile ps_2_0 ViewMappingPS();
+        VertexShader = compile VS_SHADERMODEL ViewMappingVS();
+        PixelShader = compile PS_SHADERMODEL ViewMappingPS();
     }
 }
 

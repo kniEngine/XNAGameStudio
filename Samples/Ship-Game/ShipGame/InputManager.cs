@@ -32,8 +32,14 @@ namespace ShipGame
 
         public void GetInput(bool singlePlayer)
         {
-            padState[0] = GamePad.GetState(PlayerIndex.One);
-            padState[1] = GamePad.GetState(PlayerIndex.Two);
+            try
+            {
+                padState[0] = GamePad.GetState(PlayerIndex.One);
+                padState[1] = GamePad.GetState(PlayerIndex.Two);
+            }
+            catch (NotImplementedException) { }
+
+
             if (singlePlayer)
                 keyState[0] = Keyboard.GetState();
             else

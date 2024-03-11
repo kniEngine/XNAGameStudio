@@ -85,7 +85,7 @@ namespace ShipGame
                 rotation[0] = Matrix.Identity;
                 rotation[1] = Matrix.Identity;
 
-                lights = LightList.Load("content/screens/player_lights.xml");
+                lights = LightList.Load("Content/screens/player_lights.xml");
 
                 for (int i = 0; i < NumberShips; i++)
                 {

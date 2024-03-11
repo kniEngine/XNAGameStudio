@@ -1,3 +1,11 @@
+#if __DIRECTX__ 
+	#define VS_SHADERMODEL vs_4_0_level_9_3
+	#define PS_SHADERMODEL ps_4_0_level_9_3
+#else
+	#define VS_SHADERMODEL vs_3_0
+	#define PS_SHADERMODEL ps_3_0
+#endif
+
 float4x4 g_WorldViewProj;
 
 texture g_ColorMap:TEXUNIT0;
@@ -41,12 +49,18 @@ float4 ColorPS() : COLOR
     return g_Color;
 }
 
-float4 ColorTexturePS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 ColorTexturePS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     return g_Color * tex2D(ColorSampler,TexCoord + g_PixelSize);
 }
 
-float4 BlurHorizontalPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurHorizontalPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )
@@ -62,7 +76,10 @@ float4 BlurHorizontalPS(float2 TexCoord : TEXCOORD0) : COLOR
     return color/(2*BLUR_RANGE+1);
 }
 
-float4 BlurHorizontalSplitPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurHorizontalSplitPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )
@@ -87,7 +104,10 @@ float4 BlurHorizontalSplitPS(float2 TexCoord : TEXCOORD0) : COLOR
     return color/color.w;
 }
 
-float4 BlurVerticalPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurVerticalPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )
@@ -103,8 +123,8 @@ technique Color
 {
     pass P0
     {          
-        VertexShader = compile vs_3_0 MainVS( );
-        PixelShader  = compile ps_3_0 ColorPS( ); 
+        VertexShader = compile VS_SHADERMODEL MainVS( );
+        PixelShader  = compile PS_SHADERMODEL ColorPS( ); 
     }
 }
 
@@ -112,8 +132,8 @@ technique ColorTexture
 {
     pass P0
     {          
-        VertexShader = compile vs_3_0 MainVS( );
-        PixelShader  = compile ps_3_0 ColorTexturePS( ); 
+        VertexShader = compile VS_SHADERMODEL MainVS( );
+        PixelShader  = compile PS_SHADERMODEL ColorTexturePS( ); 
     }
 }
 
@@ -121,8 +141,8 @@ technique BlurHorizontal
 {
     pass P0
     {          
-        VertexShader = compile vs_3_0 MainVS( );
-        PixelShader  = compile ps_3_0 BlurHorizontalPS( ); 
+        VertexShader = compile VS_SHADERMODEL MainVS( );
+        PixelShader  = compile PS_SHADERMODEL BlurHorizontalPS( ); 
     }
 }
 
@@ -130,8 +150,8 @@ technique BlurVertical
 {
     pass P0
     {          
-        VertexShader = compile vs_3_0 MainVS( );
-        PixelShader  = compile ps_3_0 BlurVerticalPS( ); 
+        VertexShader = compile VS_SHADERMODEL MainVS( );
+        PixelShader  = compile PS_SHADERMODEL BlurVerticalPS( ); 
     }
 }
 
@@ -139,7 +159,7 @@ technique BlurHorizontalSplit
 {
     pass P0
     {          
-        VertexShader = compile vs_3_0 MainVS( );
-        PixelShader  = compile ps_3_0 BlurHorizontalSplitPS( ); 
+        VertexShader = compile VS_SHADERMODEL MainVS( );
+        PixelShader  = compile PS_SHADERMODEL BlurHorizontalSplitPS( ); 
     }
 }
