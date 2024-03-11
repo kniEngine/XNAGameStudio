@@ -1,3 +1,11 @@
+#if __DIRECTX__ 
+	#define VS_SHADERMODEL vs_4_0_level_9_3
+	#define PS_SHADERMODEL ps_4_0_level_9_3
+#else
+	#define VS_SHADERMODEL vs_3_0
+	#define PS_SHADERMODEL ps_3_0
+#endif
+
 float4x4 ViewProj;
 float4 FrameOffset;
 float2 FrameSize;
@@ -22,7 +30,10 @@ void AnimSpriteVS(
     OutTexCoord = InTexCoord;
 }
 
-float4 AnimSpritePS( in float2 TexCoord : TEXCOORD0 ) : COLOR0
+float4 AnimSpritePS( 
+     in float4 Position : SV_POSITION,
+     in float2 TexCoord : TEXCOORD0
+    ) : COLOR0
 {
     float2 tx1 = FrameSize * (FrameOffset.xy + TexCoord);
     float2 tx2 = FrameSize * (FrameOffset.zw + TexCoord);
@@ -40,8 +51,8 @@ Technique AnimSprite
 {
     Pass
     {
-        VertexShader = compile vs_3_0 AnimSpriteVS();
-        PixelShader = compile ps_3_0 AnimSpritePS();
+        VertexShader = compile VS_SHADERMODEL AnimSpriteVS();
+        PixelShader = compile PS_SHADERMODEL AnimSpritePS();
     }
 }
 
