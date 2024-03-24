@@ -1,0 +1,99 @@
+/* /MainLayout.razor.rz.scp.css */
+.page[b-qqp9td9sub]
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-qqp9td9sub]
+{
+    flex: 1;
+}
+
+.sidebar[b-qqp9td9sub]
+{
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-qqp9td9sub]
+{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-qqp9td9sub]  a, .top-row[b-qqp9td9sub]  .btn-link
+    {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-qqp9td9sub]  a:hover, .top-row[b-qqp9td9sub]  .btn-link:hover
+    {
+        text-decoration: underline;
+    }
+
+    .top-row[b-qqp9td9sub]  a:first-child
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px)
+{
+    .top-row:not(.auth)[b-qqp9td9sub]
+    {
+        display: none;
+    }
+
+    .top-row.auth[b-qqp9td9sub]
+    {
+        justify-content: space-between;
+    }
+
+    .top-row[b-qqp9td9sub]  a, .top-row[b-qqp9td9sub]  .btn-link
+    {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px)
+{
+    .page[b-qqp9td9sub]
+    {
+        flex-direction: row;
+    }
+
+    .sidebar[b-qqp9td9sub]
+    {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-qqp9td9sub]
+    {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-qqp9td9sub]  a:first-child
+    {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-qqp9td9sub], article[b-qqp9td9sub]
+    {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
