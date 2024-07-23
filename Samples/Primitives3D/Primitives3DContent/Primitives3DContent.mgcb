@@ -3,6 +3,7 @@
 
 /outputDir:bin/$(Platform)
 /intermediateDir:obj/$(Platform)
+/platform:Windows
 /config:
 /profile:Reach
 /compress:True
@@ -17,5 +18,15 @@
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
+/processorParam:Smoothing=Normal
 /build:hudFont.spritefont
+
+#begin sfx.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Medium
+/build:sfx.wav
+
+#begin sfx2.wav
+/copy:sfx2.wav
 
