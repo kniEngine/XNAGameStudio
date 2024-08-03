@@ -362,8 +362,6 @@ namespace Primitives3D
             spriteBatch.Begin();
             //spriteBatch.DrawString(spriteFont, text, new Vector2(48, 48), Color.White);
 
-            PlayerIndex playerIndex = PlayerIndex.One;
-
             var gamePadState = GamePad.GetState(playerIndex);
             var cap = GamePad.GetCapabilities(playerIndex);
             var isbdown = gamePadState.IsButtonDown(Buttons.A);
@@ -460,7 +458,7 @@ namespace Primitives3D
             base.Draw(gameTime);
         }
 
-        PlayerIndex playerIndex = PlayerIndex.One;
+        PlayerIndex playerIndex = PlayerIndex.Two;
 
         #endregion
 
