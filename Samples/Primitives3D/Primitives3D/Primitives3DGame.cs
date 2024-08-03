@@ -74,7 +74,7 @@ namespace Primitives3D
             Content.RootDirectory = "Content";
             graphics = new GraphicsDeviceManager(this);
 
-            //graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
 #if WINDOWS_PHONE
             TargetElapsedTime = TimeSpan.FromTicks(333333);
@@ -107,8 +107,8 @@ namespace Primitives3D
             spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteFont = Content.Load<SpriteFont>("hudFont");
 
-            Load2();
-            return;
+            //Load2();
+            //return;
 
             primitives.Add(new CubePrimitive(GraphicsDevice));
             primitives.Add(new SpherePrimitive(GraphicsDevice));
@@ -309,9 +309,9 @@ namespace Primitives3D
         /// </summary>
         protected override void Draw(GameTime gameTime)
         {
-            Draw2(gameTime);
-            base.Draw(gameTime);
-            return;
+            //Draw2(gameTime);
+            //base.Draw(gameTime);
+            //return;
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
@@ -362,9 +362,10 @@ namespace Primitives3D
             spriteBatch.Begin();
             //spriteBatch.DrawString(spriteFont, text, new Vector2(48, 48), Color.White);
 
+            PlayerIndex playerIndex = PlayerIndex.One;
 
-            var gamePadState = GamePad.GetState(PlayerIndex.Two);
-            var cap = GamePad.GetCapabilities(PlayerIndex.Two);
+            var gamePadState = GamePad.GetState(playerIndex);
+            var cap = GamePad.GetCapabilities(playerIndex);
             var isbdown = gamePadState.IsButtonDown(Buttons.A);
 
             spriteBatch.DrawString(spriteFont, "gamePadState.IsConnected " + gamePadState.IsConnected.ToString(), new Vector2(10, 70), Color.White);
@@ -378,6 +379,13 @@ namespace Primitives3D
 
             spriteBatch.DrawString(spriteFont, "gamePadState.ThumbSticks.Left  " + gamePadState.ThumbSticks.Left.ToString(),  new Vector2(10, 230), Color.White);
             spriteBatch.DrawString(spriteFont, "gamePadState.ThumbSticks.Right " + gamePadState.ThumbSticks.Right.ToString(), new Vector2(10, 260), Color.White);
+
+
+            bool leftTrigger = gamePadState.IsButtonDown(Buttons.LeftTrigger);
+            bool rightTrigger = gamePadState.IsButtonDown(Buttons.RightTrigger);
+
+            spriteBatch.DrawString(spriteFont, "gamePadState.Triggers " + leftTrigger +" "+rightTrigger, new Vector2(10, 290), Color.White);
+
 
             spriteBatch.End();
 
@@ -452,6 +460,7 @@ namespace Primitives3D
             base.Draw(gameTime);
         }
 
+        PlayerIndex playerIndex = PlayerIndex.One;
 
         #endregion
 
@@ -472,10 +481,7 @@ namespace Primitives3D
 #else
             currentKeyboardState = Keyboard.GetState();
 #endif
-            //try {
-                currentGamePadState = GamePad.GetState(PlayerIndex.Two);
-            //}
-            //catch (NotImplementedException) { }
+            currentGamePadState = GamePad.GetState(playerIndex);
             currentMouseState = Mouse.GetState();
             currentTouchState = TouchPanel.GetState();
 
