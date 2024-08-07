@@ -458,7 +458,7 @@ namespace Primitives3D
             base.Draw(gameTime);
         }
 
-        PlayerIndex playerIndex = PlayerIndex.Two;
+        PlayerIndex playerIndex = PlayerIndex.One;
 
         #endregion
 
