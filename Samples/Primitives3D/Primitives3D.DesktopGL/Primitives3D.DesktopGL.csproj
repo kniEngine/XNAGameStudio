@@ -41,15 +41,17 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Audio" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Media" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.14.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Game" Version="3.14.9001" />
-    <PackageReference Include="MonoGame.Framework.DesktopGL.9000" Version="3.14.9001" />
     <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.14.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\kni\Platforms\Kni.Platform.SDL2.GL.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework\Xna.Framework.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Content\Xna.Framework.Content.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Graphics\Xna.Framework.Graphics.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Audio\Xna.Framework.Audio.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Media\XNA.Framework.Media.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Input\Xna.Framework.Input.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Game\Xna.Framework.Game.csproj" />
   </ItemGroup>
   <Import Project="..\Primitives3D\Primitives3D.projitems" Label="Shared" />
 
