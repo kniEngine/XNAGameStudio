@@ -498,6 +498,7 @@ namespace Primitives3D
             if (IsPressed(Keys.A, Buttons.A) || LeftMouseIsPressed(topOfScreen) || TouchIsPressed(topOfScreen))
             {
                 currentPrimitiveIndex = (currentPrimitiveIndex + 1) % primitives.Count;
+                GamePad.SetVibration(PlayerIndex.One, 1, 0, 0, 1);
             }
 
 
