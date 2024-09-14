@@ -73,6 +73,8 @@ namespace Primitives3D
             Content.RootDirectory = "Content";
             graphics = new GraphicsDeviceManager(this);
 
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
+
 #if WINDOWS_PHONE
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 
@@ -81,7 +83,6 @@ namespace Primitives3D
             graphics.IsFullScreen = true;
 #endif
         }
-
 
         /// <summary>
         /// Load your graphics content.
@@ -105,7 +106,6 @@ namespace Primitives3D
 
         }
 
-
         #endregion
 
         #region Update and Draw
@@ -120,7 +120,6 @@ namespace Primitives3D
 
             base.Update(gameTime);
         }
-
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -168,12 +167,37 @@ namespace Primitives3D
                           "Y or tap bottom right of screen = Toggle wireframe";
 
             spriteBatch.Begin();
-            spriteBatch.DrawString(spriteFont, text, new Vector2(48, 48), Color.White);
+            //spriteBatch.DrawString(spriteFont, text, new Vector2(48, 48), Color.White);
+
+            var gamePadState = GamePad.GetState(playerIndex);
+            var cap = GamePad.GetCapabilities(playerIndex);
+            var isbdown = gamePadState.IsButtonDown(Buttons.A);
+
+            spriteBatch.DrawString(spriteFont, "gamePadState.IsConnected " + gamePadState.IsConnected.ToString(), new Vector2(10, 70), Color.White);
+            spriteBatch.DrawString(spriteFont,"cap.IsConnected " + cap.IsConnected, new Vector2(10, 90), Color.White);
+            spriteBatch.DrawString(spriteFont, "cap.DisplayName " + cap.DisplayName, new Vector2(10, 120), Color.White);
+            spriteBatch.DrawString(spriteFont, "isbdown " + isbdown.ToString(), new Vector2(10, 150), Color.White);
+            spriteBatch.DrawString(spriteFont, "gamePadState.Buttons " + gamePadState.Buttons.ToString(), new Vector2(10, 180), Color.White);
+            spriteBatch.DrawString(spriteFont, "PacketNumber " + gamePadState.PacketNumber, new Vector2(10, 210), Color.White);
+            spriteBatch.DrawString(spriteFont, "gamePadState.DPad " + gamePadState.DPad.ToString(), new Vector2(10, 240), Color.White);
+            spriteBatch.DrawString(spriteFont, "gamePadState.Triggers " + gamePadState.Triggers.ToString(), new Vector2(10, 270), Color.White);
+
+            spriteBatch.DrawString(spriteFont, "gamePadState.ThumbSticks.Left  " + gamePadState.ThumbSticks.Left.ToString(),  new Vector2(10, 230), Color.White);
+            spriteBatch.DrawString(spriteFont, "gamePadState.ThumbSticks.Right " + gamePadState.ThumbSticks.Right.ToString(), new Vector2(10, 260), Color.White);
+
+
+            bool leftTrigger = gamePadState.IsButtonDown(Buttons.LeftTrigger);
+            bool rightTrigger = gamePadState.IsButtonDown(Buttons.RightTrigger);
+
+            spriteBatch.DrawString(spriteFont, "gamePadState.Triggers " + leftTrigger +" "+rightTrigger, new Vector2(10, 290), Color.White);
+
+
             spriteBatch.End();
 
             base.Draw(gameTime);
         }
 
+        PlayerIndex playerIndex = PlayerIndex.One;
 
         #endregion
 
@@ -194,7 +218,7 @@ namespace Primitives3D
 #else
             currentKeyboardState = Keyboard.GetState();
 #endif
-            currentGamePadState = GamePad.GetState(PlayerIndex.One);
+            currentGamePadState = GamePad.GetState(playerIndex);
             currentMouseState = Mouse.GetState();
             currentTouchState = TouchPanel.GetState();
 
