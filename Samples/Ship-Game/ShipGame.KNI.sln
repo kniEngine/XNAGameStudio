@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShipGame", "ShipGame", "{1E4345F6-3229-4C84-9F03-0233D1FF3F5C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ShipGame", "ShipGame\ShipGame.shproj", "{43BFA9D5-9676-4A9B-A091-4EBD1D37B386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipGame.Android", "ShipGame.Android\ShipGame.Android.csproj", "{6CCE2A87-1634-47E7-85F2-568B8394055F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipGame.WindowsDX", "ShipGame.WindowsDX\ShipGame.WindowsDX.csproj", "{0FE9779C-5045-47D5-9D9B-97DE191097B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipGame.DesktopGL", "ShipGame.DesktopGL\ShipGame.DesktopGL.csproj", "{75ECB741-5937-4250-A1C2-37BCB0D83A42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipGame.BlazorGL", "ShipGame.BlazorGL\ShipGame.BlazorGL.csproj", "{2E16C06E-9844-4383-B835-9A535D4D6724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NormalMappingModelProcessor.NETStandard", "NormalMappingModelProcessor\NormalMappingModelProcessor.NETStandard.csproj", "{64B08C70-640D-41BD-909D-A688A62B4AC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxColliderWindows.NETStandard", "BoxCollider\BoxColliderWindows.NETStandard.csproj", "{71DE28A6-76B9-41CC-BA46-2235F3CF152F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCE2A87-1634-47E7-85F2-568B8394055F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0FE9779C-5045-47D5-9D9B-97DE191097B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE9779C-5045-47D5-9D9B-97DE191097B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE9779C-5045-47D5-9D9B-97DE191097B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE9779C-5045-47D5-9D9B-97DE191097B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75ECB741-5937-4250-A1C2-37BCB0D83A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75ECB741-5937-4250-A1C2-37BCB0D83A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75ECB741-5937-4250-A1C2-37BCB0D83A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75ECB741-5937-4250-A1C2-37BCB0D83A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E16C06E-9844-4383-B835-9A535D4D6724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E16C06E-9844-4383-B835-9A535D4D6724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E16C06E-9844-4383-B835-9A535D4D6724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E16C06E-9844-4383-B835-9A535D4D6724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B08C70-640D-41BD-909D-A688A62B4AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B08C70-640D-41BD-909D-A688A62B4AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B08C70-640D-41BD-909D-A688A62B4AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B08C70-640D-41BD-909D-A688A62B4AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DE28A6-76B9-41CC-BA46-2235F3CF152F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DE28A6-76B9-41CC-BA46-2235F3CF152F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DE28A6-76B9-41CC-BA46-2235F3CF152F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DE28A6-76B9-41CC-BA46-2235F3CF152F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43BFA9D5-9676-4A9B-A091-4EBD1D37B386} = {1E4345F6-3229-4C84-9F03-0233D1FF3F5C}
+		{6CCE2A87-1634-47E7-85F2-568B8394055F} = {1E4345F6-3229-4C84-9F03-0233D1FF3F5C}
+		{0FE9779C-5045-47D5-9D9B-97DE191097B0} = {1E4345F6-3229-4C84-9F03-0233D1FF3F5C}
+		{75ECB741-5937-4250-A1C2-37BCB0D83A42} = {1E4345F6-3229-4C84-9F03-0233D1FF3F5C}
+		{2E16C06E-9844-4383-B835-9A535D4D6724} = {1E4345F6-3229-4C84-9F03-0233D1FF3F5C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB15F1C1-0562-4DB4-B6C9-FDEB2F51D0C1}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ShipGame\ShipGame.projitems*{0fe9779c-5045-47d5-9d9b-97de191097b0}*SharedItemsImports = 5
+		ShipGame\ShipGame.projitems*{2e16c06e-9844-4383-b835-9a535d4d6724}*SharedItemsImports = 5
+		ShipGame\ShipGame.projitems*{43bfa9d5-9676-4a9b-a091-4ebd1d37b386}*SharedItemsImports = 13
+		ShipGame\ShipGame.projitems*{6cce2a87-1634-47e7-85f2-568b8394055f}*SharedItemsImports = 5
+		ShipGame\ShipGame.projitems*{75ecb741-5937-4250-a1c2-37bcb0d83a42}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
