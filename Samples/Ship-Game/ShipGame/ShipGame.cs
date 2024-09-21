@@ -41,9 +41,13 @@ namespace ShipGame
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
-            audioEngine = new AudioEngine("content/sounds/sounds.xgs");
-            waveBank = new WaveBank(audioEngine, "content/sounds/Wave Bank.xwb");
-            soundBank = new SoundBank(audioEngine, "content/sounds/Sound Bank.xsb");
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
+
+#if XNA // Xact
+            audioEngine = new AudioEngine("Content/sounds/sounds.xgs");
+            waveBank = new WaveBank(audioEngine, "Content/sounds/Wave Bank.xwb");
+            soundBank = new SoundBank(audioEngine, "Content/sounds/Sound Bank.xsb");
+#endif
 
             game = new GameManager(soundBank);
 

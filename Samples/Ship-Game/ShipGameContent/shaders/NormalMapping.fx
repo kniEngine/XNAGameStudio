@@ -1,5 +1,5 @@
 float4x4 WorldViewProj;
-float4 LightPosition;
+float3 LightPosition;
 float3 LightColor;
 float3 LightAmbient;
 float3 CameraPosition;
@@ -71,7 +71,10 @@ void PlainMappingVS(
     OutTexCoord = InTexCoord;
 }
 
-float4 PlainMappingPS( in float2 TexCoord : TEXCOORD0 ) : COLOR0
+float4 PlainMappingPS(
+     in float4 Position : SV_POSITION,
+     in float2 TexCoord : TEXCOORD0
+    ) : COLOR0
 {
     return tex2D(TextureSampler, TexCoord);
 }
@@ -102,10 +105,12 @@ void NormalMappingVS(
 }
 
 float4 NormalMappingPS(
+    in float4 Position        : SV_POSITION,
     in float2 TexCoord        : TEXCOORD0,
     in float3 LightDir        : TEXCOORD1,
     in float3 ViewDir         : TEXCOORD2,
-    in float3 ReflectDir      : TEXCOORD3 ) : COLOR0
+    in float3 ReflectDir      : TEXCOORD3
+    ) : COLOR0
 {
     float4 diffuse = tex2D(TextureSampler, TexCoord);
     float4 specular = tex2D(SpecularSampler, TexCoord);
@@ -150,7 +155,10 @@ void ViewMappingVS(
     OutFacing = saturate(dot(view, InNormal));
 }
 
-float4 ViewMappingPS(in float Facing : TEXCOORD0) : COLOR0
+float4 ViewMappingPS(
+     in float4 Position : SV_POSITION,
+     in float Facing : TEXCOORD0
+    ) : COLOR0
 {
     Facing *= Facing;
     Facing *= Facing;
