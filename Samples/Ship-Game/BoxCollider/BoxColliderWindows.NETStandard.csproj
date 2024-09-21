@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFrameworks>net40;netstandard2.0</TargetFrameworks>
+    <AssemblyName>BoxCollider</AssemblyName>
+    <RootNamespace>BoxCollider</RootNamespace>
+    <DefineConstants>$(DefineConstants);KNI;</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.13.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.13.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.13.9001">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollisionBox.cs" />
+    <Compile Include="CollisionCamera.cs" />
+    <Compile Include="CollisionCameraObserver.cs" />
+    <Compile Include="CollisionCameraPerson.cs" />
+    <Compile Include="CollisionFace.cs" />
+    <Compile Include="CollisionMesh.cs" />
+    <Compile Include="CollisionTree.cs" />
+    <Compile Include="CollisionTreeElem.cs" />
+    <Compile Include="CollisionTreeNode.cs" />
+  </ItemGroup>
+
+</Project>

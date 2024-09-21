@@ -41,12 +41,18 @@ float4 ColorPS() : COLOR
     return g_Color;
 }
 
-float4 ColorTexturePS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 ColorTexturePS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     return g_Color * tex2D(ColorSampler,TexCoord + g_PixelSize);
 }
 
-float4 BlurHorizontalPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurHorizontalPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )
@@ -62,7 +68,10 @@ float4 BlurHorizontalPS(float2 TexCoord : TEXCOORD0) : COLOR
     return color/(2*BLUR_RANGE+1);
 }
 
-float4 BlurHorizontalSplitPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurHorizontalSplitPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )
@@ -87,7 +96,10 @@ float4 BlurHorizontalSplitPS(float2 TexCoord : TEXCOORD0) : COLOR
     return color/color.w;
 }
 
-float4 BlurVerticalPS(float2 TexCoord : TEXCOORD0) : COLOR
+float4 BlurVerticalPS(
+    float4 Position : SV_POSITION,
+    float2 TexCoord : TEXCOORD0
+    ) : COLOR
 {
     float4 color = float4(0,0,0,0);
     for( float i=-BLUR_RANGE;i<=BLUR_RANGE;i++ )

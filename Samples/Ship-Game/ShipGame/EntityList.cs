@@ -125,7 +125,7 @@ namespace ShipGame
             Stream stream;
             try
             {
-                stream = File.OpenRead(filename);
+                stream = TitleContainer.OpenStream(filename);
             }
             catch (FileNotFoundException e)
             {

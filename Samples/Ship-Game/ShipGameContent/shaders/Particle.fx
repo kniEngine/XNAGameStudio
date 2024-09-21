@@ -31,8 +31,13 @@ void ParticleVS(
      in float2 InTexCoord    : TEXCOORD0,
     out float4 OutPosition   : POSITION,
     out float4 OutColor      : COLOR0,
-    out float  OutSize       : PSIZE,
-    out float4 OutRotation   : COLOR1)
+    out float4 OutRotation   : COLOR1,
+#ifdef XBOX
+    out float  OutSize       : PSIZE
+#else
+    out float  OutSize       : TEXCOORD0
+#endif
+    )
 {
     // particle time
     float time = ElapsedTime + ParticleOffset * ParticleTime;
@@ -96,6 +101,7 @@ void ParticleVS(
 }
 
 float4 ParticlePS( 
+    in float4 Position  : SV_POSITION,
     in float4 Color     : COLOR0,
     in float4 Rotation  : COLOR1,
 #ifdef XBOX
