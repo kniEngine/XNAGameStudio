@@ -13,8 +13,8 @@ FBXHeaderExtension:  {
 		Day: 4
 		Hour: 6
 		Minute: 22
-		Second: 10
-		Millisecond: 522
+		Second: 2
+		Millisecond: 240
 	}
 	Creator: "FBX SDK/FBX Plugins version 2013.3"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -73,7 +73,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 80792544, "", "Scene" {
+	Document: 82889600, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -277,7 +277,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 81109232, "NodeAttribute::", "CameraSwitcher" {
+	NodeAttribute: 83205968, "NodeAttribute::", "CameraSwitcher" {
 		Properties70:  {
 			P: "Camera Index", "Integer", "", "A+",100
 		}
@@ -287,7 +287,7 @@ Objects:  {
 		CameraName: 100
 		CameraIndexName: 
 	}
-	Geometry: 81259136, "Geometry::", "Mesh" {
+	Geometry: 86043888, "Geometry::", "Mesh" {
 		Vertices: *47187 {
 			a: 2344.97216796875,-560.013366699219,742.836059570313,1786.83569335938,-560.013366699219,742.836059570313,646.695434570313,-559.885620117188,690.63623046875,646.695434570313,-559.885375976563,-590.8173828125,-14.5036506652832,-559.885559082031,-642.498168945313,-14.5036506652832,-559.885620117188,742.836059570313,1786.83569335938,-560.013366699219,-642.498168945313,2344.97216796875,-560.013366699219,-642.498168945313,3483.64697265625,-559.885620117188,690.63623046875,3483.64697265625,-559.885559082031,-590.8173828125,4144.845703125,-559.885620117188,742.635986328125,4144.845703125,-559.885620117188,-642.325317382813,-14.5036506652832,-559.885620117188,49.9093322753906,646.695434570313,-559.885620117188,49.9093322753906,1786.83569335938,-559.885559082031,49.9093322753906,2344.97216796875,-559.885559082031,49.9093322753906,3483.64697265625,-559.885559082031,49.9093322753906,4144.845703125,-559.885620117188,49.9093322753906,2446.69653320313,-559.885559082031,-590.8173828125,2446.69653320313,-559.885559082031,49.9093322753906,2446.69653320313,-559.885620117188,690.63623046875,3585.37084960938,-559.885620117188,-642.325317382813,3585.37084960938,-559.885620117188,49.9093322753906,3585.37084960938,-559.885620117188,742.635986328125,1683.77319335938,-559.885375976563,-590.8173828125,1683.77319335938,-559.885620117188,49.9093322753906,1683.77319335938,-559.885620117188,690.63623046875,544.971069335938,-559.885559082031,-642.498168945313,544.971069335938,-559.885620117188,49.9093322753906,544.971069335938,-559.885620117188,742.836059570313,-14.5036506652832,-559.885559082031,-566.678649902344,544.971069335938,-559.885559082031,-566.662536621094,646.695434570313,-559.885559082031,-544.400817871094,1683.77319335938,-559.885498046875,-545.117370605469,1786.83569335938,-559.885498046875,-565.893188476563,2344.97216796875,-559.885498046875,-567.447998046875,2446.69653320313,-559.885498046875,-544.530090332031,3483.64697265625,-559.885498046875,-544.271667480469,3585.37084960938,-559.885559082031,-565.817199707031,
 4144.845703125,-559.885559082031,-567.524291992188,646.695434570313,-559.885620117188,639.309753417969,1786.83569335938,-559.885620117188,666.489318847656,2344.97216796875,-559.885620117188,666.489318847656,3483.64672851563,-559.885620117188,639.309753417969,-14.5036506652832,-559.885620117188,666.489318847656,4144.845703125,-559.885620117188,666.4892578125,2446.69653320313,-559.885620117188,639.309753417969,3585.37084960938,-559.885620117188,666.4892578125,1683.77319335938,-559.885620117188,639.309753417969,544.971069335938,-559.885620117188,666.489318847656,1676.98815917969,887.211181640625,-106.52466583252,1676.98815917969,861.568908691406,-259.107330322266,653.352355957031,887.211120605469,-106.524673461914,653.352416992188,861.56884765625,-259.107330322266,1676.98815917969,819.533813476563,-404.080963134766,653.352416992188,819.533813476563,-404.080932617188,1676.98815917969,762.141052246094,-537.875793457031,653.352416992188,762.141052246094,-537.875793457031,1676.98815917969,690.803955078125,-657.197448730469,653.352416992188,690.803894042969,-657.197448730469,1676.98815917969,607.27880859375,-759.107727050781,653.352416992188,607.278747558594,-759.107727050781,1676.98815917969,513.622497558594,-841.097473144531,653.352416992188,513.622436523438,-841.097412109375,1676.98815917969,412.141021728516,-901.147399902344,653.352355957031,412.140991210938,-901.147399902344,1676.98815917969,305.333038330078,-937.779235839844,653.352355957031,305.333038330078,-937.779235839844,1676.98815917969,305.332733154297,1037.59802246094,653.352416992188,305.332763671875,1037.59802246094,1676.98815917969,412.140533447266,1000.96618652344,653.352416992188,412.140563964844,1000.96618652344,1676.98815917969,513.494140625,940.877014160156,1676.98815917969,607.2783203125,858.926635742188,653.352416992188,513.494079589844,940.876953125,653.352416992188,607.2783203125,858.926635742188,1676.98815917969,690.803405761719,757.016418457031,653.352416992188,690.803405761719,757.016418457031,1676.98815917969,762.140625,637.694946289063,653.352416992188,762.140563964844,637.694885253906,
@@ -4365,7 +4365,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 81167600, "Model::Camera_Switcher", "CameraSwitcher" {
+	Model: 83264672, "Model::Camera_Switcher", "CameraSwitcher" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMin", "Vector3D", "Vector", "",1,1,1
@@ -4376,7 +4376,7 @@ Objects:  {
 		Shading: W
 		Culling: "CullingOff"
 	}
-	Model: 81256880, "Model::polySurface305", "Mesh" {
+	Model: 86041632, "Model::polySurface305", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -4387,7 +4387,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 81242736, "Material::floor", "" {
+	Material: 87646944, "Material::floor", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4409,7 +4409,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88646576, "Material::piping", "" {
+	Material: 87661664, "Material::piping", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4431,7 +4431,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88640176, "Material::ceilingLights", "" {
+	Material: 83333952, "Material::ceilingLights", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4453,7 +4453,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88644656, "Material::circularLight", "" {
+	Material: 87653984, "Material::circularLight", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4475,7 +4475,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88644016, "Material::supportLights", "" {
+	Material: 87659104, "Material::supportLights", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4497,7 +4497,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88635696, "Material::spaceTile", "" {
+	Material: 87655904, "Material::spaceTile", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4519,7 +4519,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88636976, "Material::trimTile", "" {
+	Material: 83328192, "Material::trimTile", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4541,7 +4541,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88636336, "Material::pipe", "" {
+	Material: 87648224, "Material::pipe", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4563,7 +4563,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88645296, "Material::sidePanel", "" {
+	Material: 83333312, "Material::sidePanel", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4585,7 +4585,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 81242096, "Material::trimTileLights", "" {
+	Material: 87653344, "Material::trimTileLights", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4607,7 +4607,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 81243376, "Material::pillar", "" {
+	Material: 87649504, "Material::pillar", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4629,7 +4629,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Material: 88640816, "Material::sidePanelsNoGlow", "" {
+	Material: 87658464, "Material::sidePanelsNoGlow", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -4651,7 +4651,7 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
-	Video: 90420624, "Video::file16", "Clip" {
+	Video: 91397024, "Video::file16", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "black.tga"
@@ -4661,7 +4661,7 @@ Objects:  {
 		Filename: "black.tga"
 		RelativeFilename: "black.tga"
 	}
-	Video: 90425104, "Video::file11", "Clip" {
+	Video: 91394464, "Video::file11", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "piping_g.tga"
@@ -4671,7 +4671,7 @@ Objects:  {
 		Filename: "piping_g.tga"
 		RelativeFilename: "piping_g.tga"
 	}
-	Video: 90421264, "Video::file54", "Clip" {
+	Video: 91395744, "Video::file54", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "ceilingLights_g.tga"
@@ -4681,7 +4681,7 @@ Objects:  {
 		Filename: "ceilingLights_g.tga"
 		RelativeFilename: "ceilingLights_g.tga"
 	}
-	Video: 90421904, "Video::file13", "Clip" {
+	Video: 91396384, "Video::file13", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "circularLight_g.tga"
@@ -4691,7 +4691,7 @@ Objects:  {
 		Filename: "circularLight_g.tga"
 		RelativeFilename: "circularLight_g.tga"
 	}
-	Video: 90423184, "Video::file28", "Clip" {
+	Video: 91398304, "Video::file28", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "supportLights_g.tga"
@@ -4701,7 +4701,7 @@ Objects:  {
 		Filename: "supportLights_g.tga"
 		RelativeFilename: "supportLights_g.tga"
 	}
-	Video: 90426384, "Video::file25", "Clip" {
+	Video: 91395104, "Video::file25", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "spaceTile_g.tga"
@@ -4711,7 +4711,7 @@ Objects:  {
 		Filename: "spaceTile_g.tga"
 		RelativeFilename: "spaceTile_g.tga"
 	}
-	Video: 90423824, "Video::file19", "Clip" {
+	Video: 91397664, "Video::file19", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "black.tga"
@@ -4721,7 +4721,7 @@ Objects:  {
 		Filename: "black.tga"
 		RelativeFilename: "black.tga"
 	}
-	Video: 91780320, "Video::file22", "Clip" {
+	Video: 91537552, "Video::file22", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "black.tga"
@@ -4731,7 +4731,7 @@ Objects:  {
 		Filename: "black.tga"
 		RelativeFilename: "black.tga"
 	}
-	Video: 91772640, "Video::file33", "Clip" {
+	Video: 91539472, "Video::file33", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_g.tga"
@@ -4741,7 +4741,7 @@ Objects:  {
 		Filename: "sidePanels_g.tga"
 		RelativeFilename: "sidePanels_g.tga"
 	}
-	Video: 91782880, "Video::file50", "Clip" {
+	Video: 91545872, "Video::file50", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTileLights_g.tga"
@@ -4751,7 +4751,7 @@ Objects:  {
 		Filename: "trimTileLights_g.tga"
 		RelativeFilename: "trimTileLights_g.tga"
 	}
-	Video: 91772000, "Video::file46", "Clip" {
+	Video: 91549712, "Video::file46", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "black.tga"
@@ -4761,7 +4761,7 @@ Objects:  {
 		Filename: "black.tga"
 		RelativeFilename: "black.tga"
 	}
-	Video: 91778400, "Video::file58", "Clip" {
+	Video: 91542672, "Video::file58", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "black.tga"
@@ -4771,7 +4771,7 @@ Objects:  {
 		Filename: "black.tga"
 		RelativeFilename: "black.tga"
 	}
-	Video: 91775840, "Video::file7", "Clip" {
+	Video: 91538192, "Video::file7", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "floor_c.tga"
@@ -4781,7 +4781,7 @@ Objects:  {
 		Filename: "floor_c.tga"
 		RelativeFilename: "floor_c.tga"
 	}
-	Video: 91769440, "Video::file9", "Clip" {
+	Video: 91548432, "Video::file9", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "piping_c.tga"
@@ -4791,7 +4791,7 @@ Objects:  {
 		Filename: "piping_c.tga"
 		RelativeFilename: "piping_c.tga"
 	}
-	Video: 91783520, "Video::file53", "Clip" {
+	Video: 91546512, "Video::file53", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "ceilingLights_c.tga"
@@ -4801,7 +4801,7 @@ Objects:  {
 		Filename: "ceilingLights_c.tga"
 		RelativeFilename: "ceilingLights_c.tga"
 	}
-	Video: 91777760, "Video::file8", "Clip" {
+	Video: 91547152, "Video::file8", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "circularLight_c.tga"
@@ -4811,7 +4811,7 @@ Objects:  {
 		Filename: "circularLight_c.tga"
 		RelativeFilename: "circularLight_c.tga"
 	}
-	Video: 91784160, "Video::file6", "Clip" {
+	Video: 91534352, "Video::file6", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "supportLights_c.tga"
@@ -4821,7 +4821,7 @@ Objects:  {
 		Filename: "supportLights_c.tga"
 		RelativeFilename: "supportLights_c.tga"
 	}
-	Video: 91775200, "Video::file3", "Clip" {
+	Video: 91534992, "Video::file3", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "spaceTile_c.tga"
@@ -4831,7 +4831,7 @@ Objects:  {
 		Filename: "spaceTile_c.tga"
 		RelativeFilename: "spaceTile_c.tga"
 	}
-	Video: 91770080, "Video::file5", "Clip" {
+	Video: 91545232, "Video::file5", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTile_c.tga"
@@ -4841,7 +4841,7 @@ Objects:  {
 		Filename: "trimTile_c.tga"
 		RelativeFilename: "trimTile_c.tga"
 	}
-	Video: 91776480, "Video::file4", "Clip" {
+	Video: 91536272, "Video::file4", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pipe_c.tga"
@@ -4851,7 +4851,7 @@ Objects:  {
 		Filename: "pipe_c.tga"
 		RelativeFilename: "pipe_c.tga"
 	}
-	Video: 91779040, "Video::file32", "Clip" {
+	Video: 91541392, "Video::file32", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_c.tga"
@@ -4861,7 +4861,7 @@ Objects:  {
 		Filename: "sidePanels_c.tga"
 		RelativeFilename: "sidePanels_c.tga"
 	}
-	Video: 91782240, "Video::file49", "Clip" {
+	Video: 91540752, "Video::file49", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTileLights_c.tga"
@@ -4871,7 +4871,7 @@ Objects:  {
 		Filename: "trimTileLights_c.tga"
 		RelativeFilename: "trimTileLights_c.tga"
 	}
-	Video: 91780960, "Video::file42", "Clip" {
+	Video: 91535632, "Video::file42", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pillar_c.tga"
@@ -4881,7 +4881,7 @@ Objects:  {
 		Filename: "pillar_c.tga"
 		RelativeFilename: "pillar_c.tga"
 	}
-	Video: 91777120, "Video::file57", "Clip" {
+	Video: 91547792, "Video::file57", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_c.tga"
@@ -4891,7 +4891,7 @@ Objects:  {
 		Filename: "sidePanels_c.tga"
 		RelativeFilename: "sidePanels_c.tga"
 	}
-	Video: 91781600, "Video::file18", "Clip" {
+	Video: 91536912, "Video::file18", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "floor_s.tga"
@@ -4901,7 +4901,7 @@ Objects:  {
 		Filename: "floor_s.tga"
 		RelativeFilename: "floor_s.tga"
 	}
-	Video: 91770720, "Video::file12", "Clip" {
+	Video: 91538832, "Video::file12", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "piping_s.tga"
@@ -4911,7 +4911,7 @@ Objects:  {
 		Filename: "piping_s.tga"
 		RelativeFilename: "piping_s.tga"
 	}
-	Video: 91768800, "Video::file56", "Clip" {
+	Video: 91542032, "Video::file56", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "ceilingLights_s.tga"
@@ -4921,7 +4921,7 @@ Objects:  {
 		Filename: "ceilingLights_s.tga"
 		RelativeFilename: "ceilingLights_s.tga"
 	}
-	Video: 91771360, "Video::file15", "Clip" {
+	Video: 91543952, "Video::file15", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "circularLight_s.tga"
@@ -4931,7 +4931,7 @@ Objects:  {
 		Filename: "circularLight_s.tga"
 		RelativeFilename: "circularLight_s.tga"
 	}
-	Video: 91773280, "Video::file30", "Clip" {
+	Video: 91549072, "Video::file30", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "supportLights_s.tga"
@@ -4941,7 +4941,7 @@ Objects:  {
 		Filename: "supportLights_s.tga"
 		RelativeFilename: "supportLights_s.tga"
 	}
-	Video: 91774560, "Video::file27", "Clip" {
+	Video: 91540112, "Video::file27", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "spaceTile_s.tga"
@@ -4951,7 +4951,7 @@ Objects:  {
 		Filename: "spaceTile_s.tga"
 		RelativeFilename: "spaceTile_s.tga"
 	}
-	Video: 91779680, "Video::file21", "Clip" {
+	Video: 91543312, "Video::file21", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTile_s.tga"
@@ -4961,7 +4961,7 @@ Objects:  {
 		Filename: "trimTile_s.tga"
 		RelativeFilename: "trimTile_s.tga"
 	}
-	Video: 91773920, "Video::file24", "Clip" {
+	Video: 91544592, "Video::file24", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pipe_s.tga"
@@ -4971,7 +4971,7 @@ Objects:  {
 		Filename: "pipe_s.tga"
 		RelativeFilename: "pipe_s.tga"
 	}
-	Video: 88634416, "Video::file39", "Clip" {
+	Video: 87650144, "Video::file39", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_s.tga"
@@ -4981,7 +4981,7 @@ Objects:  {
 		Filename: "sidePanels_s.tga"
 		RelativeFilename: "sidePanels_s.tga"
 	}
-	Video: 88641456, "Video::file52", "Clip" {
+	Video: 87652704, "Video::file52", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTileLights_s.tga"
@@ -4991,7 +4991,7 @@ Objects:  {
 		Filename: "trimTileLights_s.tga"
 		RelativeFilename: "trimTileLights_s.tga"
 	}
-	Video: 88647216, "Video::file48", "Clip" {
+	Video: 87646304, "Video::file48", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pillar_s.tga"
@@ -5001,7 +5001,7 @@ Objects:  {
 		Filename: "pillar_s.tga"
 		RelativeFilename: "pillar_s.tga"
 	}
-	Video: 88633136, "Video::file60", "Clip" {
+	Video: 87657824, "Video::file60", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_s.tga"
@@ -5011,7 +5011,7 @@ Objects:  {
 		Filename: "sidePanels_s.tga"
 		RelativeFilename: "sidePanels_s.tga"
 	}
-	Video: 88645936, "Video::file17", "Clip" {
+	Video: 87656544, "Video::file17", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "floor_n.tga"
@@ -5021,7 +5021,7 @@ Objects:  {
 		Filename: "floor_n.tga"
 		RelativeFilename: "floor_n.tga"
 	}
-	Video: 88642736, "Video::file10", "Clip" {
+	Video: 87650784, "Video::file10", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "piping_n.tga"
@@ -5031,7 +5031,7 @@ Objects:  {
 		Filename: "piping_n.tga"
 		RelativeFilename: "piping_n.tga"
 	}
-	Video: 88638896, "Video::file55", "Clip" {
+	Video: 87655264, "Video::file55", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "ceilingLights_n.tga"
@@ -5041,7 +5041,7 @@ Objects:  {
 		Filename: "ceilingLights_n.tga"
 		RelativeFilename: "ceilingLights_n.tga"
 	}
-	Video: 88638256, "Video::file14", "Clip" {
+	Video: 87660384, "Video::file14", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "circularLight_n.tga"
@@ -5051,7 +5051,7 @@ Objects:  {
 		Filename: "circularLight_n.tga"
 		RelativeFilename: "circularLight_n.tga"
 	}
-	Video: 88647856, "Video::file29", "Clip" {
+	Video: 87648864, "Video::file29", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "supportLights_n.tga"
@@ -5061,7 +5061,7 @@ Objects:  {
 		Filename: "supportLights_n.tga"
 		RelativeFilename: "supportLights_n.tga"
 	}
-	Video: 88642096, "Video::file26", "Clip" {
+	Video: 87661024, "Video::file26", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "spaceTile_n.tga"
@@ -5071,7 +5071,7 @@ Objects:  {
 		Filename: "spaceTile_n.tga"
 		RelativeFilename: "spaceTile_n.tga"
 	}
-	Video: 88637616, "Video::file20", "Clip" {
+	Video: 87651424, "Video::file20", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTile_n.tga"
@@ -5081,7 +5081,7 @@ Objects:  {
 		Filename: "trimTile_n.tga"
 		RelativeFilename: "trimTile_n.tga"
 	}
-	Video: 88633776, "Video::file23", "Clip" {
+	Video: 87652064, "Video::file23", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pipe_n.tga"
@@ -5091,7 +5091,7 @@ Objects:  {
 		Filename: "pipe_n.tga"
 		RelativeFilename: "pipe_n.tga"
 	}
-	Video: 88643376, "Video::file38", "Clip" {
+	Video: 87657184, "Video::file38", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_n.tga"
@@ -5101,7 +5101,7 @@ Objects:  {
 		Filename: "sidePanels_n.tga"
 		RelativeFilename: "sidePanels_n.tga"
 	}
-	Video: 88648496, "Video::file51", "Clip" {
+	Video: 87659744, "Video::file51", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "trimTileLights_n.tga"
@@ -5111,7 +5111,7 @@ Objects:  {
 		Filename: "trimTileLights_n.tga"
 		RelativeFilename: "trimTileLights_n.tga"
 	}
-	Video: 88635056, "Video::file47", "Clip" {
+	Video: 87647584, "Video::file47", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "pillar_n.tga"
@@ -5121,7 +5121,7 @@ Objects:  {
 		Filename: "pillar_n.tga"
 		RelativeFilename: "pillar_n.tga"
 	}
-	Video: 88639536, "Video::file59", "Clip" {
+	Video: 87654624, "Video::file59", "Clip" {
 		Type: "Clip"
 		Properties70:  {
 			P: "Path", "KString", "XRefUrl", "", "sidePanels_n.tga"
@@ -5131,7 +5131,7 @@ Objects:  {
 		Filename: "sidePanels_n.tga"
 		RelativeFilename: "sidePanels_n.tga"
 	}
-	Texture: 81267664, "Texture::file16", "" {
+	Texture: 83290464, "Texture::file16", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file16"
@@ -5149,7 +5149,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 85178608, "Texture::file11", "" {
+	Texture: 87824640, "Texture::file11", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file11"
@@ -5167,7 +5167,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 85179360, "Texture::file54", "" {
+	Texture: 87825392, "Texture::file54", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file54"
@@ -5185,7 +5185,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91842784, "Texture::file13", "" {
+	Texture: 83953920, "Texture::file13", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file13"
@@ -5203,7 +5203,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91843536, "Texture::file28", "" {
+	Texture: 83954672, "Texture::file28", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file28"
@@ -5221,7 +5221,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 81163712, "Texture::file25", "" {
+	Texture: 94116080, "Texture::file25", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file25"
@@ -5239,7 +5239,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 81164464, "Texture::file19", "" {
+	Texture: 94116832, "Texture::file19", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file19"
@@ -5257,7 +5257,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91502736, "Texture::file22", "" {
+	Texture: 93157600, "Texture::file22", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file22"
@@ -5275,7 +5275,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91503488, "Texture::file33", "" {
+	Texture: 93158352, "Texture::file33", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file33"
@@ -5293,7 +5293,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 94259328, "Texture::file50", "" {
+	Texture: 83355792, "Texture::file50", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file50"
@@ -5311,7 +5311,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 94260080, "Texture::file46", "" {
+	Texture: 83356544, "Texture::file46", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file46"
@@ -5329,7 +5329,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 86333584, "Texture::file58", "" {
+	Texture: 88979600, "Texture::file58", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file58"
@@ -5347,7 +5347,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 86334336, "Texture::file7", "" {
+	Texture: 88980352, "Texture::file7", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file7"
@@ -5365,7 +5365,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 81211344, "Texture::file9", "" {
+	Texture: 91400672, "Texture::file9", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file9"
@@ -5383,7 +5383,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 81212096, "Texture::file53", "" {
+	Texture: 91401424, "Texture::file53", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file53"
@@ -5401,7 +5401,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90427472, "Texture::file8", "" {
+	Texture: 91402176, "Texture::file8", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file8"
@@ -5419,7 +5419,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90428224, "Texture::file6", "" {
+	Texture: 91402928, "Texture::file6", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file6"
@@ -5437,7 +5437,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90163904, "Texture::file3", "" {
+	Texture: 90681504, "Texture::file3", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file3"
@@ -5455,7 +5455,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90169168, "Texture::file5", "" {
+	Texture: 90683008, "Texture::file5", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file5"
@@ -5473,7 +5473,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90164656, "Texture::file4", "" {
+	Texture: 90687520, "Texture::file4", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file4"
@@ -5491,7 +5491,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90169920, "Texture::file32", "" {
+	Texture: 90688272, "Texture::file32", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file32"
@@ -5509,7 +5509,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90165408, "Texture::file49", "" {
+	Texture: 90683760, "Texture::file49", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file49"
@@ -5527,7 +5527,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90163152, "Texture::file42", "" {
+	Texture: 90684512, "Texture::file42", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file42"
@@ -5545,7 +5545,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90166160, "Texture::file57", "" {
+	Texture: 90682256, "Texture::file57", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file57"
@@ -5563,7 +5563,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90166912, "Texture::file18", "" {
+	Texture: 90685264, "Texture::file18", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file18"
@@ -5581,7 +5581,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90167664, "Texture::file12", "" {
+	Texture: 90686016, "Texture::file12", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file12"
@@ -5599,7 +5599,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 90168416, "Texture::file56", "" {
+	Texture: 90686768, "Texture::file56", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file56"
@@ -5617,7 +5617,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91733808, "Texture::file15", "" {
+	Texture: 91503120, "Texture::file15", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file15"
@@ -5635,7 +5635,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91728544, "Texture::file30", "" {
+	Texture: 91494848, "Texture::file30", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file30"
@@ -5653,7 +5653,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91730048, "Texture::file27", "" {
+	Texture: 91502368, "Texture::file27", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file27"
@@ -5671,7 +5671,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91736064, "Texture::file21", "" {
+	Texture: 91495600, "Texture::file21", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file21"
@@ -5689,7 +5689,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91736816, "Texture::file24", "" {
+	Texture: 91506880, "Texture::file24", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file24"
@@ -5707,7 +5707,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91731552, "Texture::file39", "" {
+	Texture: 91503872, "Texture::file39", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file39"
@@ -5725,7 +5725,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91735312, "Texture::file52", "" {
+	Texture: 91507632, "Texture::file52", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file52"
@@ -5743,7 +5743,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91739824, "Texture::file48", "" {
+	Texture: 91494096, "Texture::file48", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file48"
@@ -5761,7 +5761,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91737568, "Texture::file60", "" {
+	Texture: 91508384, "Texture::file60", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file60"
@@ -5779,7 +5779,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91734560, "Texture::file17", "" {
+	Texture: 91499360, "Texture::file17", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file17"
@@ -5797,7 +5797,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91730800, "Texture::file10", "" {
+	Texture: 91498608, "Texture::file10", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file10"
@@ -5815,7 +5815,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91739072, "Texture::file55", "" {
+	Texture: 91505376, "Texture::file55", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file55"
@@ -5833,7 +5833,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91742832, "Texture::file14", "" {
+	Texture: 91496352, "Texture::file14", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file14"
@@ -5851,7 +5851,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91732304, "Texture::file29", "" {
+	Texture: 91497104, "Texture::file29", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file29"
@@ -5869,7 +5869,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91741328, "Texture::file26", "" {
+	Texture: 91497856, "Texture::file26", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file26"
@@ -5887,7 +5887,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91738320, "Texture::file20", "" {
+	Texture: 91500112, "Texture::file20", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file20"
@@ -5905,7 +5905,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91729296, "Texture::file23", "" {
+	Texture: 91500864, "Texture::file23", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file23"
@@ -5923,7 +5923,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91740576, "Texture::file38", "" {
+	Texture: 91506128, "Texture::file38", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file38"
@@ -5941,7 +5941,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91733056, "Texture::file51", "" {
+	Texture: 91501616, "Texture::file51", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file51"
@@ -5959,7 +5959,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91742080, "Texture::file47", "" {
+	Texture: 91504624, "Texture::file47", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file47"
@@ -5977,7 +5977,7 @@ Objects:  {
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	Texture: 91727792, "Texture::file59", "" {
+	Texture: 91493344, "Texture::file59", "" {
 		Type: "TextureVideoClip"
 		Version: 202
 		TextureName: "Texture::file59"
@@ -6003,337 +6003,337 @@ Objects:  {
 Connections:  {
 	
 	;Model::polySurface305, Model::RootNode
-	C: "OO",81256880,0
+	C: "OO",86041632,0
 	
 	;NodeAttribute::, Model::Camera_Switcher
-	C: "OO",81109232,81167600
+	C: "OO",83205968,83264672
 	
 	;Geometry::, Model::polySurface305
-	C: "OO",81259136,81256880
+	C: "OO",86043888,86041632
 	
 	;Material::floor, Model::polySurface305
-	C: "OO",81242736,81256880
+	C: "OO",87646944,86041632
 	
 	;Material::piping, Model::polySurface305
-	C: "OO",88646576,81256880
+	C: "OO",87661664,86041632
 	
 	;Material::ceilingLights, Model::polySurface305
-	C: "OO",88640176,81256880
+	C: "OO",83333952,86041632
 	
 	;Material::circularLight, Model::polySurface305
-	C: "OO",88644656,81256880
+	C: "OO",87653984,86041632
 	
 	;Material::supportLights, Model::polySurface305
-	C: "OO",88644016,81256880
+	C: "OO",87659104,86041632
 	
 	;Material::spaceTile, Model::polySurface305
-	C: "OO",88635696,81256880
+	C: "OO",87655904,86041632
 	
 	;Material::trimTile, Model::polySurface305
-	C: "OO",88636976,81256880
+	C: "OO",83328192,86041632
 	
 	;Material::pipe, Model::polySurface305
-	C: "OO",88636336,81256880
+	C: "OO",87648224,86041632
 	
 	;Material::sidePanel, Model::polySurface305
-	C: "OO",88645296,81256880
+	C: "OO",83333312,86041632
 	
 	;Material::trimTileLights, Model::polySurface305
-	C: "OO",81242096,81256880
+	C: "OO",87653344,86041632
 	
 	;Material::pillar, Model::polySurface305
-	C: "OO",81243376,81256880
+	C: "OO",87649504,86041632
 	
 	;Material::sidePanelsNoGlow, Model::polySurface305
-	C: "OO",88640816,81256880
+	C: "OO",87658464,86041632
 	
 	;Video::file16, Texture::file16
-	C: "OO",90420624,81267664
+	C: "OO",91397024,83290464
 	
 	;Video::file11, Texture::file11
-	C: "OO",90425104,85178608
+	C: "OO",91394464,87824640
 	
 	;Video::file54, Texture::file54
-	C: "OO",90421264,85179360
+	C: "OO",91395744,87825392
 	
 	;Video::file13, Texture::file13
-	C: "OO",90421904,91842784
+	C: "OO",91396384,83953920
 	
 	;Video::file28, Texture::file28
-	C: "OO",90423184,91843536
+	C: "OO",91398304,83954672
 	
 	;Video::file25, Texture::file25
-	C: "OO",90426384,81163712
+	C: "OO",91395104,94116080
 	
 	;Video::file19, Texture::file19
-	C: "OO",90423824,81164464
+	C: "OO",91397664,94116832
 	
 	;Video::file22, Texture::file22
-	C: "OO",91780320,91502736
+	C: "OO",91537552,93157600
 	
 	;Video::file33, Texture::file33
-	C: "OO",91772640,91503488
+	C: "OO",91539472,93158352
 	
 	;Video::file50, Texture::file50
-	C: "OO",91782880,94259328
+	C: "OO",91545872,83355792
 	
 	;Video::file46, Texture::file46
-	C: "OO",91772000,94260080
+	C: "OO",91549712,83356544
 	
 	;Video::file58, Texture::file58
-	C: "OO",91778400,86333584
+	C: "OO",91542672,88979600
 	
 	;Video::file7, Texture::file7
-	C: "OO",91775840,86334336
+	C: "OO",91538192,88980352
 	
 	;Video::file9, Texture::file9
-	C: "OO",91769440,81211344
+	C: "OO",91548432,91400672
 	
 	;Video::file53, Texture::file53
-	C: "OO",91783520,81212096
+	C: "OO",91546512,91401424
 	
 	;Video::file8, Texture::file8
-	C: "OO",91777760,90427472
+	C: "OO",91547152,91402176
 	
 	;Video::file6, Texture::file6
-	C: "OO",91784160,90428224
+	C: "OO",91534352,91402928
 	
 	;Video::file3, Texture::file3
-	C: "OO",91775200,90163904
+	C: "OO",91534992,90681504
 	
 	;Video::file5, Texture::file5
-	C: "OO",91770080,90169168
+	C: "OO",91545232,90683008
 	
 	;Video::file4, Texture::file4
-	C: "OO",91776480,90164656
+	C: "OO",91536272,90687520
 	
 	;Video::file32, Texture::file32
-	C: "OO",91779040,90169920
+	C: "OO",91541392,90688272
 	
 	;Video::file49, Texture::file49
-	C: "OO",91782240,90165408
+	C: "OO",91540752,90683760
 	
 	;Video::file42, Texture::file42
-	C: "OO",91780960,90163152
+	C: "OO",91535632,90684512
 	
 	;Video::file57, Texture::file57
-	C: "OO",91777120,90166160
+	C: "OO",91547792,90682256
 	
 	;Video::file18, Texture::file18
-	C: "OO",91781600,90166912
+	C: "OO",91536912,90685264
 	
 	;Video::file12, Texture::file12
-	C: "OO",91770720,90167664
+	C: "OO",91538832,90686016
 	
 	;Video::file56, Texture::file56
-	C: "OO",91768800,90168416
+	C: "OO",91542032,90686768
 	
 	;Video::file15, Texture::file15
-	C: "OO",91771360,91733808
+	C: "OO",91543952,91503120
 	
 	;Video::file30, Texture::file30
-	C: "OO",91773280,91728544
+	C: "OO",91549072,91494848
 	
 	;Video::file27, Texture::file27
-	C: "OO",91774560,91730048
+	C: "OO",91540112,91502368
 	
 	;Video::file21, Texture::file21
-	C: "OO",91779680,91736064
+	C: "OO",91543312,91495600
 	
 	;Video::file24, Texture::file24
-	C: "OO",91773920,91736816
+	C: "OO",91544592,91506880
 	
 	;Video::file39, Texture::file39
-	C: "OO",88634416,91731552
+	C: "OO",87650144,91503872
 	
 	;Video::file52, Texture::file52
-	C: "OO",88641456,91735312
+	C: "OO",87652704,91507632
 	
 	;Video::file48, Texture::file48
-	C: "OO",88647216,91739824
+	C: "OO",87646304,91494096
 	
 	;Video::file60, Texture::file60
-	C: "OO",88633136,91737568
+	C: "OO",87657824,91508384
 	
 	;Video::file17, Texture::file17
-	C: "OO",88645936,91734560
+	C: "OO",87656544,91499360
 	
 	;Video::file10, Texture::file10
-	C: "OO",88642736,91730800
+	C: "OO",87650784,91498608
 	
 	;Video::file55, Texture::file55
-	C: "OO",88638896,91739072
+	C: "OO",87655264,91505376
 	
 	;Video::file14, Texture::file14
-	C: "OO",88638256,91742832
+	C: "OO",87660384,91496352
 	
 	;Video::file29, Texture::file29
-	C: "OO",88647856,91732304
+	C: "OO",87648864,91497104
 	
 	;Video::file26, Texture::file26
-	C: "OO",88642096,91741328
+	C: "OO",87661024,91497856
 	
 	;Video::file20, Texture::file20
-	C: "OO",88637616,91738320
+	C: "OO",87651424,91500112
 	
 	;Video::file23, Texture::file23
-	C: "OO",88633776,91729296
+	C: "OO",87652064,91500864
 	
 	;Video::file38, Texture::file38
-	C: "OO",88643376,91740576
+	C: "OO",87657184,91506128
 	
 	;Video::file51, Texture::file51
-	C: "OO",88648496,91733056
+	C: "OO",87659744,91501616
 	
 	;Video::file47, Texture::file47
-	C: "OO",88635056,91742080
+	C: "OO",87647584,91504624
 	
 	;Video::file59, Texture::file59
-	C: "OO",88639536,91727792
+	C: "OO",87654624,91493344
 	
 	;Texture::file16, Material::floor
-	C: "OP",81267664,81242736, "EmissiveColor"
+	C: "OP",83290464,87646944, "EmissiveColor"
 	
 	;Texture::file7, Material::floor
-	C: "OP",86334336,81242736, "DiffuseColor"
+	C: "OP",88980352,87646944, "DiffuseColor"
 	
 	;Texture::file17, Material::floor
-	C: "OP",91734560,81242736, "Bump"
+	C: "OP",91499360,87646944, "Bump"
 	
 	;Texture::file18, Material::floor
-	C: "OP",90166912,81242736, "SpecularColor"
+	C: "OP",90685264,87646944, "SpecularColor"
 	
 	;Texture::file11, Material::piping
-	C: "OP",85178608,88646576, "EmissiveColor"
+	C: "OP",87824640,87661664, "EmissiveColor"
 	
 	;Texture::file9, Material::piping
-	C: "OP",81211344,88646576, "DiffuseColor"
+	C: "OP",91400672,87661664, "DiffuseColor"
 	
 	;Texture::file10, Material::piping
-	C: "OP",91730800,88646576, "Bump"
+	C: "OP",91498608,87661664, "Bump"
 	
 	;Texture::file12, Material::piping
-	C: "OP",90167664,88646576, "SpecularColor"
+	C: "OP",90686016,87661664, "SpecularColor"
 	
 	;Texture::file54, Material::ceilingLights
-	C: "OP",85179360,88640176, "EmissiveColor"
+	C: "OP",87825392,83333952, "EmissiveColor"
 	
 	;Texture::file53, Material::ceilingLights
-	C: "OP",81212096,88640176, "DiffuseColor"
+	C: "OP",91401424,83333952, "DiffuseColor"
 	
 	;Texture::file55, Material::ceilingLights
-	C: "OP",91739072,88640176, "Bump"
+	C: "OP",91505376,83333952, "Bump"
 	
 	;Texture::file56, Material::ceilingLights
-	C: "OP",90168416,88640176, "SpecularColor"
+	C: "OP",90686768,83333952, "SpecularColor"
 	
 	;Texture::file13, Material::circularLight
-	C: "OP",91842784,88644656, "EmissiveColor"
+	C: "OP",83953920,87653984, "EmissiveColor"
 	
 	;Texture::file8, Material::circularLight
-	C: "OP",90427472,88644656, "DiffuseColor"
+	C: "OP",91402176,87653984, "DiffuseColor"
 	
 	;Texture::file14, Material::circularLight
-	C: "OP",91742832,88644656, "Bump"
+	C: "OP",91496352,87653984, "Bump"
 	
 	;Texture::file15, Material::circularLight
-	C: "OP",91733808,88644656, "SpecularColor"
+	C: "OP",91503120,87653984, "SpecularColor"
 	
 	;Texture::file28, Material::supportLights
-	C: "OP",91843536,88644016, "EmissiveColor"
+	C: "OP",83954672,87659104, "EmissiveColor"
 	
 	;Texture::file6, Material::supportLights
-	C: "OP",90428224,88644016, "DiffuseColor"
+	C: "OP",91402928,87659104, "DiffuseColor"
 	
 	;Texture::file29, Material::supportLights
-	C: "OP",91732304,88644016, "Bump"
+	C: "OP",91497104,87659104, "Bump"
 	
 	;Texture::file30, Material::supportLights
-	C: "OP",91728544,88644016, "SpecularColor"
+	C: "OP",91494848,87659104, "SpecularColor"
 	
 	;Texture::file25, Material::spaceTile
-	C: "OP",81163712,88635696, "EmissiveColor"
+	C: "OP",94116080,87655904, "EmissiveColor"
 	
 	;Texture::file3, Material::spaceTile
-	C: "OP",90163904,88635696, "DiffuseColor"
+	C: "OP",90681504,87655904, "DiffuseColor"
 	
 	;Texture::file26, Material::spaceTile
-	C: "OP",91741328,88635696, "Bump"
+	C: "OP",91497856,87655904, "Bump"
 	
 	;Texture::file27, Material::spaceTile
-	C: "OP",91730048,88635696, "SpecularColor"
+	C: "OP",91502368,87655904, "SpecularColor"
 	
 	;Texture::file19, Material::trimTile
-	C: "OP",81164464,88636976, "EmissiveColor"
+	C: "OP",94116832,83328192, "EmissiveColor"
 	
 	;Texture::file5, Material::trimTile
-	C: "OP",90169168,88636976, "DiffuseColor"
+	C: "OP",90683008,83328192, "DiffuseColor"
 	
 	;Texture::file20, Material::trimTile
-	C: "OP",91738320,88636976, "Bump"
+	C: "OP",91500112,83328192, "Bump"
 	
 	;Texture::file21, Material::trimTile
-	C: "OP",91736064,88636976, "SpecularColor"
+	C: "OP",91495600,83328192, "SpecularColor"
 	
 	;Texture::file22, Material::pipe
-	C: "OP",91502736,88636336, "EmissiveColor"
+	C: "OP",93157600,87648224, "EmissiveColor"
 	
 	;Texture::file4, Material::pipe
-	C: "OP",90164656,88636336, "DiffuseColor"
+	C: "OP",90687520,87648224, "DiffuseColor"
 	
 	;Texture::file23, Material::pipe
-	C: "OP",91729296,88636336, "Bump"
+	C: "OP",91500864,87648224, "Bump"
 	
 	;Texture::file24, Material::pipe
-	C: "OP",91736816,88636336, "SpecularColor"
+	C: "OP",91506880,87648224, "SpecularColor"
 	
 	;Texture::file33, Material::sidePanel
-	C: "OP",91503488,88645296, "EmissiveColor"
+	C: "OP",93158352,83333312, "EmissiveColor"
 	
 	;Texture::file32, Material::sidePanel
-	C: "OP",90169920,88645296, "DiffuseColor"
+	C: "OP",90688272,83333312, "DiffuseColor"
 	
 	;Texture::file38, Material::sidePanel
-	C: "OP",91740576,88645296, "Bump"
+	C: "OP",91506128,83333312, "Bump"
 	
 	;Texture::file39, Material::sidePanel
-	C: "OP",91731552,88645296, "SpecularColor"
+	C: "OP",91503872,83333312, "SpecularColor"
 	
 	;Texture::file50, Material::trimTileLights
-	C: "OP",94259328,81242096, "EmissiveColor"
+	C: "OP",83355792,87653344, "EmissiveColor"
 	
 	;Texture::file49, Material::trimTileLights
-	C: "OP",90165408,81242096, "DiffuseColor"
+	C: "OP",90683760,87653344, "DiffuseColor"
 	
 	;Texture::file51, Material::trimTileLights
-	C: "OP",91733056,81242096, "Bump"
+	C: "OP",91501616,87653344, "Bump"
 	
 	;Texture::file52, Material::trimTileLights
-	C: "OP",91735312,81242096, "SpecularColor"
+	C: "OP",91507632,87653344, "SpecularColor"
 	
 	;Texture::file46, Material::pillar
-	C: "OP",94260080,81243376, "EmissiveColor"
+	C: "OP",83356544,87649504, "EmissiveColor"
 	
 	;Texture::file42, Material::pillar
-	C: "OP",90163152,81243376, "DiffuseColor"
+	C: "OP",90684512,87649504, "DiffuseColor"
 	
 	;Texture::file47, Material::pillar
-	C: "OP",91742080,81243376, "Bump"
+	C: "OP",91504624,87649504, "Bump"
 	
 	;Texture::file48, Material::pillar
-	C: "OP",91739824,81243376, "SpecularColor"
+	C: "OP",91494096,87649504, "SpecularColor"
 	
 	;Texture::file58, Material::sidePanelsNoGlow
-	C: "OP",86333584,88640816, "EmissiveColor"
+	C: "OP",88979600,87658464, "EmissiveColor"
 	
 	;Texture::file57, Material::sidePanelsNoGlow
-	C: "OP",90166160,88640816, "DiffuseColor"
+	C: "OP",90682256,87658464, "DiffuseColor"
 	
 	;Texture::file59, Material::sidePanelsNoGlow
-	C: "OP",91727792,88640816, "Bump"
+	C: "OP",91493344,87658464, "Bump"
 	
 	;Texture::file60, Material::sidePanelsNoGlow
-	C: "OP",91737568,88640816, "SpecularColor"
+	C: "OP",91508384,87658464, "SpecularColor"
 }
 ;Takes section
 ;----------------------------------------------------

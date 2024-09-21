@@ -44,11 +44,12 @@ namespace ShipGame
                 EffectParameter effectLightColor,
                 Matrix worldInverse)
         {
-            Vector4 positionRadius = 
-                new Vector4(Vector3.Transform(position,worldInverse),radius);
+            Vector3 lightPosition = Vector3.Transform(position, worldInverse);
+            Vector4 positionRadius = new Vector4(lightPosition, radius);
+
             if (effectLightPosition != null)
             {
-                effectLightPosition.SetValue(positionRadius);
+                effectLightPosition.SetValue(lightPosition); //positionRadius
             }
             if (effectLightColor != null)
             {
@@ -97,7 +98,7 @@ namespace ShipGame
             Stream stream;
             try
             {
-                stream = File.OpenRead(filename);
+                stream = TitleContainer.OpenStream(filename);
             }
             catch (FileNotFoundException e)
             {

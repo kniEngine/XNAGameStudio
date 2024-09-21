@@ -65,6 +65,8 @@ namespace NormalMappingProcessor
             MeshContent mesh = input as MeshContent;
             if (mesh != null)
             {
+                MeshHelper.CalculateNormals(mesh, false);
+
                 MeshHelper.CalculateTangentFrames(mesh,
                     VertexChannelNames.TextureCoordinate(0),
                     VertexChannelNames.Tangent(0),

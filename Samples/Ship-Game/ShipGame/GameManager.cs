@@ -237,8 +237,8 @@ namespace ShipGame
             collisionModel = null;
 
             // load spawns and lights
-            levelSpawns = EntityList.Load("content/levels/" + level + "_spawns.xml");
-            levelLights = LightList.Load("content/levels/" + level + "_lights.xml");
+            levelSpawns = EntityList.Load("Content/levels/" + level + "_spawns.xml");
+            levelLights = LightList.Load("Content/levels/" + level + "_lights.xml");
 
             // load particle textures
             if (particleTextures == null)
@@ -288,7 +288,7 @@ namespace ShipGame
                             "ships/" + shipFile[i]);
 
                     EntityList ShipEnities = EntityList.Load(
-                            "content/ships/" + shipFile[i] + ".xml");
+                            "Content/ships/" + shipFile[i] + ".xml");
 
                     players[i] = new PlayerShip(this, i,
                         ShipModel, ShipEnities, GameOptions.CollisionBoxRadius);
@@ -298,7 +298,7 @@ namespace ShipGame
 
             // create powerups
             EntityList powerups = EntityList.Load(
-                            "content/levels/" + level + "_powerups.xml");
+                            "Content/levels/" + level + "_powerups.xml");
 
             foreach (Entity entity in powerups.Entities)
             {
@@ -394,7 +394,9 @@ namespace ShipGame
         /// </summary>
         public void PlaySound(String soundName)
         {
+#if XNA // Xact
             sound.PlayCue(soundName);
+#endif
         }
 
         /// <summary>
@@ -413,6 +415,7 @@ namespace ShipGame
                         minimumDistance = dist;
                 }
 
+#if XNA // Xact
             // create a new sound instance
             Cue cue = sound.GetCue(soundName);
             cueSounds.Add(cue);
@@ -422,6 +425,7 @@ namespace ShipGame
 
             // play sound 
             cue.Play();
+#endif
         }
 
         /// <summary>
@@ -1229,11 +1233,11 @@ namespace ShipGame
 
                             // get light effect parameters
                             EffectParameter effectLightPosition =
-                                                effect.Parameters[1];
+                                                effect.Parameters["LightPosition"];
                             EffectParameter effectLightColor =
-                                                effect.Parameters[2];
+                                                effect.Parameters["LightColor"];
                             EffectParameter effectLightAmbient =
-                                                effect.Parameters[3];
+                                                effect.Parameters["LightAmbient"];
 
                             // ambient light
                             Vector3 ambient = lights.ambient;
