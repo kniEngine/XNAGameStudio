@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <ProjectGuid>{928098D6-C9F4-4A5C-8E55-1B6854ED7F6E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Primitives3D</RootNamespace>
+    <AssemblyName>Primitives3D</AssemblyName>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>ANDROID</DefineConstants>
+    <KniPlatform>Android</KniPlatform>
+    <ApplicationId>com.companyname.Primitives3D</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidStoreUncompressedFileExtensions>.m4a</AndroidStoreUncompressedFileExtensions>
+    <PlatformTarget>ARM64</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Primitives3DActivity.cs" />
+    <Compile Include="Primitives3DVRGame.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\Splash.png" />
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <AndroidResource Include="Resources\Values\Styles.xml" />
+    <Folder Include="Resources\Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <KniContentReference Include="..\Primitives3DContent\Primitives3DContent.mgcb">
+      <Link>Content\Primitives3DContent.mgcb</Link>
+    </KniContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.14.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\kni\Platforms\Kni.Platform.Oculus.GL.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Audio\Xna.Framework.Audio.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Content\Xna.Framework.Content.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Devices\Xna.Framework.Devices.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Game\Xna.Framework.Game.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Graphics\Xna.Framework.Graphics.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Input\Xna.Framework.Input.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Media\XNA.Framework.Media.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Storage\Xna.Framework.Storage.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.XR\Xna.Framework.XR.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework\Xna.Framework.csproj" />
+  </ItemGroup>
+  <Import Project="..\Primitives3D\Primitives3D.projitems" Label="Shared" />
+
+</Project>

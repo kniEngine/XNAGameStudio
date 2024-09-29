@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Primitives3D.Primitives3D" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<!-- Tell the system this app requires OpenGL ES 3.1. -->
+	<uses-feature android:glEsVersion="0x00030001" android:required="true" />
+	<uses-feature android:name="android.hardware.vr.headtracking" android:required="true" />
+    <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" />
+    
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="com.android.vending.BILLING" />
+	<application android:icon="@drawable/icon" >
+	    <meta-data android:name="com.oculus.vr.focusaware" android:value="true"/>
+	</application>
+</manifest>
