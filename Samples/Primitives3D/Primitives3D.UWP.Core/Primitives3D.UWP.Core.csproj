@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -18,9 +17,7 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    
     <PackageCertificateKeyFile>Primitives3D_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
     <KniPlatform>WindowsStoreApp</KniPlatform>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
@@ -118,7 +115,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <KniContentReference Include="..\Primitives3DContent\Primitives3DContent.mgcb">   
+    <KniContentReference Include="..\Primitives3DContent\Primitives3DContent.mgcb">
       <Link>Content\Primitives3DContent.mgcb</Link>
     </KniContentReference>
   </ItemGroup>
@@ -126,23 +123,20 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
-    <PackageReference Include="nkast.Xna.Framework" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Content" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Devices" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Audio" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Media" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Input" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Game" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Storage" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.XR" Version="4.0.9001" />
-    <PackageReference Include="nkast.Kni.Platform.UAP.DX11" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.0.9001" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework\Xna.Framework.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Content\Xna.Framework.Content.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Graphics\Xna.Framework.Graphics.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Audio\Xna.Framework.Audio.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Media\XNA.Framework.Media.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Input\Xna.Framework.Input.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Game\Xna.Framework.Game.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Devices\Xna.Framework.Devices.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\Platforms\XNA.Framework.UAP.csproj" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.1.9001" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="..\Primitives3D\Primitives3D.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-
 </Project>
