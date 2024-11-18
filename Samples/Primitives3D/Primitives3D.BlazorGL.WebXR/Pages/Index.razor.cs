@@ -24,7 +24,7 @@ namespace Primitives3D.Pages
             // init game
             if (_game == null)
             {
-                _game = new Primitives3DGame();
+                _game = new Primitives3DVRGame();
                 _game.Run();
             }
 
