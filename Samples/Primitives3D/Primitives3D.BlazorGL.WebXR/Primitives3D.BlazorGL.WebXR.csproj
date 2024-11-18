@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Compile Include="Pages\Index.razor.cs" />
+    <Compile Include="Primitives3DVRGame.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
 
