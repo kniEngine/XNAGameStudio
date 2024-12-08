@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Oculus;
+using Microsoft.Xna.Framework.XR;
 
 #endregion
 
@@ -29,7 +30,7 @@ namespace Primitives3D
 
         GraphicsDeviceManager graphics;
 
-        OvrDevice ovrDevice;
+        XRDevice ovrDevice;
         BasicEffect spriteBatchEffect;
 
         SpriteBatch spriteBatch;
@@ -90,7 +91,7 @@ namespace Primitives3D
             graphics.GraphicsProfile = GraphicsProfile.FL11_0;
 
             // create oculus device
-            ovrDevice = new OvrDevice(graphics);
+            ovrDevice = new XRDevice("Primitives3DVR", this.Services);
         }
 
 
@@ -130,7 +131,7 @@ namespace Primitives3D
         /// </summary>
         protected override void Update(GameTime gameTime)
         {
-            if (!ovrDevice.IsConnected)
+            if (ovrDevice.State == XRDeviceState.Disabled)
             {
                 try
                 {
@@ -163,7 +164,7 @@ namespace Primitives3D
             Matrix view = Matrix.CreateLookAt(cameraPosition, Vector3.Zero, Vector3.Up);
             Matrix projection = Matrix.CreatePerspectiveFieldOfView(1, aspect, 1, 10);
 
-            if (ovrDevice.IsConnected)
+            if (ovrDevice.State == XRDeviceState.Ready)
             {
                 // draw on VR headset
                 int ovrResult = ovrDevice.BeginFrame();
@@ -172,7 +173,7 @@ namespace Primitives3D
                     var headsetState = ovrDevice.GetHeadsetState();
 
                     // draw each eye on a rendertarget
-                    for (int eye = 0; eye < 2; eye++)
+                    foreach (XREye eye in ovrDevice.GetEyes())
                     {
                         RenderTarget2D rt = ovrDevice.GetEyeRenderTarget(eye);
                         GraphicsDevice.SetRenderTarget(rt);
@@ -202,12 +203,12 @@ namespace Primitives3D
                     // preview VR rendertargets
                     var pp = GraphicsDevice.PresentationParameters;
                     int height = pp.BackBufferHeight;
-                    float aspectRatio = (float)ovrDevice.GetEyeRenderTarget(0).Width / ovrDevice.GetEyeRenderTarget(0).Height;
+                    float aspectRatio = (float)ovrDevice.GetEyeRenderTarget(XREye.Left).Width / ovrDevice.GetEyeRenderTarget(XREye.Left).Height;
 
                     int width = Math.Min(pp.BackBufferWidth, (int)(height * aspectRatio));
                     spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
-                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(0), new Rectangle(0, 0, width, height), Color.White);
-                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(1), new Rectangle(width, 0, width, height), Color.White);
+                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(XREye.Left), new Rectangle(0, 0, width, height), Color.White);
+                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(XREye.Right), new Rectangle(width, 0, width, height), Color.White);
                     spriteBatch.End();
 
                     return;
