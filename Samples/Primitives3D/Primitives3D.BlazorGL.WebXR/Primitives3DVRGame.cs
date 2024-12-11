@@ -11,10 +11,12 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.XR;
 using Microsoft.Xna.Framework.Input.Touch;
+using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.XR;
 
 #endregion
@@ -36,36 +38,41 @@ namespace Primitives3D
 
         SpriteBatch spriteBatch;
         SpriteFont spriteFont;
+        SoundEffect sfxXPlowed;
+        Song songChristmasTime;
 
         KeyboardState currentKeyboardState;
         KeyboardState lastKeyboardState;
         GamePadState currentGamePadState;
         GamePadState lastGamePadState;
+        MouseState currentMouseState;
+        MouseState lastMouseState;
+        TouchCollection currentTouchState;
         GamePadState currentTouchControllerState;
         GamePadState lastTouchControllerState;
 
-        // Store a list of primitive models, plus which one is currently selected.
-        List<GeometricPrimitive> primitives = new List<GeometricPrimitive>();
+        private CubePrimitive _cubePrimitive;
+        private SpherePrimitive _spherePrimitive;
+        private CylinderPrimitive _cylinderPrimitive;
+        private TorusPrimitive _torusPrimitive;
+        private TeapotPrimitive _teapotPrimitive;
 
-        int currentPrimitiveIndex = 0;
+#if DEBUG
+        const int _ballCount = 4;
+#else
+        const int _ballCount = 20;
+#endif
+        List<Ball> _balls;
 
-        // store a wireframe rasterize state
-        RasterizerState wireFrameState;
+        BoundingBox bounds;
+        Vector3 boundsExt;
 
-        // Store a list of tint colors, plus which one is currently selected.
-        List<Color> colors = new List<Color>
-        {
-            Color.Red,
-            Color.Green,
-            Color.Blue,
-            Color.White,
-            Color.Black,
-        };
+        List<Xplosion> _xplosions;
 
-        int currentColorIndex = 0;
+        const int initTries = 4;
+        int _tries;
 
-        // Are we rendering in wireframe mode?
-        bool isWireframe;
+        string txtMotivation = "";
 
 
         #endregion
@@ -91,7 +98,6 @@ namespace Primitives3D
 
             graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
-            // create xr device
             xrDevice = new XRDevice("Primitives3DXR", this);
         }
 
@@ -103,21 +109,18 @@ namespace Primitives3D
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
             spriteFont = Content.Load<SpriteFont>("hudFont");
+            sfxXPlowed = Content.Load<SoundEffect>("GemCollected");
+            songChristmasTime = Content.Load<Song>("ChristmasTime");
+
             spriteBatchEffect = new BasicEffect(GraphicsDevice);
             spriteBatchEffect.TextureEnabled = true;
             spriteBatchEffect.VertexColorEnabled = true;
 
-            primitives.Add(new CubePrimitive(GraphicsDevice));
-            primitives.Add(new SpherePrimitive(GraphicsDevice));
-            primitives.Add(new CylinderPrimitive(GraphicsDevice));
-            primitives.Add(new TorusPrimitive(GraphicsDevice));
-            primitives.Add(new TeapotPrimitive(GraphicsDevice));
-
-            wireFrameState = new RasterizerState()
-            {
-                FillMode = FillMode.WireFrame,
-                CullMode = CullMode.None,
-            };
+            _cubePrimitive = new CubePrimitive(GraphicsDevice);
+            _spherePrimitive = new SpherePrimitive(GraphicsDevice);
+            _cylinderPrimitive = new CylinderPrimitive(GraphicsDevice);
+            _torusPrimitive = new TorusPrimitive(GraphicsDevice);
+            _teapotPrimitive = new TeapotPrimitive(GraphicsDevice);
 
         }
 
@@ -132,23 +135,44 @@ namespace Primitives3D
         /// </summary>
         protected override void Update(GameTime gameTime)
         {
-            var ms = Mouse.GetState();
-            var ts = TouchPanel.GetState();
-            TouchLocation tl = default;
-            if (ts.Count > 0)
-                tl = ts[0];
+            HandleInput();
 
-            if (ms.LeftButton == ButtonState.Pressed
-            ||  tl.State == TouchLocationState.Pressed)
+            TouchLocation tl = default;
+            if (currentTouchState.Count > 0)
+                tl = currentTouchState[0];
+
+            // Create XR Device
+            if (xrDevice.DeviceState == XRDeviceState.Disabled
+            ||  xrDevice.DeviceState == XRDeviceState.NoPermissions)
             {
-                if (xrDevice.DeviceState == XRDeviceState.Disabled
-                ||  xrDevice.DeviceState == XRDeviceState.NoPermissions)
+                Viewport vp = GraphicsDevice.Viewport;
+                float vw = vp.Width;
+                float vh = vp.Height;
+                float hvw = vw / 2f;
+
+                // select mode
+                XRSessionMode mode = default(XRSessionMode);
+                if (currentMouseState.LeftButton == ButtonState.Pressed)
+                {
+                    if (currentMouseState.X < hvw)
+                        mode = XRSessionMode.VR;
+                    else
+                        mode = XRSessionMode.AR;
+                }
+                if (tl.State == TouchLocationState.Pressed
+                ||  tl.State == TouchLocationState.Moved)
+                {
+                    if (tl.Position.X < hvw)
+                        mode = XRSessionMode.VR;
+                    else
+                        mode = XRSessionMode.AR;
+                }
+
+                if (mode != default(XRSessionMode))
                 {
                     try
                     {
-                        // Initialize Oculus VR
-                        int ovrCreateResult = xrDevice.BeginSessionAsync();
-
+                        xrDevice.BeginSessionAsync(mode);
                     }
                     catch (Exception ovre)
                     {
@@ -157,11 +181,136 @@ namespace Primitives3D
                 }
             }
 
-            HandleInput();
+            // create balls
+            if (_balls == null)
+                InitStage();
+
+            TimeSpan scaledElapsedGameTime = gameTime.ElapsedGameTime;
+            scaledElapsedGameTime = scaledElapsedGameTime * timescale;
+
+            // move balls
+            for (int b = _balls.Count - 1; b >= 0; b--)
+            {
+                _balls[b].Update(scaledElapsedGameTime, ref this.bounds);
+            }
+
+            // update _xplosions factor
+            for (int x = _xplosions.Count - 1; x >= 0; x--)
+            {
+                _xplosions[x].Update(scaledElapsedGameTime);
+                if (_xplosions[x]._factor >= 1f)
+                    _xplosions.RemoveAt(x);
+            }
+
+            // chain _xplosions
+            int initialXplosionsCount = _xplosions.Count;
+            for (int x = _xplosions.Count - 1; x >= 0; x--)
+            {
+                for (int b = _balls.Count - 1; b >= 0; b--)
+                {
+                    bool intersects = _xplosions[x]._boundingSphere.Intersects(_balls[b]._boundingSphere);
+                    if (intersects)
+                    {
+                        XplodeBall(b);
+                    }
+                }
+            }
+
+            if (_tries > 0)
+            {
+                if (_tries >= _balls.Count)
+                    txtMotivation = "You got this!          ";
+                else if (_tries == _balls.Count - 1)
+                    txtMotivation = "Make it happen!        ";
+                else if (_tries == 1 && _balls.Count == 3)
+                    txtMotivation = "Focus!                 ";
+            }
+
+            if (_xplosions.Count == 0) // wait for explosions
+            {
+                if (_balls.Count == 0)
+                {
+                    txtMotivation = "You Won!               ";
+                        InitStage();
+                }
+                else
+                {
+                    if (_tries == 0)
+                    {
+                        txtMotivation = "You Lost!              ";
+                        InitStage();
+                    }
+                }
+            }
 
             base.Update(gameTime);
         }
 
+        private void InitStage()
+        {
+            _tries = initTries;
+            txtMotivation = DaysUntilChristmas() + " days until Christmas!";
+
+            bounds = new BoundingBox(
+                new Vector3(-0.5f, -0.5f, -1.5f),
+                new Vector3(+0.5f, +0.5f, -0.5f)
+                );
+            boundsExt = bounds.Max - bounds.Min;
+
+            Random rnd = new Random();
+
+            _xplosions = new List<Xplosion>();
+            _balls = new List<Ball>(_ballCount);
+            for (int b = 0; b < _ballCount; b++)
+            {
+                Vector3 pos = bounds.Min
+                    + new Vector3(
+                           boundsExt.X * rnd.NextSingle(),
+                           boundsExt.Y * rnd.NextSingle(),
+                           boundsExt.Z * rnd.NextSingle()
+                    );
+
+                Vector3 dir = new Vector3(
+                           (rnd.NextSingle() - 0.5f),
+                           (rnd.NextSingle() - 0.5f),
+                           (rnd.NextSingle() - 0.5f)
+                           );
+                if (dir == Vector3.Zero) // no luck!
+                    dir = Vector3.One;
+                dir.Normalize();
+                float vel = MathHelper.Lerp(0.125f, 0.275f, rnd.NextSingle());
+
+                Ball ball = new Ball(
+                    _spherePrimitive, _cylinderPrimitive,
+                    pos
+                    );
+                ball.dir = dir;
+                ball.vel = vel;
+                
+                ball._inityaw= rnd.NextSingle();
+                ball._initpitch= rnd.NextSingle();
+                ball._initroll= rnd.NextSingle();
+
+                _balls.Add(ball);
+            }
+        }
+
+        private void XplodeBall(int ballIndex)
+        {
+            sfxXPlowed.Play();
+
+            Ball ball = _balls[ballIndex];
+            _balls.RemoveAt(ballIndex);
+
+            Vector3 pos = ball._boundingSphere.Center;
+            float radius = ball._boundingSphere.Radius;
+            Xplosion xplosion = new Xplosion(
+                _spherePrimitive,
+                pos, radius
+            );
+
+            _xplosions.Add(xplosion);
+        }
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -175,6 +324,13 @@ namespace Primitives3D
 
             if (xrDevice.DeviceState == XRDeviceState.Enabled)
             {
+                if (MediaPlayer.State != MediaState.Playing)
+                {
+                    MediaPlayer.Volume = 0.3f; // background loop
+                    MediaPlayer.IsRepeating = true;
+                    MediaPlayer.Play(songChristmasTime);
+                }
+
                 // draw on VR headset
                 int ovrResult = xrDevice.BeginFrame();
                 if (ovrResult >= 0)
@@ -198,7 +354,7 @@ namespace Primitives3D
                         view = Matrix.Invert(globalWorld) * view;
 
                         DrawScene(gameTime, view, projection);
-                        DrawGroundAndControllers(gameTime, view, projection);
+                        DrawGroundAndControllers(view, projection);
 
                         // Resolve eye rendertarget
                         GraphicsDevice.SetRenderTarget(null);
@@ -212,11 +368,37 @@ namespace Primitives3D
                     return;
                 }
             }
+            else
+            {
+                // draw on backbuffer
+                GraphicsDevice.SetRenderTarget(null);
+                DrawXREntry();
+                //DrawScene(gameTime, view, projection);
+            }
+        }
 
-            // draw on PC screen
-            GraphicsDevice.SetRenderTarget(null);
+        private void DrawXREntry()
+        {
+            Viewport vp = GraphicsDevice.Viewport;
+            float vw = vp.Width;
+            float vh = vp.Height;
+            float hvw = vw / 2f;
 
-            DrawScene(gameTime, view, projection);
+            var vrtxt = "Hold to enter VR";
+            var artxt = "Hold to enter AR";
+
+            Vector2 vrsize = spriteFont.MeasureString(vrtxt);
+            Vector2 arsize = spriteFont.MeasureString(artxt);
+
+            spriteBatch.Begin();
+            spriteBatch.DrawString(spriteFont, vrtxt,
+                new Vector2(hvw / 2f - vrsize.X / 2f, vh / 2f - vrsize.Y / 2f),
+                Color.White);
+            spriteBatch.DrawString(spriteFont, artxt,
+                new Vector2(hvw + hvw / 2f -arsize.X / 2f, vh / 2f - arsize.Y / 2f),
+                Color.White);
+            spriteBatch.End();
+
         }
 
         private void DrawScene(GameTime gameTime, Matrix view, Matrix projection)
@@ -224,38 +406,48 @@ namespace Primitives3D
             if (xrDevice.SessionMode == XRSessionMode.AR)
                 GraphicsDevice.Clear(Color.Transparent);
             else
-                GraphicsDevice.Clear(Color.CornflowerBlue);
+                GraphicsDevice.Clear(Color.Black);
 
-            GraphicsDevice.RasterizerState = (isWireframe) 
-                                           ? wireFrameState 
-                                           : RasterizerState.CullCounterClockwise;
 
-            // Create camera matrices, making the object spin.
-            float time = (float)gameTime.TotalGameTime.TotalSeconds;
+            DrawText(gameTime, view, projection);
 
-            float yaw = time * 0.4f;
-            float pitch = time * 0.7f;
-            float roll = time * 1.1f;
 
-            Matrix world = Matrix.Identity;
-            world *= Matrix.CreateFromYawPitchRoll(yaw, pitch, roll);
-            world *= Matrix.CreateTranslation(Vector3.Forward*2.5f);
-            //world *= Matrix.CreateTranslation(Vector3.Up * 0.8f);
+            GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
+            GraphicsDevice.BlendState = BlendState.Opaque;
+            for (int b = 0; b < _balls.Count; b++)
+            {
+                _balls[b].Draw(gameTime, view, projection);
+            }
 
-            // Draw the current primitive.
-            GeometricPrimitive currentPrimitive = primitives[currentPrimitiveIndex];
-            Color color = colors[currentColorIndex];
+            GraphicsDevice.BlendState = BlendState.AlphaBlend;
+            for (int x = 0; x < _xplosions.Count; x++)
+            {
+                _xplosions[x].Draw(view, projection);
+            }
 
-            currentPrimitive.Draw(world, view, projection, color);
 
+            // draw any drawable components
+            base.Draw(gameTime);
+        }
+
+        private void DrawText(GameTime gameTime, Matrix view, Matrix projection)
+        {
             // Reset the fill mode renderstate.
             GraphicsDevice.RasterizerState = RasterizerState.CullCounterClockwise;
 
+            Matrix world = Matrix.Identity;
+            world *= Matrix.CreateTranslation(Vector3.Forward * 2.5f);
 
             // Draw billboard text.
-            string text = "A = Change primitive\n" +
-                          "B = Change color\n" +
-                          "Y = Toggle wireframe";
+            string text = String.Empty;
+            text += "Balls: "+ _balls.Count;
+            text += "\n";
+            text += "Tries: " + _tries;
+            text += "\n";
+            text += "\n";
+            text += txtMotivation;
+            text += "\n";
 
             Matrix cameraMtx = Matrix.Invert(view);
             Vector3 objectPosition = world.Translation;
@@ -263,79 +455,138 @@ namespace Primitives3D
                     objectPosition, cameraMtx.Translation, Vector3.UnitY, cameraMtx.Forward, Vector3.Forward);
             spriteBatchEffect.View = view;
             spriteBatchEffect.Projection = projection;
-            spriteBatch.Begin(SpriteSortMode.Deferred,
+            spriteBatch.Begin(SpriteSortMode.Deferred, 
+                depthStencilState: DepthStencilState.Default,
                 effect: spriteBatchEffect);
-            spriteBatch.DrawString(spriteFont, text, new Vector2(-0.40f, 1.0f),
+            spriteBatch.DrawString(spriteFont, text, new Vector2(-1.00f, -0.40f),
             Color.White, 0, Vector2.Zero, 0.005f,
             SpriteEffects.FlipVertically | SpriteEffects.FlipHorizontally, 0);
             spriteBatch.End();
-
-            // draw any drawable components
-            base.Draw(gameTime);
         }
 
-        private void DrawGroundAndControllers(GameTime gameTime, Matrix view, Matrix projection)
+        static int DaysUntilChristmas()
+        {
+            DateTime today = DateTime.Today;
+            DateTime christmas = new DateTime(today.Year, 12, 25);
+            if (today > christmas)
+                christmas = new DateTime(today.Year + 1, 12, 25);
+
+            return (christmas - today).Days;
+        }
+
+        private void DrawGroundAndControllers(Matrix view, Matrix projection)
         {
             // draw ground
-            GeometricPrimitive currentPrimitive = primitives[0];
 
             Matrix world = Matrix.Identity;
             world *= Matrix.CreateScale(2f, 0f,4f);
 
             Color color = Color.DarkGray;
 
-            //currentPrimitive.Draw(world, view, projection, color);
+            //_cubePrimitive.Draw(world, view, projection, color);
 
             // draw controllers
             HandsState handsState = xrDevice.GetHandsState();
 
-            GamePadState ltc = TouchController.GetState(TouchControllerType.LTouch);
-            Matrix lp = handsState.GetHandTransform(0);
-            Matrix lg = handsState.GetGripTransform(0);
+            int explodeNum = -1;
 
+            GamePadState ltc = TouchController.GetState(TouchControllerType.LTouch);
             if (ltc.IsConnected)
             {
-                color = Color.Gainsboro;
-                DrawController(view, projection, color, lp, lg);
+                Matrix lp = handsState.GetHandTransform(0);
+                DrawController(view, projection, lp, lvibe);
+                HandleControllerTrigger(ltc, lp, ref explodeNum);
             }
 
             GamePadState rtc = TouchController.GetState(TouchControllerType.RTouch);
-            Matrix rp = handsState.GetHandTransform(1);
-            Matrix rg = handsState.GetGripTransform(1);
-
             if (rtc.IsConnected)
             {
-                color = Color.Yellow;
-                DrawController(view, projection, color, rp, rg);
+                Matrix rp = handsState.GetHandTransform(1);
+                DrawController(view, projection, rp, rvibe);
+                HandleControllerTrigger(rtc, rp, ref explodeNum);
             }
 
-            GamePadCapabilities lcap = TouchController.GetCapabilities(TouchControllerType.LTouch);
-            GamePadCapabilities rcap = TouchController.GetCapabilities(TouchControllerType.RTouch);
-            GamePadCapabilities  cap = TouchController.GetCapabilities(TouchControllerType.Touch);
+            if (explodeNum != -1)
+            {
+                _tries--;
+                XplodeBall(explodeNum);
+            }
 
             return;
         }
 
-        private void DrawController(Matrix view, Matrix projection, Color color, Matrix pworld, Matrix gworld)
+        private void HandleControllerTrigger(GamePadState tc, Matrix rp, ref int explodeNum)
         {
-            GeometricPrimitive currentPrimitive = primitives[2];
+            Matrix bb = Matrix.Identity;
+            bb *= Matrix.CreateTranslation(0f, 0f, -0.2f);
+            bb *= rp;
+            BoundingSphere bs = new BoundingSphere(
+                 bb.Translation,
+                 0.01f // 0.025f
+                );
 
+            // test
+            //_balls[_ballCount - 1]._boundingSphere = bs;
+            //_balls[_ballCount - 1].Draw(new GameTime(), view, projection);
+
+            int intersectNum = -1;
+            for (int b = 0; b < _balls.Count; b++)
+            {
+                bool intersects = _balls[b]._boundingSphere.Intersects(bs);
+                if (intersects)
+                {
+                    _balls[b]._color = Color.Purple;
+                    intersectNum = b;
+                }
+                else
+                    _balls[b]._color = Color.Red;
+            }
+
+            if (_tries > 0 && intersectNum != -1)
+            {
+                if (tc.IsButtonDown(Buttons.A)
+                ||  tc.IsButtonDown(Buttons.B)
+                ||  tc.IsButtonDown(Buttons.X)
+                ||  tc.IsButtonDown(Buttons.Y)
+                ||  tc.IsButtonDown(Buttons.LeftTrigger)
+                ||  tc.IsButtonDown(Buttons.RightTrigger)
+                )
+                {
+                    // explode
+                    explodeNum = intersectNum;
+                }
+            }
+        }
+
+        private void DrawController(Matrix view, Matrix projection, Matrix pworld, float vibe)
+        {
             Matrix world;
 
             world = Matrix.Identity;
-            world *= Matrix.CreateRotationX(MathHelper.Tau / 4);
-            world *= Matrix.CreateScale(new Vector3(1f, 1f, 8f) * 0.01f);
+            world *= Matrix.CreateRotationX(-MathHelper.Tau / 4f);
+            world *= Matrix.CreateScale(new Vector3(0.01f, 0.01f, 0.08f));
             world *= pworld;
-            currentPrimitive.Draw(world, view, projection, color);
+            _cylinderPrimitive.Draw(world, view, projection, Color.DarkGreen);
 
             world = Matrix.Identity;
-            world *= Matrix.CreateRotationX(MathHelper.Tau / 4);
-            world *= Matrix.CreateScale(new Vector3(1f, 1f, 2f) * 0.03f);
-            world *= gworld;
-            currentPrimitive.Draw(world, view, projection, color);
+            world *= Matrix.CreateTranslation(0.0f, 0.5f, 0.0f);
+            world *= Matrix.CreateRotationX(-MathHelper.Tau / 4f);
+            world *= Matrix.CreateScale(new Vector3(0.01f, 0.01f, 0.2f - 0.01f));
+            world *= pworld;
+            _cylinderPrimitive.Draw(world, view, projection, Color.DarkGreen);
+
+            Color color = Color.Lerp(Color.Purple, Color.CornflowerBlue, vibe);
+
+            world = Matrix.Identity;
+            world *= Matrix.CreateRotationX(MathHelper.Tau / 8f);
+            world *= Matrix.CreateRotationY(MathHelper.Tau / 8f);
+            world *= Matrix.CreateScale(new Vector3(0.01f, 0.01f, 0.01f + (0.005f * vibe)));
+            world *= Matrix.CreateTranslation(0.0f, 0.0f, -0.2f);
+            world *= pworld;
+            _cubePrimitive.Draw(world, view, projection, color);
         }
 
-        #endregion
+#endregion
 
         #region Handle Input
 
@@ -349,10 +600,13 @@ namespace Primitives3D
         {
             lastKeyboardState = currentKeyboardState;
             lastGamePadState = currentGamePadState;
+            lastMouseState = currentMouseState;
             lastTouchControllerState = currentTouchControllerState;
 
             currentKeyboardState = Keyboard.GetState();
             currentGamePadState = GamePad.GetState(PlayerIndex.One);
+            currentMouseState = Mouse.GetState();
+            currentTouchState = TouchPanel.GetState();
             currentTouchControllerState = TouchController.GetState(TouchControllerType.Touch);
 
             // Check for exit.
@@ -362,6 +616,23 @@ namespace Primitives3D
                 catch (PlatformNotSupportedException) { /* ignore exit */ }
             }
 
+            float maxThumpY = 0;
+            maxThumpY = MathHelper.Max(maxThumpY, currentTouchControllerState.ThumbSticks.Left.Y);
+            maxThumpY = MathHelper.Max(maxThumpY, currentTouchControllerState.ThumbSticks.Right.Y);
+            float minThumpY = 0;
+            minThumpY = MathHelper.Min(minThumpY, currentTouchControllerState.ThumbSticks.Left.Y);
+            minThumpY = MathHelper.Min(minThumpY, currentTouchControllerState.ThumbSticks.Right.Y);
+
+            if (Math.Abs(maxThumpY) > Math.Abs(minThumpY))
+            {
+                timescale = 1f + maxThumpY * 3; // minThumpY [0, +1]
+            }
+            else
+            {
+                timescale = 1f + minThumpY * 0.75f; // minThumpY [-1, 0]
+            }
+            
+
             lvibe *= 0.85f;
             rvibe *= 0.85f;
             if (lvibe <= 0.1f) lvibe = 0;
@@ -369,45 +640,38 @@ namespace Primitives3D
 
             // Change primitive?
             if (IsPressed(Keys.A, Buttons.A))
-            {
-                currentPrimitiveIndex = (currentPrimitiveIndex + 1) % primitives.Count;
                 rvibe = 1f;
-            }
-
-            // Change color?
             if (IsPressed(Keys.B, Buttons.B))
-            {
-                currentColorIndex = (currentColorIndex + 1) % colors.Count;
                 rvibe = 1f;
-            }
-
             if (IsPressed(Keys.X, Buttons.X))
-            {
                 lvibe = 1f;
-            }
-
-            // Toggle wireframe?
             if (IsPressed(Keys.Y, Buttons.Y))
-            {
-                isWireframe = !isWireframe;
                 lvibe = 1f;
-            }
+            if (IsPressed(Keys.X, Buttons.LeftTrigger))
+                lvibe = 1f;
+            if (IsPressed(Keys.Y, Buttons.RightTrigger))
+                rvibe = 1f;
+            if (IsPressed(Keys.X, Buttons.LeftGrip))
+                lvibe = 1f;
+            if (IsPressed(Keys.Y, Buttons.RightGrip))
+                rvibe = 1f;
+
 
             TouchController.SetVibration(TouchControllerType.LTouch, lvibe);
             TouchController.SetVibration(TouchControllerType.RTouch, rvibe);
         }
+
+        float timescale = 1f;
 
         /// <summary>
         /// Checks whether the specified key or button has been pressed.
         /// </summary>
         bool IsPressed(Keys key, Buttons button)
         {
-            return (currentKeyboardState.IsKeyDown(key) &&
-                    lastKeyboardState.IsKeyUp(key)) ||
-                   (currentGamePadState.IsButtonDown(button) &&
-                    lastGamePadState.IsButtonUp(button)) ||
-                   (currentTouchControllerState.IsButtonDown(button) &&
-                    !lastTouchControllerState.IsButtonDown(button));
+            return (currentKeyboardState.IsKeyDown(key) && lastKeyboardState.IsKeyUp(key))
+                || (currentGamePadState.IsButtonDown(button) && lastGamePadState.IsButtonUp(button))
+                || (currentTouchControllerState.IsButtonDown(button) && !lastTouchControllerState.IsButtonDown(button)
+                );
         }
 
         #endregion

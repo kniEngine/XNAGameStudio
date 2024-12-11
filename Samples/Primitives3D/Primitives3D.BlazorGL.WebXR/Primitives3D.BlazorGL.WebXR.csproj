@@ -24,9 +24,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Ball.cs" />
     <Compile Include="Pages\Index.razor.cs" />
     <Compile Include="Primitives3DVRGame.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Xplosion.cs" />
   </ItemGroup>
 
   <ItemGroup>
