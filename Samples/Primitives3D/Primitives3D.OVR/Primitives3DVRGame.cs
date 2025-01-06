@@ -13,7 +13,8 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Input.Oculus;
+using Microsoft.Xna.Framework.Input.XR;
+using Microsoft.Xna.Framework.XR;
 
 #endregion
 
@@ -29,7 +30,7 @@ namespace Primitives3D
 
         GraphicsDeviceManager graphics;
 
-        OvrDevice ovrDevice;
+        XRDevice xrDevice;
         BasicEffect spriteBatchEffect;
 
         SpriteBatch spriteBatch;
@@ -39,8 +40,8 @@ namespace Primitives3D
         KeyboardState lastKeyboardState;
         GamePadState currentGamePadState;
         GamePadState lastGamePadState;
-        TouchControllerState currentTouchControllerState;
-        TouchControllerState lastTouchControllerState;
+        GamePadState currentTouchControllerState;
+        GamePadState lastTouchControllerState;
         HandsState handsState;
 
         // Store a list of primitive models, plus which one is currently selected.
@@ -90,7 +91,7 @@ namespace Primitives3D
             graphics.GraphicsProfile = GraphicsProfile.FL11_0;
 
             // create oculus device
-            ovrDevice = new OvrDevice(graphics);
+            xrDevice = new XRDevice("Primitives3dXR", this.Services);
         }
 
 
@@ -130,16 +131,12 @@ namespace Primitives3D
         /// </summary>
         protected override void Update(GameTime gameTime)
         {
-            if (!ovrDevice.IsConnected)
+            if (xrDevice.DeviceState != XRDeviceState.Enabled)
             {
                 try
                 {
                     // Initialize Oculus VR
-                    int ovrCreateResult = ovrDevice.CreateDevice();
-                    if (ovrCreateResult == 0)
-                    {
-
-                    }
+                    int ovrCreateResult = xrDevice.BeginSessionAsync();
                 }
                 catch (Exception ovre)
                 {
@@ -163,23 +160,23 @@ namespace Primitives3D
             Matrix view = Matrix.CreateLookAt(cameraPosition, Vector3.Zero, Vector3.Up);
             Matrix projection = Matrix.CreatePerspectiveFieldOfView(1, aspect, 1, 10);
 
-            if (ovrDevice.IsConnected)
+            if (xrDevice.DeviceState == XRDeviceState.Enabled)
             {
                 // draw on VR headset
-                int ovrResult = ovrDevice.BeginFrame();
+                int ovrResult = xrDevice.BeginFrame();
                 if (ovrResult >= 0)
                 {
-                    var headsetState = ovrDevice.GetHeadsetState();
+                    HeadsetState headsetState = xrDevice.GetHeadsetState();
 
                     // draw each eye on a rendertarget
-                    for (int eye = 0; eye < 2; eye++)
+                    foreach (XREye eye in xrDevice.GetEyes())
                     {
-                        RenderTarget2D rt = ovrDevice.GetEyeRenderTarget(eye);
+                        RenderTarget2D rt = xrDevice.GetEyeRenderTarget(eye);
                         GraphicsDevice.SetRenderTarget(rt);
 
                         // VR eye view and projection
                         view = headsetState.GetEyeView(eye);
-                        projection = ovrDevice.CreateProjection(eye, 0.05f, 10);
+                        projection = xrDevice.CreateProjection(eye, 0.05f, 10);
 
                         Matrix globalWorld = Matrix.CreateWorld(cameraPosition, Vector3.Forward, Vector3.Up);
                         view = Matrix.Invert(globalWorld) * view;
@@ -189,11 +186,11 @@ namespace Primitives3D
                         // Resolve eye rendertarget
                         GraphicsDevice.SetRenderTarget(null);
                         // submit eye rendertarget
-                        ovrDevice.CommitRenderTarget(eye, rt);
+                        xrDevice.CommitRenderTarget(eye, rt);
                     }
 
                     // submit frame
-                    int result = ovrDevice.EndFrame();
+                    int result = xrDevice.EndFrame();
 
                     // draw on PC screen
                     GraphicsDevice.SetRenderTarget(null);
@@ -202,12 +199,12 @@ namespace Primitives3D
                     // preview VR rendertargets
                     var pp = GraphicsDevice.PresentationParameters;
                     int height = pp.BackBufferHeight;
-                    float aspectRatio = (float)ovrDevice.GetEyeRenderTarget(0).Width / ovrDevice.GetEyeRenderTarget(0).Height;
+                    float aspectRatio = (float)xrDevice.GetEyeRenderTarget(0).Width / xrDevice.GetEyeRenderTarget(0).Height;
 
                     int width = Math.Min(pp.BackBufferWidth, (int)(height * aspectRatio));
                     spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
-                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(0), new Rectangle(0, 0, width, height), Color.White);
-                    spriteBatch.Draw(ovrDevice.GetEyeRenderTarget(1), new Rectangle(width, 0, width, height), Color.White);
+                    spriteBatch.Draw(xrDevice.GetEyeRenderTarget(XREye.Left), new Rectangle(0, 0, width, height), Color.White);
+                    spriteBatch.Draw(xrDevice.GetEyeRenderTarget(XREye.Right), new Rectangle(width, 0, width, height), Color.White);
                     spriteBatch.End();
 
                     return;
@@ -288,7 +285,7 @@ namespace Primitives3D
             currentGamePadState = GamePad.GetState(PlayerIndex.One);
             currentTouchControllerState = TouchController.GetState(TouchControllerType.Touch);
             //if (ovrDevice.IsConnected)
-                handsState = ovrDevice.GetHandsState();
+                handsState = xrDevice.GetHandsState();
 
             // Check for exit.
             if (IsPressed(Keys.Escape, Buttons.Back))
@@ -325,8 +322,8 @@ namespace Primitives3D
                     lastKeyboardState.IsKeyUp(key)) ||
                    (currentGamePadState.IsButtonDown(button) &&
                     lastGamePadState.IsButtonUp(button)) ||
-                   (currentTouchControllerState.IsButtonPressed(button) &&
-                    !lastTouchControllerState.IsButtonPressed(button));
+                   (currentTouchControllerState.IsButtonDown(button) &&
+                    !lastTouchControllerState.IsButtonDown(button));
         }
 
         #endregion
