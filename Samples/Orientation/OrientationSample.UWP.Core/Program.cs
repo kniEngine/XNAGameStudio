@@ -12,7 +12,7 @@ namespace OrientationSample
         /// </summary>
         static void Main()
         {
-            var factory = new MonoGame.Framework.GameFrameworkViewSource<OrientationSample>();
+            var factory = new Microsoft.Xna.Platform.GameFrameworkViewSource<OrientationSample>();
             Windows.ApplicationModel.Core.CoreApplication.Run(factory);
         }
     }

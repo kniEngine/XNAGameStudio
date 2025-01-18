@@ -19,7 +19,7 @@ namespace OrientationSample
 
 			// Create the game.
 			var launchArguments = string.Empty;
-            _game = MonoGame.Framework.XamlGame<OrientationSample>.Create(launchArguments, Window.Current.CoreWindow, swapChainPanel);
+            _game = Microsoft.Xna.Platform.XamlGame<OrientationSample>.Create(launchArguments, Window.Current.CoreWindow, swapChainPanel);
         }
     }
 }
