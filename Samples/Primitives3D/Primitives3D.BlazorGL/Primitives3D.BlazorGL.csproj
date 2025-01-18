@@ -29,18 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="nkast.Xna.Framework" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Content" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Devices" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Audio" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Media" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Input" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Game" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.Storage" Version="4.0.9001" />
-    <PackageReference Include="nkast.Xna.Framework.XR" Version="4.0.9001" />
-    <PackageReference Include="nkast.Kni.Platform.Blazor.GL" Version="4.0.9001.*" />
-    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.0.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.1.9001" />
   </ItemGroup>
 	
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
@@ -56,6 +45,20 @@
     <KniContentReference Include="..\Primitives3DContent\Primitives3DContent.mgcb">   
       <Link>Content\Primitives3DContent.mgcb</Link>
     </KniContentReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\kni\Platforms\Kni.Platform.Blazor.GL.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Audio\Xna.Framework.Audio.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Content\Xna.Framework.Content.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Devices\Xna.Framework.Devices.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Game\Xna.Framework.Game.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Graphics\Xna.Framework.Graphics.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Input\Xna.Framework.Input.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Media\XNA.Framework.Media.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.Storage\Xna.Framework.Storage.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework.XR\Xna.Framework.XR.csproj" />
+    <ProjectReference Include="..\..\..\..\kni\src\Xna.Framework\Xna.Framework.csproj" />
   </ItemGroup>
   <Import Project="..\Primitives3D\Primitives3D.projitems" Label="Shared" />
 
