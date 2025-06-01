@@ -55,6 +55,7 @@ namespace MicrophoneEchoSample
 
         // The most recent microphone samples.
         byte[] micSamples;
+        int lenSamples;
         // A circular buffer that we feedback into from micSamples
         byte[] echoBuffer;
         // Tracks the position into the echo buffer.
@@ -385,7 +386,7 @@ namespace MicrophoneEchoSample
             try
             {
                 // Copy the captured audio data into the pre-allocated array.
-                activeMicrophone.GetData(micSamples, 0, micSamples.Length);
+                lenSamples = activeMicrophone.GetData(micSamples, 0, micSamples.Length);
                 ProcessEcho();
             }
             catch (NoMicrophoneConnectedException)
@@ -403,7 +404,7 @@ namespace MicrophoneEchoSample
         /// </summary>
         private void ProcessEcho()
         {
-            for (int index = 0; index < micSamples.Length; index += sizeof(short))
+            for (int index = 0; index < lenSamples; index += sizeof(short))
             {
                 short micSample = ReadSample(micSamples, index);
                 short echoSample = ReadSample(echoBuffer, echoBufferPosition);
