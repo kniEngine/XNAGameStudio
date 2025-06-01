@@ -98,6 +98,7 @@ namespace InstancedModelSample
             IsFixedTimeStep = false;
 
             graphics.SynchronizeWithVerticalRetrace = false;
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
             // Initialize the list of instances.
             instances = new List<SpinningInstance>();
