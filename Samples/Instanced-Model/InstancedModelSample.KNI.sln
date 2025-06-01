@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InstancedModelSample", "InstancedModelSample", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "InstancedModelSample", "InstancedModelSample\InstancedModelSample.shproj", "{71BF94B9-FB62-4240-8A19-2D826B4A2F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSample.Android", "InstancedModelSample.Android\InstancedModelSample.Android.csproj", "{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSample.WindowsDX", "InstancedModelSample.WindowsDX\InstancedModelSample.WindowsDX.csproj", "{3167B52D-87FB-4860-BD3B-2D027CFCCC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSample.DesktopGL", "InstancedModelSample.DesktopGL\InstancedModelSample.DesktopGL.csproj", "{B7A53441-4AC7-40B4-9E61-DC9857E21A3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelSample.BlazorGL", "InstancedModelSample.BlazorGL\InstancedModelSample.BlazorGL.csproj", "{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstancedModelPipeline..NETStandard", "InstancedModelPipeline\InstancedModelPipeline..NETStandard.csproj", "{FF69FD90-8834-4F60-ADA5-36387F112437}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3167B52D-87FB-4860-BD3B-2D027CFCCC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3167B52D-87FB-4860-BD3B-2D027CFCCC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3167B52D-87FB-4860-BD3B-2D027CFCCC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3167B52D-87FB-4860-BD3B-2D027CFCCC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A53441-4AC7-40B4-9E61-DC9857E21A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A53441-4AC7-40B4-9E61-DC9857E21A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A53441-4AC7-40B4-9E61-DC9857E21A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A53441-4AC7-40B4-9E61-DC9857E21A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Debug|Any CPU.Build.0 = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|Any CPU.ActiveCfg = Debug|x86
+		{FF69FD90-8834-4F60-ADA5-36387F112437}.Release|Any CPU.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71BF94B9-FB62-4240-8A19-2D826B4A2F4B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F2C2F93F-C7B5-43D9-9E1F-3C2ACAC07353} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3167B52D-87FB-4860-BD3B-2D027CFCCC99} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B7A53441-4AC7-40B4-9E61-DC9857E21A3B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E3904A9D-181B-4984-9E09-EFFDFD8B4D4D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28F3E328-8C0D-47A8-BA18-02A5183A5D2B}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		InstancedModelSample\InstancedModelSample.projitems*{3167b52d-87fb-4860-bd3b-2d027cfccc99}*SharedItemsImports = 5
+		InstancedModelSample\InstancedModelSample.projitems*{71bf94b9-fb62-4240-8a19-2d826b4a2f4b}*SharedItemsImports = 13
+		InstancedModelSample\InstancedModelSample.projitems*{b7a53441-4ac7-40b4-9e61-dc9857e21a3b}*SharedItemsImports = 5
+		InstancedModelSample\InstancedModelSample.projitems*{e3904a9d-181b-4984-9e09-effdfd8b4d4d}*SharedItemsImports = 5
+		InstancedModelSample\InstancedModelSample.projitems*{f2c2f93f-c7b5-43d9-9e1f-3c2acac07353}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
