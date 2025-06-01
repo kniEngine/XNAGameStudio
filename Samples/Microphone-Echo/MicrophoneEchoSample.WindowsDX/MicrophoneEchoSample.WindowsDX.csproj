@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RollForward>Major</RollForward>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ProjectGuid>993dc2d8-468c-463c-a750-2e1209f2aec4</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MicrophoneEchoSample</RootNamespace>
+    <AssemblyName>MicrophoneEchoSample</AssemblyName>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>$(DefineConstants);WINDOWSDX</DefineConstants>
+    <KniPlatform>Windows</KniPlatform>
+  </PropertyGroup>
+	
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+	
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+	
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Audio" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Media" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Devices" Version="4.1.9001" />
+    <PackageReference Include="nkast.Kni.Platform.WinForms.DX11" Version="4.1.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="4.1.9001" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <KniContentReference Include="..\MicrophoneEchoSampleContent\MicrophoneEchoSampleContent.mgcb">
+      <Link>Content\MicrophoneEchoSampleContent.mgcb</Link>
+    </KniContentReference>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="..\MicrophoneEchoSample\MicrophoneEchoSample.projitems" Label="Shared" />
+
+</Project>
