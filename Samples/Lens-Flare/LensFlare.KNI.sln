@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LensFlare", "LensFlare", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LensFlare", "LensFlare\LensFlare.shproj", "{97E41454-3C85-4FD4-8484-321E4FA7C9CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlare.Android", "LensFlare.Android\LensFlare.Android.csproj", "{922DF16C-2DC3-47C7-9009-532CA13E8ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlare.WindowsDX", "LensFlare.WindowsDX\LensFlare.WindowsDX.csproj", "{221B73A0-415D-4663-A8C5-FC21AC1172C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlare.DesktopGL", "LensFlare.DesktopGL\LensFlare.DesktopGL.csproj", "{96464F46-5499-4AA6-B0EB-787DABFF277F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LensFlare.BlazorGL", "LensFlare.BlazorGL\LensFlare.BlazorGL.csproj", "{4153E897-E03F-4EAE-A43D-0AC139FB0761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{922DF16C-2DC3-47C7-9009-532CA13E8ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922DF16C-2DC3-47C7-9009-532CA13E8ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922DF16C-2DC3-47C7-9009-532CA13E8ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922DF16C-2DC3-47C7-9009-532CA13E8ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{221B73A0-415D-4663-A8C5-FC21AC1172C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221B73A0-415D-4663-A8C5-FC21AC1172C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221B73A0-415D-4663-A8C5-FC21AC1172C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221B73A0-415D-4663-A8C5-FC21AC1172C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96464F46-5499-4AA6-B0EB-787DABFF277F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96464F46-5499-4AA6-B0EB-787DABFF277F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96464F46-5499-4AA6-B0EB-787DABFF277F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96464F46-5499-4AA6-B0EB-787DABFF277F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4153E897-E03F-4EAE-A43D-0AC139FB0761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4153E897-E03F-4EAE-A43D-0AC139FB0761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4153E897-E03F-4EAE-A43D-0AC139FB0761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4153E897-E03F-4EAE-A43D-0AC139FB0761}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97E41454-3C85-4FD4-8484-321E4FA7C9CD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{922DF16C-2DC3-47C7-9009-532CA13E8ECE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{221B73A0-415D-4663-A8C5-FC21AC1172C3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{96464F46-5499-4AA6-B0EB-787DABFF277F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4153E897-E03F-4EAE-A43D-0AC139FB0761} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8520F03E-4FA0-413B-A80B-3789D2DCA763}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LensFlare\LensFlare.projitems*{221b73a0-415d-4663-a8c5-fc21ac1172c3}*SharedItemsImports = 5
+		LensFlare\LensFlare.projitems*{4153e897-e03f-4eae-a43d-0ac139fb0761}*SharedItemsImports = 5
+		LensFlare\LensFlare.projitems*{922df16c-2dc3-47c7-9009-532ca13e8ece}*SharedItemsImports = 5
+		LensFlare\LensFlare.projitems*{96464f46-5499-4aa6-b0eb-787dabff277f}*SharedItemsImports = 5
+		LensFlare\LensFlare.projitems*{97e41454-3c85-4fd4-8484-321e4fa7c9cd}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

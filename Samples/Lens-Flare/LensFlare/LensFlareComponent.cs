@@ -29,7 +29,7 @@ namespace LensFlare
         // How big a rectangle should we examine when issuing our occlusion queries?
         // Increasing this makes the flares fade out more gradually when the sun goes
         // behind scenery, while smaller query areas cause sudden on/off transitions.
-        const float querySize = 100;
+        float querySize = 100;
 
 
         #endregion
@@ -134,6 +134,13 @@ namespace LensFlare
         /// </summary>
         protected override void LoadContent()
         {
+            // For GLES and WebGL occlusion queries, the exact pixel count is not available.
+            // Instead, a result of 1 indicates that one or more pixels are visible.
+            // Therefore the querySize (also used to calculate the occlusionAlpha value) is reduced accordingly.
+            if (GraphicsDevice.Adapter.Backend == GraphicsBackend.GLES
+             || GraphicsDevice.Adapter.Backend == GraphicsBackend.WebGL)
+                querySize = 1;
+
             // Create a SpriteBatch for drawing the glow and flare sprites.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
@@ -249,7 +256,7 @@ namespace LensFlare
 
                 // Use the occlusion query pixel count to work
                 // out what percentage of the sun is visible.
-                const float queryArea = querySize * querySize;
+                float queryArea = querySize * querySize;
 
                 occlusionAlpha = Math.Min(occlusionQuery.PixelCount / queryArea, 1);
             }

@@ -855,17 +855,17 @@ div.clsPlatSpec
 
     <p>The lens flare is built up out of two different effects. First, the sample draws a large, soft circular glow, which is centered on the sun. The glow is white in the center. It fades to transparent at the edge of the circle. These screenshots show the glow effect in isolation. The screen shot on the left shows the glow over a black background; the one on the right shows the glow over a terrain mesh.</p>
 
-    <img src="Glow.png" />
+    <img src="Documentation/Glow.png" />
 
     <p>Second, a number of flare sprites are positioned at arbitrary points along a 2D line. Three slightly different circular sprite textures are used to draw the flares. Each one is given a different scale and tint. You calculate flare positions by projecting the position of the sun on the 2D screen, then laying out each sprite along a line that runs from the sun through the center of the screen. This causes the flares to move position depending on the location of the sun. When the sun is near the middle of the screen, the flares will all be bunched up near the center. On the other hand, the flares will have a wider spacing when the sun is near the edge.</p>
 
     <p>The following screenshots show the flare effect in isolation. The image on the left shows the glow over a black background; the image on the right shows the glow over a terrain mesh.</p>
 
-    <img src="Flares.png" />
+    <img src="Documentation/Flares.png" />
 
     <p>Finally, these screenshots show both the glow and flare effects combined.</p>
 
-    <img src="Final.png" />
+    <img src="Documentation/Final.png" />
 
     <p>If you move the camera around so the sun is hidden behind a hill, you will notice that the lens flare gradually fades out. This is an important part of making a convincing effect. It would not look very realistic if you could see the sun right through other pieces of scenery! The depth buffer on the graphics card usually handles this kind of sorting automatically. The depth buffer ensures that objects farther away will never be drawn over the top of closer objects. However, the hardware depth buffer does not work for lens flares. The flare is a 2D shape drawn over the top of the 3D scene. This means it cannot be depth sorted in the usual way. For example, you might have a flare in the lower-left corner of the screen, which is caused by the sun at the top right, and you want that flare to be visible because there is no scenery blocking the upper-right corner of the screen, even if the lower left where you have placed that flare is covered up by the terrain.</p>
 
