@@ -46,6 +46,8 @@ namespace LensFlare
 
             Content.RootDirectory = "Content";
 
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
+
             // Create and add the lensflare component.
             lensFlare = new LensFlareComponent(this);
 
@@ -224,23 +226,4 @@ namespace LensFlare
 
         #endregion
     }
-
-
-    #region Entry Point
-
-    /// <summary>
-    /// The main entry point for the application.
-    /// </summary>
-    static class Program
-    {
-        static void Main()
-        {
-            using (LensFlareGame game = new LensFlareGame())
-            {
-                game.Run();
-            }
-        }
-    }
-
-    #endregion
 }
