@@ -1,0 +1,41 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin
+/intermediateDir:obj
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin terrain.fbx
+/importer:FbxImporter
+/processor:ModelProcessor
+/processorParam:RotationX=-90
+/build:terrain.fbx
+
+#begin flare1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:flare1.png
+
+#begin flare2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:flare2.png
+
+#begin flare3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:flare3.png
+
+#begin glow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:glow.png
+
