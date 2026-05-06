@@ -135,7 +135,7 @@ namespace LensFlare
         protected override void LoadContent()
         {
             // For GLES and WebGL occlusion queries, the exact pixel count is not available.
-            // Instead, a result of 1 indicates that one or more pixels are visible.
+            // Instead, OcclusionQuery.AnyPixelsPassed indicates that one or more pixels are visible.
             // Therefore the querySize (also used to calculate the occlusionAlpha value) is reduced accordingly.
             if (GraphicsDevice.Adapter.Backend == GraphicsBackend.GLES
              || GraphicsDevice.Adapter.Backend == GraphicsBackend.WebGL)
@@ -258,7 +258,11 @@ namespace LensFlare
                 // out what percentage of the sun is visible.
                 float queryArea = querySize * querySize;
 
-                occlusionAlpha = Math.Min(occlusionQuery.PixelCount / queryArea, 1);
+                if (GraphicsDevice.Adapter.Backend == GraphicsBackend.GLES
+                 || GraphicsDevice.Adapter.Backend == GraphicsBackend.WebGL)
+                    occlusionAlpha = occlusionQuery.AnyPixelsPassed ? 1 : 0;
+                else
+                    occlusionAlpha = Math.Min(occlusionQuery.PixelCount / queryArea, 1);
             }
 
             // Set renderstates for drawing the occlusion query geometry. We want depth
